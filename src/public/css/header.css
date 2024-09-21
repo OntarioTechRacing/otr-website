@@ -1,0 +1,58 @@
+.navigation-bar {
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+}
+.nav-shell {
+  position: relative;
+}
+.navigation-bar ul {
+  list-style: none;
+  padding: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-toggle {
+  display: flex;
+}
+.navigation-bar a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0.8em;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+.navigation-bar a:hover {
+  background-color: white;
+  color: #000000;
+}
+.navigation-bar a:active {
+  background-color: white;
+  color: #000000;
+}
+.otr-logo {
+  width: 95px;
+  min-width: 96px;
+  transition: transform 0.2s;
+}
+.otr-logo:hover {
+  transform: scale(1.04);
+}
+.otr-logo img {
+  width: 100%;
+}
+
+.link {
+  font-weight: 700;
+  cursor: pointer;
+}
