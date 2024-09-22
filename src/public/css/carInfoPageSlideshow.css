@@ -1,0 +1,148 @@
+.slideshow {
+  background-color: #000000;
+  color: white;
+  padding: 40px 40px 150px 40px;
+  margin-top: 80px;
+}
+.slideshow-heading {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+.slideshow-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.left-arrow,
+.right-arrow {
+  width: 250px;
+  height: 70px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 101;
+}
+.left-arrow {
+  left: -40%;
+}
+.right-arrow {
+  right: -40%;
+}
+
+.left-arrow img,
+.right-arrow img {
+  width: 100%;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.slideshow-images {
+  /*Edit this container to change the size of the slideshow images, also edit in the query selectors below*/
+  position: relative;
+
+  width: 800px;
+
+  margin: auto;
+  border: 1px solid rgb(70, 68, 68);
+}
+.display {
+  display: block !important;
+}
+.slideshow-images .image {
+  display: none;
+  width: 100%;
+  height: 800px;
+  z-index: 100;
+  object-fit: contain;
+}
+
+@media (max-width: 1500px) {
+  .left-arrow,
+  .right-arrow {
+    width: 180px;
+    height: 50px;
+  }
+  .slideshow-images {
+    width: 650px;
+  }
+  .slideshow-images .image {
+    height: 700px;
+  }
+}
+@media (max-width: 1200px) {
+  .left-arrow,
+  .right-arrow {
+    width: 240px;
+    height: 60px;
+    margin-bottom: 0;
+    bottom: -80px;
+  }
+  .left-arrow {
+    left: 0;
+  }
+  .right-arrow {
+    right: 0;
+  }
+  .slideshow-images {
+    width: 700px;
+  }
+  .slideshow-images .image {
+    height: 650px;
+  }
+}
+@media (max-width: 1080px) {
+  .slideshow-images {
+    width: 700px;
+  }
+  .slideshow-images .image {
+    height: 650px;
+  }
+}
+@media (max-width: 900px) {
+  .slideshow-images {
+    width: 600px;
+  }
+  .slideshow-images .image {
+    height: 550px;
+  }
+}
+@media (max-width: 720px) {
+  .left-arrow,
+  .right-arrow {
+    width: 180px;
+    height: 60px;
+  }
+  .slideshow-images {
+    width: 500px;
+  }
+  .slideshow-images .image {
+    height: 450px;
+  }
+  .slideshow-heading {
+    font-size: 3em;
+  }
+}
+@media (max-width: 600px) {
+  .left-arrow,
+  .right-arrow {
+    width: 180px;
+    height: 60px;
+  }
+  .slideshow-images {
+    width: 400px;
+  }
+  .slideshow-images .image {
+    height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .slideshow-images {
+    width: 350px;
+  }
+  .slideshow-images .image {
+    height: 350px;
+  }
+}
