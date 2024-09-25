@@ -17,7 +17,7 @@ const observer = new IntersectionObserver(
 );
 
 const tags = document.querySelectorAll(
-  ".image,.table,.section-header, .background-information, .comp"
+  ".image,.table,.section-header, .background-information, .number-value, .comp"
 );
 tags.forEach((tag) => {
   observer.observe(tag);

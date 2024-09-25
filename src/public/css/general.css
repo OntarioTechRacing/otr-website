@@ -10,6 +10,25 @@ body {
   margin-top: 56px;
   background-color: #000000;
 }
+@media (prefers-reduced-motion: no-preference) {
+  .in-view {
+    animation: image-fade 1s 1s ease-in both;
+  }
+  .not-in-view {
+    opacity: 0;
+  }
+}
+
+@keyframes image-fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 img {
   cursor: pointer;
 }
