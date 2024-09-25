@@ -51,9 +51,25 @@
 
 .spec-heading {
   font-size: 4em;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1170px) {
+  .spec-grid {
+    column-gap: 20%;
+  }
+  .spec-image {
+    width: 250px;
+  }
+  .spec-number-value {
+    font-size: 3.5em;
+  }
 }
 
+@media (max-width: 790px) {
+  .spec-section {
+    margin-bottom: 180px;
+  }
+}
 @media (max-width: 700px) {
   .spec-heading {
     font-size: 3em;
@@ -66,6 +82,6 @@
 }
 @media (max-width: 500px) {
   .spec-grid {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
   }
 }
