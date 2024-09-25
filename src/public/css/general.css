@@ -17,6 +17,24 @@ body {
   .not-in-view {
     opacity: 0;
   }
+  .pop-in {
+    animation: text-pop 1s 1s ease-in both;
+  }
+}
+
+@keyframes text-pop {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  50% {
+    opacity: 1;
+    scale: 50%;
+  }
+  100% {
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
 @keyframes image-fade {

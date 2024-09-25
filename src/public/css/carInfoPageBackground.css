@@ -28,6 +28,7 @@
 }
 
 .background-image img {
+  opacity: 0;
   scale: 0.9;
   width: 100%;
   transition: scale 0.3s;
