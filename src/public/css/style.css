@@ -4,7 +4,6 @@
 
 html {
   line-height: 1.2; 
-  -webkit-text-size-adjust: 100%; 
 }
 
 html, * {
@@ -116,3 +115,4 @@ progress {
 [hidden] {
   display: none;
 }
+
