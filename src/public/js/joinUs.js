@@ -9,23 +9,38 @@ const message = document.querySelector(".message");
 const firstNameErrorMessage = document.getElementById("firstname-error");
 const lastNameErrorMessage = document.getElementById("lastname-error");
 const emailErrorMessage = document.getElementById("email-error");
+const verficationErrorMessage = document.getElementById(
+  "email-verfication-error"
+);
 const messageErrorMessage = document.getElementById("message-error");
 
+const validateEmail = (email) => {
+  const regex =
+    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+  return regex.test(email);
+};
 sendButton.addEventListener("click", (e) => {
   e.preventDefault();
   firstNameErrorMessage.style.display = "none";
   lastNameErrorMessage.style.display = "none";
   emailErrorMessage.style.display = "none";
   messageErrorMessage.style.display = "none";
-
-  if (firstName.value && lastName.value && email.value && message.value) {
+  const isEmail = validateEmail(email.value);
+  console.log(isEmail);
+  if (
+    firstName.value &&
+    lastName.value &&
+    email.value &&
+    message.value &&
+    isEmail
+  ) {
     joinUsForm.style.display = "none";
     thankYouMessage.style.display = "flex";
   } else {
     if (!firstName.value) {
       firstNameErrorMessage.style.display = "flex";
     }
-    e;
+
     if (!lastName.value) {
       lastNameErrorMessage.style.display = "flex";
     }
@@ -34,6 +49,9 @@ sendButton.addEventListener("click", (e) => {
     }
     if (!message.value) {
       messageErrorMessage.style.display = "flex";
+    }
+    if (email.value && !isEmail) {
+      verficationErrorMessage.style.display = "flex";
     }
   }
 });
