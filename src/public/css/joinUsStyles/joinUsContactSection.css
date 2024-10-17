@@ -1,0 +1,154 @@
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+.contact-us-heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+.info-form {
+  font-size: 1rem;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  padding: 45px;
+}
+.heading-form {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.form-container ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  list-style: none;
+  margin-top: 70px;
+
+  margin-bottom: 200px;
+  font-size: 1.2rem;
+}
+.form-container li {
+  display: flex;
+  column-gap: 25px;
+}
+.contact-icon {
+  width: 20px;
+}
+.contact-icon img {
+  width: 100%;
+}
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+.facebook {
+  width: 35px;
+}
+.instagram {
+  width: 30px;
+  margin-right: 3px;
+}
+.x {
+  width: 30px;
+}
+.contact-footer img {
+  width: 100%;
+}
+.join-us-form {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+}
+.join-us-form form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  width: 100%;
+}
+.row {
+  display: flex;
+  column-gap: 40px;
+  margin-bottom: 40px;
+}
+.row div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 15px;
+}
+.row input {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  outline: none;
+}
+.row textarea {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  outline: none;
+}
+.row input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(199, 196, 196);
+}
+.line {
+  background-color: white;
+  height: 1px;
+}
+.form-submit {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 12px;
+  margin-left: auto;
+  margin-top: 25px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+@media (max-width: 1100px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 100px;
+  }
+  .join-us-form {
+    margin: auto;
+  }
+}
