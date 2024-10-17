@@ -122,6 +122,7 @@
   font-size: 1.2rem;
   color: white;
   outline: none;
+  resize: none;
 }
 .row input::placeholder {
   font-size: 1rem;
@@ -136,11 +137,43 @@
   display: flex;
   justify-content: center;
   font-size: 1rem;
+  font-weight: 500;
   padding: 12px;
   margin-left: auto;
   margin-top: 25px;
-  border: 1px solid white;
+  border: 2px solid white;
   cursor: pointer;
+}
+.form-submit:hover {
+  background-color: transparent;
+  color: white;
+}
+.thank-you-message {
+  display: none;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-left: 70px;
+}
+.thank-you-message div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid white;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 200px;
+}
+.thank-you-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.error {
+  display: none;
+  font-size: 0.8rem;
+  color: red;
 }
 @media (max-width: 1100px) {
   .form-container {
@@ -150,5 +183,15 @@
   }
   .join-us-form {
     margin: auto;
+  }
+  .thank-you-message {
+    margin: auto;
+  }
+}
+@media (max-width: 570px) {
+  .join-us-form form,
+  .row input,
+  .row textarea {
+    font-size: 1rem;
   }
 }
