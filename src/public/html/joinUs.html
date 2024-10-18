@@ -19,7 +19,9 @@
       href="../css/joinUsStyles/joinUsContactSection.css"
       rel="stylesheet"
     />
-
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -143,7 +145,7 @@
               </div>
               <div>
                 <label for="phone">Phone Number (Optional)</label>
-                <input class="phone" name="phone" placeholder="+1359 836 648">
+                <input class="phone" name="phone" placeholder="+1 359 836 648">
                 <div class="line"></div>
               </div>
             </div>
@@ -193,6 +195,7 @@
       </div>
     </div>
     <script src="../js/header.js"></script>
-    <script src="../js/joinUs.js"></script>
+    <script type="module" src="../js/joinUs.js"></script>
+    <script type="module" src="../js/email.js"></script>
   </body>
 </html>

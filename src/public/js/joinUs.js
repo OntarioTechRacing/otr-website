@@ -1,3 +1,4 @@
+import { sendEmail } from "./email.js";
 const sendButton = document.querySelector(".form-submit");
 const joinUsForm = document.getElementById("join-us");
 const thankYouMessage = document.getElementById("thank-you");
@@ -19,6 +20,7 @@ const validateEmail = (email) => {
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
   return regex.test(email);
 };
+
 sendButton.addEventListener("click", (e) => {
   e.preventDefault();
   firstNameErrorMessage.style.display = "none";
@@ -36,11 +38,17 @@ sendButton.addEventListener("click", (e) => {
   ) {
     joinUsForm.style.display = "none";
     thankYouMessage.style.display = "flex";
+    sendEmail(
+      firstName.value,
+      lastName.value,
+      email.value,
+      message.value,
+      phoneNumber.value ? phoneNumber.value : "Not provided"
+    );
   } else {
     if (!firstName.value) {
       firstNameErrorMessage.style.display = "flex";
     }
-
     if (!lastName.value) {
       lastNameErrorMessage.style.display = "flex";
     }
