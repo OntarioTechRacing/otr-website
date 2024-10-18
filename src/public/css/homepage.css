@@ -14,19 +14,22 @@ html, body {
     color: inherit;
   }
   
-  
   /* Mission Section */
   .mission-section {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, #000000, #1a1a1a); 
     padding: 40px;
-    border-radius: 10px;
     color: white;
 }
 
-  
+.mission-image {
+  display: flex;
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+}
+
 .text-container {
   flex: 1;
   margin-right: 20px;
@@ -106,7 +109,7 @@ html, body {
 /* Navigation bar */
 .navigation-bar {
   position: absolute; 
-  top: 20px;
+  top: 0px;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -128,7 +131,6 @@ html, body {
 
 .nav-shell .link a {
   font-size: 1rem;
-  /* padding:2px; */
   color: white;
 }
 
