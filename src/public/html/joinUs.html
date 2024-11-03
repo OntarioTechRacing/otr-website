@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/joinUsStyles/general.css" rel="stylesheet" />
+    <link href="../css/joinUsStyles/joinUsInfoSection.css" rel="stylesheet" />
+    <link
+      href="../css/joinUsStyles/joinUsContactSection.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <div class="nav-shell">
+        <ul>
+          <li class="otr-logo">
+            <img src="../images/icons/otrLogo.svg" alt="" />
+          </li>
+          <div class="nav-toggle">
+            <li class="link">
+              <a href=""> Home </a>
+            </li>
+            <li class="link">
+              <a href="">Team</a>
+            </li>
+            <li class="link">
+              <a href="">Competiton</a>
+            </li>
+            <li class="link">
+              <a href="">Sponsors</a>
+            </li>
+            <li class="link">
+              <a href="">History</a>
+            </li>
+          </div>
+        </ul>
+        <button class="menu-button">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+      </div>
+    </div>
+    <div class="join-us-info">
+      <div class="join-us-image-container">
+        <img class="join-us-image" src="../images/windtunnel.jpg" alt="" />
+      </div>
+      <div class="join-us-info-container">
+        <p>JOIN OUR TEAM</p>
+        <div class="bold">
+          <div class="bar"></div>
+          <p>
+            Empowering students to build electric race cars means thinking
+            differently.
+          </p>
+        </div>
+        <p>
+          At Ontario Tech Racing, we are always looking for talented and
+          passionate individuals to join our team. We offer valuable engineering
+          experience and the opportunity to work on cutting-edge technology.
+        </p>
+      </div>
+    </div>
+    <div class="contact-us-container">
+      <div class="contact-us-heading">
+        <span class="heading">Contact Us</span>
+        <span">Get in Touch with Us!</span>
+      </div>
+      <div class="form-container">
+        <div class="info-form">
+          <div class="heading-form">Our Contact Information</div>
+          <div>
+            Fill in the form and our Team will get back to you within 24 hours
+          </div>
+          <ul>
+            <li>
+              <div class="contact-icon">
+                <img src="../images/icons/phone-black.png" alt="">
+              </div>
+              <p> +1413 435 298</p>
+            </li>
+            <li>
+              <div class="contact-icon">
+                <img src="../images/icons/email.png" alt="">
+              </div>
+              <p>company@gmail.com</p>
+            </li>
+            <li>
+              <div class="contact-icon">
+                <img src="../images/icons/location.png" alt="">
+              </div>
+              <p>123 Sesame Street, Toronto, M4Y2V7</p>
+            </li>
+          </ul>
+          <div class="contact-footer">
+            <a class="facebook">
+              <img src="../images/icons/facebook.png" alt="">
+            </a>
+            <a class="instagram">
+              <img src="../images/icons/instagram.png" alt="">
+            </a>
+            <a class="x">
+              <img src="../images/icons/x.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="join-us-form" id="join-us">
+          <form autocomplete="off">
+            <div class="row">
+              <div>
+                <label for="firstname">First Name*</label>
+                <input class="firstname" name="firstname" placeholder="John">
+                <div class="line"></div>
+                <p class="error" id="firstname-error">*Required field, Please add first name</p>
+              </div>
+              <div>
+                <label for="lastname">Last Name*</label>
+                <input class="lastname" name="lastname" placeholder="John">
+                <div class="line"></div>
+                <p class="error" id="lastname-error">*Required field, Please add last name</p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label type="email" for="email">Email*</label>
+                <input class="email" name="email" placeholder="johndoe@gmail.com">
+                <div class="line"></div>
+                <p class="error" id="email-error">*Required field, Please add email</p>
+                <p class="error" id="email-verfication-error">Invalid email address provided</p>
+              </div>
+              <div>
+                <label for="phone">Phone Number (Optional)</label>
+                <input class="phone" name="phone" placeholder="+1 359 836 648">
+                <div class="line"></div>
+                <p class="error" id="phone-error">Invalid phone number provided</p>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <label for="message">Message*</label>
+                <textarea spellcheck="true" class="message" name="message" rows="6" cols="33" placeholder="Write your message"></textarea>
+                <div class="line"></div>
+                <p class="error" id="message-error">*Required field, Please add message</p>
+              </div>
+            </div>
+            <button class="form-submit" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      <div class="thank-you-message" id="thank-you">
+        <div>
+          <p class="thank-you-heading">Thank you for your Interest!</p>
+          <p>We appreciate you contacting us. We will get back in touch with you soon.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="otr-info">
+        <span class="otr-email">motorsports@ontariotechu.net</span>
+        <span class="otr-name"
+          >2024 Ontario Tech University Formula Racing</span
+        >
+      </div>
+      <div class="otr-links">
+        <a>
+          <img
+            class="instagram-link"
+            src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
+            alt=""
+          />
+        </a>
+        <a>
+          <img
+            class="linkedin-link"
+            src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+    <script src="../js/header.js"></script>
+    <script type="module" src="../js/joinUs.js"></script>
+    <script type="module" src="../js/email.js"></script>
+  </body>
+</html>
