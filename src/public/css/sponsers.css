@@ -1,0 +1,32 @@
+/* Navigation bar */
+.navigation-bar {
+    position: absolute; 
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+  }
+  
+  .nav-shell ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+  
+  .nav-shell .otr-logo img {
+    height: 50px;
+  }
+  
+  .nav-shell .link a {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .nav-shell .link a:hover {
+    color: #ffab00; 
+  }
+  

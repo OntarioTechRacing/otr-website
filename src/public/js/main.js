@@ -1,5 +1,6 @@
 'use strict';
 
+    /* -------------- STATISTICS SECTION  ----------------- */
 
     // Increment "Years of Experience" up to target
     function incrementYearsOfExperience() {
@@ -66,3 +67,5 @@
       incrementYearsOfSkilledMembers();
     };
 
+
+    /* -------------- INSTAGRAM FEED----------------- */
