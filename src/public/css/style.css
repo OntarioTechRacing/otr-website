@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: jost, sans-serif;
+}
+
+body{
+    background-color: black;
+    font-family: jost, sans-serif;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/historyBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 70px;
+    text-align: right;
+    margin-top: auto;
+    position: relative; /* Add this to make .Title position relative to .banner */
+}
+
+.Title {
+    position: absolute; /* Positioned relative to the .banner */
+    bottom: 0; /* Aligns to the bottom */
+    right: 0; /* Aligns to the right */
+    margin: 10px;
+    text-shadow: 3px 5px 5px #000;
+}
+
+.section{
+    color: white;
+}
+
+
+
+.introduction-container {
+    display: flex;
+    justify-content: space-between; /* Space between image and text */
+    align-items: flex-start;
+
+}
+
+#intro-header{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 60px;
+}
+
+#HistoricTeamPhoto {
+    display: flex;
+    justify-content: flex-start; /* Align image to the left */
+    height: 500px;
+    width: auto;
+    float: left;
+    padding-top: 60px;
+
+}
+
+
+#intro-text {
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: left; /* Align the paragraph text to the right */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 24px;
+    padding-left: 40px;
+
+}
+
+#break-line {
+    padding-top: 60px;
+    width: 100%;
+    height: 2px;
+    border: none;
+    margin: 20px 0;
+}
+
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    color: black;
+    border: cyan 4px solid;
+
+}
+/*The circle that appears after each event*/
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid white;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Add arrows and adjust positions, content will either appear on the left or right side  */
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+/*Arrows*/
+.left::before {
+    content: " ";
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    border: 10px solid transparent;
+    border-right-color: white;
+}
+
+.right::before {
+    content: " ";
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    border: 10px solid transparent;
+    border-left-color: white;
+}
+
+.right::after {
+    left: -16px;
+}
+
+/*Styles for the box content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: left;
+    border: black 4px solid;
+
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .container::before {
+        left: 60px;
+        border: 10px solid white;
+        border-left-color: transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0;
+    }
+}
