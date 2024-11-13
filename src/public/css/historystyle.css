@@ -1,15 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: jost, sans-serif;
-
 }
 
 html {
     line-height: 1.2;
 }
 
-body{
+body {
     background-color: black;
     font-family: jost, sans-serif;
     color: white;
@@ -26,31 +25,30 @@ body{
     font-size: 70px;
     text-align: right;
     margin-top: auto;
-    position: relative; /* Add this to make .Title position relative to .banner */
+    position: relative;
 }
 
 .Title {
-    position: absolute; /* Positioned relative to the .banner */
-    bottom: 0; /* Aligns to the bottom */
-    right: 0; /* Aligns to the right */
+    position: absolute;
+    bottom: 0;
+    right: 0;
     margin: 10px;
     text-shadow: 3px 5px 5px #000;
 }
 
-.section{
+.section {
     color: white;
 }
 
-
-
 .introduction-container {
     display: flex;
-    justify-content: space-between; /* Space between image and text */
+    justify-content: space-between;
     align-items: flex-start;
-
+    gap: 20px;
+    padding: 20px;
 }
 
-#intro-header{
+#intro-header {
     text-align: center;
     font-size: 50px;
     padding-top: 60px;
@@ -58,25 +56,22 @@ body{
 
 #HistoricTeamPhoto {
     display: flex;
-    justify-content: flex-start; /* Align image to the left */
+    justify-content: flex-start;
     height: 500px;
     width: auto;
     float: left;
-    padding-top: 60px;
-
 }
 
+#HistoricTeamPhoto img {
+    max-width: 100%;
+    height: auto;
+}
 
 #intro-text {
-    height: auto;
     width: 50%;
-    float: left;
-    text-align: left; /* Align the paragraph text to the right */
-    padding-top: 60px;
-    padding-bottom: 60px;
+    text-align: left;
+    padding: 60px 40px;
     font-size: 24px;
-    padding-left: 40px;
-
 }
 
 #break-line {
@@ -86,6 +81,64 @@ body{
     border: none;
     margin: 20px 0;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .banner {
+        font-size: 50px;
+    }
+
+    #intro-header {
+        font-size: 40px;
+    }
+
+    #intro-text {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .introduction-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #HistoricTeamPhoto,
+    #intro-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #intro-header {
+        font-size: 36px;
+        padding-top: 30px;
+    }
+
+    #intro-text {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        font-size: 30px;
+    }
+
+    #intro-header {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+
+    #intro-text {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 
 #title{
     text-align: center;
@@ -116,8 +169,8 @@ body{
     flex-direction: column;
 }
 .timeline-image img{
-    width: 400px; /* Adjust width as needed */
-    height: auto; /* Maintains aspect ratio */
+    width: 400px;
+    height: auto;
     padding-right: 20px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -141,8 +194,8 @@ body{
     padding-bottom: 10px;
 }
 .timeline-component ul li {
-    font-size: 1.2rem; /* Adjust the size as needed */
-    line-height: 1.6; /* Optional for spacing between lines */
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 .timeline-component {
     margin: 0px 20px 20px 20px;
