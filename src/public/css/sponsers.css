@@ -29,4 +29,22 @@
   .nav-shell .link a:hover {
     color: #ffab00; 
   }
+
+  .sponsers-img{
+    width: auto;
+    height: auto;
+    
+  }
   
+  /*  SPONSERS TEXT */
+.sponsers-section{
+  display:flex;
+}
+
+.sponsers-img{
+  max-height: 1000px;
+}
+
+.sponsers-text{
+
+}
