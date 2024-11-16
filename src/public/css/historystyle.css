@@ -57,9 +57,9 @@ body {
 #HistoricTeamPhoto {
     display: flex;
     justify-content: flex-start;
-    height: 500px;
     width: auto;
     float: left;
+    height: auto;
 }
 
 #HistoricTeamPhoto img {
