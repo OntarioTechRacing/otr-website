@@ -1,0 +1,85 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu globally */
+}
+
+.content {
+  background-image: url(./TeamPicTeamPage.jpg);
+  background-size:cover;
+
+}
+
+.fullscreen-image {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1{
+  text-align: center;
+  /* font-family:  */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center text inside the card */
+}
+
+.card img {
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  height: 120px; /* Set a fixed height */
+}
+
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 160px;
+    padding: 0 8px;
+    height: 250px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 33.3%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
