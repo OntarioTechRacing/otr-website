@@ -12,6 +12,7 @@
     z-index: 2000;
     animation: header-load 600ms ease-in;
 }
+
 @keyframes header-load {
     0% {
         transform: translateY(-100%);

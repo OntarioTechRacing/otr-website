@@ -1,5 +1,6 @@
 'use strict';
 
+    /* -------------- STATISTICS SECTION  ----------------- */
 
     // Increment "Years of Experience" up to target
     function incrementYearsOfExperience() {
@@ -55,7 +56,7 @@
         if (start >= target) {
           clearInterval(interval);
         }
-      }, 500);
+      }, 50);
     }
 
     // Run all counters on page load
@@ -66,3 +67,5 @@
       incrementYearsOfSkilledMembers();
     };
 
+
+    /* -------------- INSTAGRAM FEED----------------- */
