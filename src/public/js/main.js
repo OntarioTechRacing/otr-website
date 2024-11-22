@@ -56,7 +56,7 @@
         if (start >= target) {
           clearInterval(interval);
         }
-      }, 500);
+      }, 50);
     }
 
     // Run all counters on page load
