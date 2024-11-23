@@ -20,6 +20,9 @@ body {
   .pop-in {
     animation: text-pop 1s 1s ease-in both;
   }
+  .silde-fade {
+    animation: slide-fade 0.5s 0.1s ease-in-out both;
+  }
 }
 
 @keyframes text-pop {
@@ -45,6 +48,17 @@ body {
   100% {
     opacity: 1;
     transform: translate(0, 0);
+  }
+}
+
+@keyframes slide-fade {
+  0% {
+    opacity: 0;
+    scale: 120%;
+  }
+  100% {
+    opacity: 1;
+    scale: 100%;
   }
 }
 img {
