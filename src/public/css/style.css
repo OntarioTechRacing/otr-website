@@ -2,13 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: jost, sans-serif;
-
-/* Opinionated CSS defaults based on:
-  ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
-*/
-
-html {
-  line-height: 1.2; 
 }
 
 body{
@@ -199,4 +192,3 @@ body{
         left: 0;
     }
 }
-
