@@ -10,11 +10,28 @@ h1, h2, p {
   margin: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", Arial;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+#app {
+  padding: 20px;
+}
+    
 /* Navigation bar */
 .navigation-bar {
   position: absolute; 
@@ -49,41 +66,124 @@ a {
 
   
   /*  SPONSERS TEXT */
-  
+  .sponsers-package-text{
+    font-size: 40px;
+  }
+
+  .sponsers-banner{
+    position: relative; 
+    width: 100%;
+    text-align: center;
+  }
+
   .sponsers-banner img {
     width: 100%; 
-    height: 60%;
+    height: auto;
   }
   
   .sponsers-section{
     background-color:black;
-    display:grid;
+    position: relative; 
+  }
 
+  .sponsers-heading{
+    font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+
+  .sponsers-title{
+    text-align:center;
+    margin: 5px;
+    font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .sponsers-text-container{
+    width: 100%;
+    height: 300px;
+    color:white;
+    font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
   }
 
   .sponsers-text{
-    width: 800px;
-    height: 350px;
-    border-radius: 10px;
-    color:white;
-    margin: 15px;
-    padding: 10px'
+    width: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
   }
 
   .sponsers-paragraph{
-    font-size: 18px;
+    font-size: 22px;
+    margin: 0 auto;
+    font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 1450px;
+    padding: 10px;
+  }
+
+  .view-sponsership-pkg-btn{
+    width: 250px;
+    /* margin: 0 auto; */
+    align-content: center;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 4px;
+    /* text-align:center; */
+    color:white;
+    padding: 10px;
+  }
+
+  .sponsership-packages-container{
+    margin: 0 auto;
+    text-align:center;
+    padding: 20px;
+  }
+
+  .diamond-sponsers-text{
+    padding: 20px;
+  }
+
+  .gold-sponsers-text{
+    padding: 20px;
+  }
+
+  .platinum-sponserships{
+    margin: 0 auto;
+    padding: 20px;
   }
 
   .diamond-sponsership, .platinum-sponserships, .gold-sponsership, .silver-sponsership, .bronze-sponsership{
     color: white;
   }
 
-  .logo{
-    width: 450px;
-    height: 150px;
-    border: 1px solid white;
-    border-radius: 20px;
+  .diamond-logos{
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid white; */
+    border-radius: 15px;
     margin: 5px;
+    background-color:black;
+    align-content:center;
+  }
+
+  .diamond-logos :hover {
+    transform: scale(1.12);
+  }
+
+  .logo{
+    width: 300px;
+    height: 180px;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 20px;
+
+    background-color:black;
+    align-content:center;
+  }
+
+  .logo :hover{
+    transform: scale(1.12)
   }
 
   .diamond-sponsership{
@@ -92,37 +192,29 @@ a {
 
   }
 
-  .platinum-sponserships{
-    display:flex;
-    gap: 15px;
-
-  }
-
   .gold-sponsership{
     display:flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
   }
 
   .silver-sponsership{
-    display:flex;
-    gap: 15px;
+    display:grid;
+    justify-content:center;
   }
 
   .bronze-sponsership{
-    display:flex;
-    gap: 15px;
+    display:grid;
+    justify-content:center;
   }
 
   .sponsership-packages{
     color:white;
   }
 
-  .row-1{
-    display:grid
-  }
-
-  .row-2{
-    display:grid
+  .row{
+    display:flex;
   }
 
   .sponsership-item {
@@ -131,3 +223,30 @@ a {
     align-content:center;
   }
   
+  /* .sponsership-packages-btn{
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Century Gothic'
+  } */
+
+  button :hover{
+    background-color: yellow;
+  }
+
+  /* Phone */
+  @media only screen and (max-width: 480px){
+    
+
+    
+  }
+
+
+  /* Tablets */
+  @media only screen and (max-width: 820px){
+    
+    
+    
+  }
