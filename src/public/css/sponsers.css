@@ -129,16 +129,15 @@ body {
     text-align: center;
     width: 1450px;
     padding: 10px;
+    overflow:scroll;
   }
 
   .view-sponsership-pkg-btn{
     width: 250px;
-    /* margin: 0 auto; */
     align-content: center;
     background-color: gray;
     border: 1px solid black;
     border-radius: 4px;
-    /* text-align:center; */
     color:white;
     padding: 10px;
   }
@@ -154,11 +153,6 @@ body {
   }
 
   .gold-sponsers-text{
-    padding: 20px;
-  }
-
-  .platinum-sponserships{
-    margin: 0 auto;
     padding: 20px;
   }
 
@@ -199,23 +193,6 @@ body {
 
   }
 
-  .gold-sponsership{
-    display:flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-  }
-
-  .silver-sponsership{
-    display:grid;
-    justify-content:center;
-  }
-
-  .bronze-sponsership{
-    display:grid;
-    justify-content:center;
-  }
-
   .sponsership-packages{
     color:white;
   }
@@ -228,14 +205,6 @@ body {
     margin-bottom: 40px;
   }
   
-  /* .sponsership-packages-btn{
-    width: 250px;
-    height: 40px;
-    background-color: white;
-    border-radius: 20px;
-    font-size: 14px;
-    font-family: 'Century Gothic'
-  } */
 
   button :hover{
     background-color: yellow;
@@ -243,9 +212,45 @@ body {
 
   /* Phone */
   @media only screen and (max-width: 480px){
-    
+    .title{
+      font-size:40px;
 
+    }
+
+    .sponsers-heading{
+      font-size:24px;
+    }
+
+    .sponsers-text-container{
+      height: 500px;
+    }
+
+    .sponsers-paragraph{
+      font-size: 14px;
+      text-align:left;
+      width: 330px;
+      padding:4px;
+    }
+
+    .row{
+      display:grid;
+    }
     
+    .diamond-sponsers-text{
+      text-shadow: 3px 5px 5px #3869ca;
+
+    }
+    .gold-sponsers-text{
+      text-shadow: 3px 5px 5px #bd7522;
+    }
+
+    .silver-sponsers-text{
+      text-shadow: 3px 5px 5px #88e3e3;
+    }
+
+    .bronze-sponsers-text{
+      text-shadow: 3px 5px 5px #5e4903;
+    }
   }
 
 
