@@ -13,25 +13,55 @@ html, body {
     color: inherit;
   }
   
+  /* Navigation bar */
+.navigation-bar {
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+.nav-shell ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.nav-shell .otr-logo img {
+  height: 50px;
+}
+
+.nav-shell .link a {
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-shell .link a:hover {
+  color: #ffab00; 
+}
+
   /* Homepage banner */
   .homepage-banner {
+    position: relative; 
     width: 100%;
+    text-align: center;
+    background-image:url('../images/homepage.jpg');
     height: 100vh;
-    background-image: url('../images/homepage.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
     background-repeat: no-repeat;
-    color: white;
+    background-position: center;
     font-size: 70px;
-    text-align: right;
-    margin-top: auto;
-    position: relative; /* Add this to make .Title position relative to .banner */
   }
   
   .Title{
-    position: absolute; /* Positioned relative to the .banner */
-    bottom: 0; /* Aligns to the bottom */
-    right: 0; /* Aligns to the right */
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
     margin: 10px;
     text-shadow: 3px 5px 5px #000;
   }   
@@ -104,6 +134,11 @@ html, body {
     .stat-box {
       text-align: center;
       padding: 20px;
+      width: 200px;
+      height: 150px;
+      border-radius:20px;
+      border: 1px solid white;
+      margin:10px;
     }
     
     .stat-box h1 {
@@ -116,34 +151,15 @@ html, body {
       font-weight: normal;
     }
 
-  /* Navigation bar */
-  .navigation-bar {
-    position: absolute; 
-    top: 0px;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
+
+  /* Phone */
+  @media only screen and (max-width: 480px){
+    .Title{
+      font-size:60px;
+
+    }
+  .stats-section{
+    display:grid;
   }
 
-  .nav-shell ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
-  }
-
-  .nav-shell .otr-logo img {
-    height: 50px;
-  }
-
-  .nav-shell .link a {
-    font-size: 1rem;
-    color: white;
-  }
-
-  .nav-shell .link a:hover {
-    color: #ffab00; 
   }
