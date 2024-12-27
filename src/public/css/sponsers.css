@@ -74,11 +74,20 @@ body {
     position: relative; 
     width: 100%;
     text-align: center;
+    background-image:url('../images/sponsers.jpg');
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 70px;
   }
 
-  .sponsers-banner img {
-    width: 100%; 
-    height: auto;
+  .title{
+    bottom:0;
+    right: 0;
+    position: absolute;
+    text-shadow:  3px 5px 5px #000;
+
   }
   
   .sponsers-section{
@@ -135,7 +144,7 @@ body {
   }
 
   .sponsership-packages-container{
-    margin: 0 auto;
+    margin: 40px auto;
     text-align:center;
     padding: 20px;
   }
@@ -155,31 +164,29 @@ body {
 
   .diamond-sponsership, .platinum-sponserships, .gold-sponsership, .silver-sponsership, .bronze-sponsership{
     color: white;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 20px;
   }
 
-  .diamond-logos{
-    width: 300px;
-    height: 200px;
-    /* border: 1px solid white; */
-    border-radius: 15px;
-    margin: 5px;
-    background-color:black;
-    align-content:center;
-  }
+  .diamond-logos img,
+  .gold-sponsership img,
+  .silver-sponsership img,
+  .bronze-sponsership img {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 5px;
+  background-color:black;
+  align-content:center;
+  max-width: 100%; 
+  object-fit: contain; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
 
   .diamond-logos :hover {
     transform: scale(1.12);
-  }
-
-  .logo{
-    width: 300px;
-    height: 180px;
-    margin: 5px;
-    border-radius: 15px;
-    padding: 20px;
-
-    background-color:black;
-    align-content:center;
   }
 
   .logo :hover{
@@ -218,9 +225,7 @@ body {
   }
 
   .sponsership-item {
-    display:grid;
-    justify-content: center;
-    align-content:center;
+    margin-bottom: 40px;
   }
   
   /* .sponsership-packages-btn{

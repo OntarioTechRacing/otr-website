@@ -13,20 +13,54 @@ html, body {
     color: inherit;
   }
   
+  /* Homepage banner */
+  .homepage-banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 70px;
+    text-align: right;
+    margin-top: auto;
+    position: relative; /* Add this to make .Title position relative to .banner */
+  }
+  
+  .Title{
+    position: absolute; /* Positioned relative to the .banner */
+    bottom: 0; /* Aligns to the bottom */
+    right: 0; /* Aligns to the right */
+    margin: 10px;
+    text-shadow: 3px 5px 5px #000;
+  }   
+
   /* Mission Section */
+  .mission-text{
+    width: 460px;
+    height: 40px;
+    padding: 40px;
+    text-align:left;
+  }
+
+  .mission-text-heading{
+    padding: 20px;
+  }
+
   .mission-section {
     display: flex;
-    align-items: center;
     background: linear-gradient(to right, #000000, #1a1a1a); 
-    padding: 40px;
     color: white;
+    width: 100%;
+    height: 400px;
+    justify-content:center;
   }
 
   .mission-image {
-    display: flex;
-    width: 50%;
-    height: 500px;
-    border-radius: 30px;
+    position: relative;
+    text-align:right;
+    width: 500px;
   }
 
   .text-container {
@@ -81,29 +115,6 @@ html, body {
       font-size: 1.2rem;
       font-weight: normal;
     }
-    
-    /* General styling */
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-    }
-    
-    #app {
-      padding: 20px;
-    }
-    
-  /* Homepage banner */
-  .homepage-banner {
-    position: relative; 
-    width: 100%;
-    text-align: center;
-  }
-
-  .homepage-banner img {
-    width: 100%; 
-    height: auto;
-  }
 
   /* Navigation bar */
   .navigation-bar {
