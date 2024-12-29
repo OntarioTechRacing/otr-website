@@ -1,148 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="../css/TeamPage.css">
   <meta charset="UTF-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <title>Team Page</title>
 </head>
-
 <body>
-
-  <img class="fullscreen-image" src="../img/TeamPicTeamPage.jpg">
-
-
-
-  <h1>Meet the Team</h1>
-
-  <div id="software-team">
-    <h2>Software Team</h2>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="../img/IMG_0839.JPG" alt="Aysha" style="height:120px">
-          <div class="container">
-            <h3>Manal Afzal</h3>
-            <p class="title">Software Team Lead</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Troy Odia</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Rayan Khalil</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Rosie Khurmi</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
+  <div class="navigation-bar">
+    <div class="nav-shell">
+        <ul>
+            <li class="otr-logo">
+                <img src="../images/icons/otrLogo.svg" alt="Ontario Tech Racing Logo" />
+            </li>
+            <li class="link">
+                <a href="../html/homepage/index.html">Home</a>
+            </li>
+            <li class="link">
+                <a href="../html/TeamPage.html">Team</a>
+            </li>
+            <li class="link">
+                <a href="#">Competition</a>
+            </li>
+            <li class="link">
+                <a href="../html/sponsers/index.html">Sponsors</a>
+            </li>
+            <li class="link">
+                <a href="../html/carInfoPage.html">History</a>
+            </li>
+        </ul>
     </div>
+</div>
+  <img class="fullscreen-image" src="../img/TeamPicTeamPage.Jpg">
+  <h1>Team Members</h1>
 
-    <div class="row">
+  <script>
+    // when adding new people we just need to edit their information in the teams object
+    const teams = {
+      Software: [
+        { name: "Manal Afzal", role: "Software Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/IMG_0839.jpg" },
+        { name: "Troy Odia", role: "Software Team Member", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Rayan Khalil", role: "Software Team Member", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Rosie Khurmi", role: "Software Team Member", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Disha Patel", role: "Software Team Member", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Shams Haroon", role: "Software Team Member", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Mashal Niazi", role: "Software Team Member", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+      Hardware: [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+      Aerodynamics: [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+     Suspension: [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+      Analysis: [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+      Chassis: [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+      "Electric Drivetrain": [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+      "Embedded Software": [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+      "Hardware and Electronics": [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ], 
+      "Suspension": [
+        { name: "Alvin Hyunh", role: "Hardware Team Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+        { name: "Aysha Mohmand", role: "Hardware Assistant Lead", linkedin: "http://google.ca", email: "example@example.com", img: "../img/image.png" },
+      ],
+    };
+
+    const createCard = (member) => `
       <div class="column">
         <div class="card">
-          <img src="" alt="" style="">
+          <img src="${member.img}" alt="${member.name}" style="height:120px">
           <div class="container">
-            <h3>Disha Patel</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
+            <h3>${member.name}</h3>
+            <p class="title">${member.role}</p>
+            <a style="font-size: 24px;" href="${member.linkedin}"><i class="fa-brands fa-linkedin" style="color: #ffffff; margin-right: 10px;"></i></a>
+              <a style="font-size: 24px;" href="mailto:${member.email}" style="text-decoration: none; color: inherit;">
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+              </a>
           </div>
         </div>
       </div>
+    `;
 
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Shamsuddin Haroon</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
+    const createTeamSection = (teamName, members) => `
+      <div id="${teamName.toLowerCase()}-team">
+        <h2 class="subTeam">${teamName} Team</h2>
+        <div class="row">
+          ${members.map(createCard).join("")}
         </div>
       </div>
+    `;
 
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Mashal Niazi</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="hardware-team">
-    <h2>Hardware and Electronics Team</h2>
-
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Alvin Hyunh</h3>
-            <p class="title">Hardware Team Lead</p>
-            <p> Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Aysha Mohmand</h3>
-            <p class="title">Hardware Assistant Lead</p>
-            <p>Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    const teamContainer = document.body;
+    for (const [teamName, members] of Object.entries(teams)) {
+      teamContainer.innerHTML += createTeamSection(teamName, members);
+    }
+  </script>
 </body>
-
-
 </html>
