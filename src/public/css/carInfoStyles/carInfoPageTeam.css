@@ -19,6 +19,7 @@
 }
 .member-col,
 .dept-col {
+  color: wheat;
   display: flex;
   flex-direction: column;
   align-items: center;
