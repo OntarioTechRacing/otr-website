@@ -2,13 +2,12 @@ import { pageInfoData } from "./data.js";
 
 const url = new URL(window.location.href);
 // const carYear = url.searchParams.get('year');
-const carYear = "OTR F2022";
+const carYear = "OTR F2024";
 
 const CurrentPageData = pageInfoData.find(
   (element) => element.title.titleName === carYear
 );
-{
-}
+
 let pageHTML =
   CurrentPageData &&
   `
@@ -82,7 +81,7 @@ let pageHTML =
           <div>${CurrentPageData.Competition.competitionName}</div>
           <div>&#8618; ${CurrentPageData.Competition.competitionLocation}</div>
           <div>&#8618; ${CurrentPageData.Competition.competitionDate}</div>
-          <div>&#8618; ${CurrentPageData.Competition.placement}</div>
+          <div>&#8618; Placed ${CurrentPageData.Competition.placement}</div>
         </div>
         <div class="competition-info-row comp">
           <div>${CurrentPageData.Competition.competitionLocation}</div>
