@@ -22,9 +22,12 @@
 .title-image {
   width: 50%;
   min-width: 300px;
+  max-width: 600px;
+  /* max-height: 00px; */
   /* aspect-ratio: 16/9; */
   display: flex;
   margin: auto;
+  /* border: 1px solid red; */
 }
 .title-image img {
   scale: 0.8;
