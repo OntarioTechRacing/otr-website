@@ -152,7 +152,39 @@ html, body {
     }
 
 
-  /* Phone */
+    .instagram-section {
+      width: 100%;
+      margin: 10px auto;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .instagram-title {
+      color: black;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .socialMedia-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; 
+    }
+    
+    .instagram-container,
+    .twitter-container {
+      width: 30%;
+      aspect-ratio: 4 / 5; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      
+    }
+      /* Phone */
   @media only screen and (max-width: 480px){
     .Title{
       font-size:60px;
