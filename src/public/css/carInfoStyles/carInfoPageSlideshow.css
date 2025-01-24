@@ -43,7 +43,7 @@
   /*Edit this container to change the size of the slideshow images, also edit in the query selectors below*/
   position: relative;
 
-  width: 800px;
+  width: 700px;
 
   margin: auto;
   border: 1px solid rgb(70, 68, 68);
@@ -54,17 +54,11 @@
 .slideshow-images .slideimage {
   display: none;
   width: 100%;
-  height: 800px;
+  height: 600px;
   z-index: 100;
   object-fit: contain;
 }
-/* .slideshow-images .image {
-  display: none;
-  width: 100%;
-  height: 800px;
-  z-index: 100;
-  object-fit: contain;
-} */
+
 .fade {
   animation-name: fade;
   animation-duration: 2s;

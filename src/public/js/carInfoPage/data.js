@@ -2,9 +2,9 @@ export const pageInfoData = [
   {
     title: {
       titleName: "OTR F2024",
-      titleImage: "images/carImages/2024/title-image.jpg",
+      titleImage: "../images/carImages/2024/title-image.png",
       //get tag line
-      tagLine: "tag line",
+      tagLine: "placed 52nd",
     },
     background: {
       //get background info
@@ -18,7 +18,7 @@ export const pageInfoData = [
         Latin words, consectetur, from a Lorem Ipsum passage, and going
         through the cites of the word in classical literature, discovered the
         undoubtable source. Lorem Ipsum comes fro10.32`,
-      backgroundImage: "../../images/carImages/2024/background-image.jpg",
+      backgroundImage: "../images/carImages/2024/background-image.jpg",
     },
     //get team members
     team: [
@@ -31,35 +31,27 @@ export const pageInfoData = [
       competitionName: "Formula SAE Electric",
       competitionLocation: "Michigan Int'l Speedway in Brooklyn, Michigan",
       competitionDate: "June 12-15 2024",
-      competitionImage: "../../images/carImages/2024/comp-image.png",
+      competitionImage: "../images/carImages/2024/comp-image.png",
       placement: "52nd",
     },
     //get specs
     specifications: [
       {
         spec: "Motor",
-        value: "Stock Suzuki GSXR 600",
-        image: "../../images/spec-images/suzuki GSXR black.jpg",
+        value: "Emrax 208",
+        image: "../images/spec-images/2022/ermax1-nobg.png",
       },
-      {
-        spec: "Motor",
-        value: "Stock Suzuki GSXR 600",
-        image: "../../images/spec-images/suzuki GSXR black.jpg",
-      },
-      {
-        spec: "Motor",
-        value: "Stock Suzuki GSXR 600",
-        image: "../../images/spec-images/suzuki GSXR black.jpg",
-      },
+      { spec: "Power", value: "Peak 80kW" },
+      { spec: "Torque", value: "Peak 140Nm" },
     ],
     slideshow: [
-      "../../images/carImages/2024/slideshow-1.jpg",
-      "../../images/carImages/2024/slideshow-2.jpg",
-      "../../images/carImages/2024/slideshow-3.jpg",
-      "../../images/carImages/2024/slideshow-4.jpg",
-      "../../images/carImages/2024/slideshow-5.jpg",
-      "../../images/carImages/2024/slideshow-6.jpg",
-      "../../images/carImages/2024/slideshow-7.jpg",
+      "../images/carImages/2024/slideshow-1.jpg",
+      "../images/carImages/2024/slideshow-2.png",
+      "../images/carImages/2024/slideshow-3.png",
+      "../images/carImages/2024/slideshow-4.png",
+      "../images/carImages/2024/slideshow-5.jpg",
+      "../images/carImages/2024/slideshow-6.jpg",
+      "../images/carImages/2024/slideshow-7.jpg",
     ],
   },
   {

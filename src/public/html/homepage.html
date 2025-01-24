@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="../css/sponsers.css" />
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
 
     <div class="homepage-banner">
-        <img src="../../images/homepage.jpg" alt="Ontario Tech Racing Homepage" />
-        
+        <h1 class="Title">Homepage</h1>
+    </div>
         <!-- Navigation bar -->
         <div class="navigation-bar">
           <div class="nav-shell">
               <ul>
                   <li class="otr-logo">
-                      <img src="../../images/icons/otrLogo.svg" alt="Ontario Tech Racing Logo"/>
+                      <img src="../images/icons/otrLogo.svg" alt="Ontario Tech Racing Logo"/>
                   </li>
                   <div class="nav-toggle">
                       <li class="link">
@@ -39,23 +39,23 @@
                           <a href="./sponsers.html">Sponsors</a>
                       </li>
                       <li class="link">
-                          <a href="./OntarioTechRacingHistory.html">History</a>
+                          <a href="./History.html">History</a>
                       </li>
                   </div>
               </ul>
-              <button class="menu-button">
+              <!-- <button class="menu-button">
                   <div class="bar1"></div>
                   <div class="bar2"></div>
                   <div class="bar3"></div>
-              </button>
+              </button> -->
           </div>
     </div>  
-  
 
     <!-- Mission Section -->
     <div class="mission-section">
       <div class="mission-text">
-        <h2>Our Mission</h2>
+        <h2 class="mission-text-heading">OUR MISSION</h2>
+        <div class="bar"></div>
         <p>
           Ontario Tech Racing is a club based out of the Faculty of Engineering & Applied Science at Ontario Tech
           University that empowers students with the enriching, hands-on learning experience of designing,
@@ -68,10 +68,12 @@
           the art of knowledge transfer here at Ontario Tech Racing.
         </p>
       </div>
-      <div class="mission-image">
-        <img src="../../images/racecar.jpg" alt="Racecar image" />
-      </div>
+      <!-- <div class="mission-image">
+        <img src="../images/racecar.jpg" alt="Racecar" style="float: right; margin: 0px 15px 15px 0px;"align="right" />
+      </div> -->
+  
     </div>
+
 
     <!-- Statistics Section -->
     <div class="stats-section">
@@ -94,7 +96,19 @@
     </div>
 
     <!-- INSTAGRAM Section -->
-    <div id="instagram-feed"></div>
+    <div class="instagram-section">
+        <div class="instagram-title">
+            <h1 >Find out what we're up to:</span></h1>
+        </div>
+        <div class="socialMedia-container">
+            <div class="twitter-container">
+              <a class="twitter-timeline" data-height="650" data-theme="dark" href="https://twitter.com/ontechracing?ref_src=twsrc%5Etfw">Tweets by ontechracing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="instagram-container">
+                <iframe id="ig_post" style="border-radius: 5px;" width="100%"height="650" scrolling = "yes" frameborder="0"></iframe>
+            </div>
+        </div>
+  </div>
 
     <div id="app"></div>
 
@@ -106,14 +120,14 @@
         >
       </div>
       <div class="otr-links">
-        <a>
+        <a href="https://www.instagram.com/ontariotechracing/">
           <img
             class="instagram-link"
             src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
             alt=""
           />
         </a>
-        <a>
+        <a href="https://www.linkedin.com/company/ontariotechracing/">
           <img
             class="linkedin-link"
             src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
@@ -121,8 +135,15 @@
           />
         </a>
       </div>
+    <div>
+        <span class="otr-name"
+        >Developed By Manal Afzal</span
+      >
+      </div>
     </div>
 
     <script src="../js/main.js"></script>
+    <script src="../js/updateIG.js"></script>
+
   </body>
 </html>

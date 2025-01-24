@@ -13,20 +13,84 @@ html, body {
     color: inherit;
   }
   
+  /* Navigation bar */
+.navigation-bar {
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+.nav-shell ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.nav-shell .otr-logo img {
+  height: 50px;
+}
+
+.nav-shell .link a {
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-shell .link a:hover {
+  color: #ffab00; 
+}
+
+  /* Homepage banner */
+  .homepage-banner {
+    position: relative; 
+    width: 100%;
+    text-align: center;
+    background-image:url('../images/homepage.jpg');
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 70px;
+  }
+  
+  .Title{
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    margin: 10px;
+    text-shadow: 3px 5px 5px #000;
+  }   
+
   /* Mission Section */
+  .mission-text{
+    width: 460px;
+    height: 40px;
+    padding: 40px;
+    text-align:left;
+  }
+
+  .mission-text-heading{
+    padding: 20px;
+  }
+
   .mission-section {
     display: flex;
-    align-items: center;
     background: linear-gradient(to right, #000000, #1a1a1a); 
-    padding: 40px;
     color: white;
+    width: 100%;
+    height: 400px;
+    justify-content:center;
   }
 
   .mission-image {
-    display: flex;
-    width: 50%;
-    height: 500px;
-    border-radius: 30px;
+    position: relative;
+    text-align:right;
+    width: 500px;
   }
 
   .text-container {
@@ -70,6 +134,11 @@ html, body {
     .stat-box {
       text-align: center;
       padding: 20px;
+      width: 200px;
+      height: 150px;
+      border-radius:20px;
+      border: 1px solid white;
+      margin:10px;
     }
     
     .stat-box h1 {
@@ -81,58 +150,48 @@ html, body {
       font-size: 1.2rem;
       font-weight: normal;
     }
-    
-    /* General styling */
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
+
+
+    .instagram-section {
+      width: 100%;
+      margin: 10px auto;
+      padding: 10px;
+      text-align: center;
     }
     
-    #app {
-      padding: 20px;
+    .instagram-title {
+      color: black;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
     
-  /* Homepage banner */
-  .homepage-banner {
-    position: relative; 
-    width: 100%;
-    text-align: center;
+    .socialMedia-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; 
+    }
+    
+    .instagram-container,
+    .twitter-container {
+      width: 30%;
+      aspect-ratio: 4 / 5; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      
+    }
+      /* Phone */
+  @media only screen and (max-width: 480px){
+    .Title{
+      font-size:60px;
+
+    }
+  .stats-section{
+    display:grid;
   }
 
-  .homepage-banner img {
-    width: 100%; 
-    height: auto;
-  }
-
-  /* Navigation bar */
-  .navigation-bar {
-    position: absolute; 
-    top: 0px;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
-  }
-
-  .nav-shell ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
-  }
-
-  .nav-shell .otr-logo img {
-    height: 50px;
-  }
-
-  .nav-shell .link a {
-    font-size: 1rem;
-    color: white;
-  }
-
-  .nav-shell .link a:hover {
-    color: #ffab00; 
   }
