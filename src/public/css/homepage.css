@@ -13,38 +13,6 @@ html, body {
     color: inherit;
   }
   
-  /* Navigation bar */
-.navigation-bar {
-  position: absolute; 
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 0;
-}
-
-.nav-shell ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 10px;
-}
-
-.nav-shell .otr-logo img {
-  height: 50px;
-}
-
-.nav-shell .link a {
-  font-size: 1rem;
-  color: white;
-}
-
-.nav-shell .link a:hover {
-  color: #ffab00; 
-}
-
   /* Homepage banner */
   .homepage-banner {
     position: relative; 
@@ -157,6 +125,7 @@ html, body {
       margin: 10px auto;
       padding: 10px;
       text-align: center;
+      background-color:white;
     }
     
     .instagram-title {
@@ -179,7 +148,6 @@ html, body {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid #ccc; 
       border-radius: 8px; 
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
       

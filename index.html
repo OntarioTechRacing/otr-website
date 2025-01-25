@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>Homepage</title>
-    <link rel="stylesheet" href="../src/public/css/homepage.css" />
-    <link rel="stylesheet" href="../src/public/css/style.css" />
-    <link rel="stylesheet" href="../src/public/css/sponsers.css" />
-    <link rel="stylesheet" href="../src/public/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="../src/public/css/homepage.css">
+    <link rel="stylesheet" href="../src/public/css/style.css">
+    <link rel="stylesheet" href="../src/public/css/sponsers.css">
+    <link rel="stylesheet"  href="../src/public/css/header.css">
     <link rel="stylesheet" href="../src/public/css/footer.css">
+    <link rel="stylesheet" href="../src/public/css/joinUs.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body>
 
+  <body>
     <div class="homepage-banner">
         <h1 class="Title">Homepage</h1>
     </div>
         <!-- Navigation bar -->
         <div class="navigation-bar">
           <div class="nav-shell">
-            <ul>
-              <li class="otr-logo">
-                <img src="..src/public/images/icons/otrLogo.svg" alt="" />
-              </li>
-              <div class="nav-toggle">
-                <li class="link">
-                  <a href="../src/public/html/homepage.html"> Home </a>
-                </li>
-                <li class="link">
-                  <a href="../src/public/html/TeamPage.html">Team</a>
-                </li>
-                <li class="link">
-                  <a href="">Competiton</a>
-                </li>
-                <li class="link">
-                  <a href="../src/public/html/sponsers.html">Sponsors</a>
-                </li>
-                <li class="link">
-                  <a href="../src/public/html/History.html">History</a>
-                </li>
-              </div>
-            </ul>
-            <button class="menu-button">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </button>
+              <ul>
+                  <li class="otr-logo">
+                      <img src="./src/public/images/otrLogo.svg" alt="Ontario Tech Racing Logo"/>
+                  </li>
+                  <div class="nav-toggle">
+                      <li class="link">
+                          <a href="#"> Home </a>
+                      </li>
+                      <!-- <li class="link">
+                          <a href="./src/public/html/TeamPage.html">Team</a>
+                      </li> -->
+                      <li class="link">
+                          <a href="./src/public/html/carInfoPage.html">Competiton</a>
+                      </li>
+                      <li class="link">
+                          <a href="./src/public/html/joinUs.html">Join Us</a>
+                      </li>
+                      <li class="link">
+                          <a href="./src/public/html/sponsers.html">Sponsors</a>
+                      </li>
+                      <li class="link">
+                          <a href="./src/public/html/History.html">History</a>
+                      </li>
+                  </div>
+              </ul>
+              <button class="menu-button">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+              </button>
           </div>
-        </div>
-    
+      </div>
+      
   <!-- Mission Section -->
     <div class="mission-section">
       <div class="mission-text">
@@ -94,52 +99,50 @@
 
     <!-- INSTAGRAM Section -->
     <div class="instagram-section">
-        <div class="instagram-title">
-            <h1 >Find out what we're up to:</span></h1>
-        </div>
-        <div class="socialMedia-container">
-            <div class="twitter-container">
-              <a class="twitter-timeline" data-height="650" data-theme="dark" href="https://twitter.com/ontechracing?ref_src=twsrc%5Etfw">Tweets by ontechracing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-            <div class="instagram-container">
-                <iframe id="ig_post" style="border-radius: 5px;" width="100%"height="650" scrolling = "yes" frameborder="0"></iframe>
-            </div>
-        </div>
+      <div class="instagram-title">
+          <h1 >Find out what we're up to:</span></h1>
+      </div>
+      <div class="socialMedia-container">
+          <div class="instagram-container">
+              <iframe id="ig_post" style="border-radius: 5px;" width="100%"height="650" scrolling = "yes" frameborder="0"></iframe>
+          </div>
+      </div>
+</div>
+
+  <div id="app"></div>
+
+  <div class="footer">
+    <div class="otr-info">
+      <span class="otr-email">motorsports@ontariotechu.net</span>
+      <span class="otr-name"
+        >2024 Ontario Tech University Formula Racing</span
+      >
+    </div>
+    <div class="otr-links">
+      <a href="https://www.instagram.com/ontariotechracing/">
+        <img
+          class="instagram-link"
+          src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
+          alt=""
+        />
+      </a>
+      <a href="https://www.linkedin.com/company/ontariotechracing/">
+        <img
+          class="linkedin-link"
+          src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
+          alt=""
+        />
+      </a>
+    </div>
+  <div>
+      <span class="otr-name"
+      >Developed By Manal Afzal</span
+    >
+    </div>
   </div>
 
-    <div id="app"></div>
-
-    <div class="footer">
-      <div class="otr-info">
-        <span class="otr-email">motorsports@ontariotechu.net</span>
-        <span class="otr-name"
-          >2024 Ontario Tech University Formula Racing</span
-        >
-      </div>
-      <div class="otr-links">
-        <a href="https://www.instagram.com/ontariotechracing/">
-          <img
-            class="instagram-link"
-            src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
-            alt=""
-          />
-        </a>
-        <!-- <a href="https://www.linkedin.com/company/ontariotechracing/">
-          <img
-            class="linkedin-link"
-            src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
-            alt=""
-          />
-        </a> -->
-      </div>
-    <div>
-        <span class="otr-name"
-        >Developed By Manal Afzal</span
-      >
-      </div>
-    </div>
-
     <script src="../src/public/js/main.js"></script>
+    <script src="../src/public/js/updateIG.js"></script>
 
   </body>
 </html>
