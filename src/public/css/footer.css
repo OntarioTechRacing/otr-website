@@ -1,38 +1,46 @@
 .footer {
   padding: 0px 40px 30px 40px;
+  border-top: 1px solid wheat;
   height: 200px;
   background-color: #000000;
   color: white;
   position: relative;
   margin-top: auto;
 }
-
-.otr-info {
+.footer-info {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: max-content;
   height: max-content;
-  row-gap: 20px;
+  row-gap: 5px;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   margin: auto;
+}
+.otr-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.2em;
   font-weight: 500;
-  padding-bottom: 25px;
+}
+
+.developer {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 .otr-links {
-  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 30px;
-  bottom: 20px;
-  margin-right: auto;
-  right: 70px;
   width: max-content;
 }
 .otr-links a:nth-child(1) {
@@ -48,67 +56,14 @@
   -webkit-filter: invert(100%); /* Safari/Chrome */
   filter: invert(100%);
 }
-@media (max-width: 965px) {
-  .otr-links {
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 180px;
-  }
-}
+
 @media (max-width: 580px) {
-  .otr-info {
+  .otr-info,
+  .developer {
     font-size: 1em;
   }
-  .otr-links a:nth-child(1) {
-    width: 45px;
-  }
-  .otr-links a:nth-child(2) {
-    width: 50px;
-  }
 }
 
-.otr-info {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: max-content;
-  height: max-content;
-  row-gap: 20px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  font-size: 1.2em;
-  font-weight: 500;
-  padding-bottom: 25px;
-}
-.otr-links {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 30px;
-  bottom: 20px;
-  margin-right: auto;
-  right: 70px;
-  width: max-content;
-}
-.otr-links a:nth-child(1) {
-  width: 50px;
-}
-.otr-links a:nth-child(2) {
-  width: 55px;
-}
-.instagram-link,
-.linkedin-link {
-  display: block;
-  width: 100%;
-  -webkit-filter: invert(100%); /* Safari/Chrome */
-  filter: invert(100%);
-}
 @media (max-width: 965px) {
   .otr-links {
     margin: auto;
@@ -123,10 +78,5 @@
   }
   .otr-links a:nth-child(2) {
     width: 40px;
-  }
-}
-@media (max-width: 580px) {
-  .otr-info {
-    font-size: 1em;
   }
 }
