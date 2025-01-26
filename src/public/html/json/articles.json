@@ -1,0 +1,38 @@
+[
+    {
+      "img": "../images/carImages/2022/slideshow-1.jpg",
+      "author": "Author 1",
+      "date": "Dec 28, 2024",
+      "title": "Title for the Article Goes Here",
+      "description": "Description of the article or the first few words of the article can go here."
+    },
+    {
+      "img": "../images/carImages/2022/slideshow-2.jpg",
+      "author": "Author 2",
+      "date": "Dec 27, 2024",
+      "title": "Another Article Title",
+      "description": "Another description for a different article."
+    },
+    {
+      "img": "../images/carImages/2022/slideshow-2.jpg",
+      "author": "Author 2",
+      "date": "Dec 27, 2024",
+      "title": "Another Article Title",
+      "description": "Another description for a different article."
+    },
+    {
+      "img": "../images/carImages/2022/slideshow-2.jpg",
+      "author": "Author 2",
+      "date": "Dec 27, 2024",
+      "title": "Another Article Title",
+      "description": "Another description for a different article."
+    },
+    {
+      "img": "../images/carImages/2022/slideshow-2.jpg",
+      "author": "Author 2",
+      "date": "Dec 27, 2024",
+      "title": "Another Article Title",
+      "description": "Another description for a different article."
+    }
+  ]
+  

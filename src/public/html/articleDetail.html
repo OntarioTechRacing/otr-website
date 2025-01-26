@@ -1,0 +1,69 @@
+<!-- ! This is just for testing, going to make better later -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .article-image {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            color: #555;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="article-img" class="article-image" src="" alt="Article Image">
+        <div class="article-meta">
+            <span id="article-author"></span>
+            <span id="article-date"></span>
+        </div>
+        <h1 id="article-title"></h1>
+        <p id="article-description"></p>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const title = params.get('title');
+        const author = params.get('author');
+        const date = params.get('date');
+        const img = params.get('img');
+        const description = params.get('description');
+
+        document.getElementById('article-title').textContent = decodeURIComponent(title);
+        document.getElementById('article-author').textContent = decodeURIComponent(author);
+        document.getElementById('article-date').textContent = decodeURIComponent(date);
+        document.getElementById('article-img').src = decodeURIComponent(img);
+        document.getElementById('article-description').textContent = decodeURIComponent(description);
+    </script>
+</body>
+</html>

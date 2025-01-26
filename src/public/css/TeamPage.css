@@ -1,7 +1,8 @@
 body {
   background-color: black;
   color: white;
-  font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu globally */
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
 }
 
 .content {
@@ -10,33 +11,107 @@ body {
 
 }
 
+.subTeam {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2rem;
+  color: #f3f3f3;
+  letter-spacing: 1px;
+}
+
 .fullscreen-image {
   height: 100vh;
   width: 100vw;
+  object-fit: cover;
 }
 
-h1{
-  text-align: center;
-  /* font-family:  */
-}
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center text inside the card */
+  background: linear-gradient(145deg, #1d1d1d, #030303);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  margin: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
-  display: block; /* Make the image a block element */
-  margin: 0 auto; /* Center the image horizontally */
-  height: 120px; /* Set a fixed height */
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: 3px solid #3a3a3a;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+}
+
+.card .title {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #a8d6e5;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: #57b1e8;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 1 1 20%;
+  max-width: 20%;
+  padding: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .column {
     float: left;
     width: 20%;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
     padding: 0 8px;
     height: 250px;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(168, 214, 229);
+    font-weight: bold;
+  }
+  
+  h3, h1, p, .subTeam{
+    color: white;
+    text-align: center;
   }
   
   /* Display the columns below each other instead of side by side on small screens */
@@ -56,6 +131,12 @@ h1{
   .container {
     padding: 0 16px;
   }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   
   /* Clear floats */
   .container::after, .row::after {
@@ -65,7 +146,7 @@ h1{
   }
   
   .title {
-    color: grey;
+    color: white;
   }
   
   .button {
