@@ -1,7 +1,7 @@
 body {
   background-color: black;
-  color: black;
-  font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu globally */
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
 }
 
@@ -11,56 +11,88 @@ body {
 
 }
 
-.navigation-bar {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.nav-shell ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 10px;
-}
-
-.nav-shell .otr-logo img {
-  height: 50px;
-  padding: 0 20px;
-}
-
-.nav-shell .link a {
-  font-size: 1rem;
-  color: white;
-  padding: 0 10px;
-  font-weight: 500;
-}
-
-.nav-shell .link a:hover {
-  color: #ffab00; 
-}
-
-.subTeam{
+.subTeam {
   text-align: center;
   padding: 50px 0;
+  font-size: 2rem;
+  color: #f3f3f3;
+  letter-spacing: 1px;
 }
 
 .fullscreen-image {
   height: 100vh;
   width: 100vw;
+  object-fit: cover;
 }
 
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center text inside the card */
-  padding: 30px 0;
+  background: linear-gradient(145deg, #1d1d1d, #030303);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+  margin: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
-  display: block; /* Make the image a block element */
-  margin: 0 auto; /* Center the image horizontally */
-  height: 120px; /* Set a fixed height */
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: 3px solid #3a3a3a;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+}
+
+.card .title {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #a8d6e5;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: #57b1e8;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 1 1 20%;
+  max-width: 20%;
+  padding: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .column {
