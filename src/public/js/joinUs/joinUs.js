@@ -1,4 +1,4 @@
-import { sendEmail } from "../email.js";
+import { sendEmail } from "./email.js";
 const sendButton = document.querySelector(".form-submit");
 const joinUsForm = document.getElementById("join-us");
 const thankYouMessage = document.getElementById("thank-you");

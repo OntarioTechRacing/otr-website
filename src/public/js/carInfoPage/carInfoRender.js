@@ -126,24 +126,24 @@ let pageHTML =
       <div class="slideshow-container">
         <div class="slideshow-images">
           <button class="left-arrow">
-            <img src="../images/icons/arrow-left.webp" alt="" />
+            <img src="../images/icons/arrow-left-white.png" alt="" />
           </button>
           ${CurrentPageData.slideshow
             .map((image, index) => {
               return `
-             <div>
-            <img
-              class="slideimage"
-              src=${image}
-              alt=""
-              data-id=${index}
-            />
-          </div>
+             <div class="slideimage-container">
+              <img
+                class="slideimage"
+                src=${image}
+                alt=""
+                data-id=${index}
+              />
+            </div>
             `;
             })
             .join("")}
           <button class="right-arrow">
-            <img src="../images/icons/arrow-right.webp" alt="" />
+            <img src="../images/icons/arrow-right-white.png" alt="" />
           </button>
         </div>
       </div>

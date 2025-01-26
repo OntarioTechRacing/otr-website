@@ -2,11 +2,11 @@
   background-color: #000000;
   color: white;
   padding: 40px 40px 150px 40px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .slideshow-heading {
-  font-size: 4em;
-  margin-bottom: 20px;
+  font-size: clamp(35px, 3vw + 1rem, 65px);
+  margin-bottom: 10px;
 }
 .slideshow-container {
   display: flex;
@@ -15,8 +15,11 @@
 }
 .left-arrow,
 .right-arrow {
-  width: 250px;
-  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: max-content;
+  padding: 8px;
   background-color: transparent;
   border: 1px solid transparent;
   position: absolute;
@@ -25,6 +28,12 @@
   margin: auto 0;
   z-index: 101;
 }
+.left-arrow:hover,
+.right-arrow:hover {
+  border: 2px solid wheat;
+  border-radius: 6px;
+}
+
 .left-arrow {
   left: -40%;
 }
@@ -35,22 +44,19 @@
 .left-arrow img,
 .right-arrow img {
   width: 100%;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
 }
 
 .slideshow-images {
-  /*Edit this container to change the size of the slideshow images, also edit in the query selectors below*/
   position: relative;
 
   width: 700px;
-
   margin: auto;
-  border: 1px solid rgb(70, 68, 68);
 }
+
 .display {
   display: block !important;
 }
+
 .slideshow-images .slideimage {
   display: none;
   width: 100%;
@@ -74,11 +80,6 @@
   }
 }
 @media (max-width: 1500px) {
-  .left-arrow,
-  .right-arrow {
-    width: 180px;
-    height: 50px;
-  }
   .slideshow-images {
     width: 650px;
   }
@@ -89,16 +90,13 @@
 @media (max-width: 1200px) {
   .left-arrow,
   .right-arrow {
-    width: 240px;
-    height: 60px;
-    margin-bottom: 0;
-    bottom: -80px;
+    width: 50px;
   }
   .left-arrow {
-    left: 0;
+    left: -65px;
   }
   .right-arrow {
-    right: 0;
+    right: -65px;
   }
   .slideshow-images {
     width: 700px;
@@ -115,7 +113,19 @@
     height: 650px;
   }
 }
+@media (max-width: 1000px) {
+  .slideshow {
+    margin-top: 60px;
+  }
+}
 @media (max-width: 900px) {
+  .left-arrow {
+    left: 26px;
+  }
+  .right-arrow {
+    right: 26px;
+  }
+
   .slideshow-images {
     width: 600px;
   }
@@ -126,8 +136,7 @@
 @media (max-width: 720px) {
   .left-arrow,
   .right-arrow {
-    width: 180px;
-    height: 60px;
+    width: 40px;
   }
   .slideshow-images {
     width: 500px;
@@ -135,16 +144,8 @@
   .slideshow-images .image {
     height: 450px;
   }
-  .slideshow-heading {
-    font-size: 3em;
-  }
 }
 @media (max-width: 600px) {
-  .left-arrow,
-  .right-arrow {
-    width: 180px;
-    height: 60px;
-  }
   .slideshow-images {
     width: 400px;
   }
@@ -153,10 +154,18 @@
   }
 }
 @media (max-width: 480px) {
+  .slideshow {
+    padding-bottom: 40px;
+  }
   .slideshow-images {
     width: 350px;
   }
   .slideshow-images .image {
     height: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .slideshow {
+    margin-top: 40px;
   }
 }

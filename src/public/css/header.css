@@ -4,7 +4,7 @@
   color: white;
   padding-left: 40px;
   padding-right: 40px;
-  height: auto;
+  height: 55px;
   position: fixed;
   top: 0;
   right: 0;
@@ -81,14 +81,12 @@
   top: 12px;
 
   right: 0;
-  background-color: #000000;
+  background-color: transparent;
   border: none;
   display: none;
   cursor: pointer;
 
   transition: 1000ms ease all;
-
-  /* background-color: black; */
 }
 
 @keyframes header-load {

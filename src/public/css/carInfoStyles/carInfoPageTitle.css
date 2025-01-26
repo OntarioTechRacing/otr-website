@@ -1,21 +1,23 @@
 .title-section {
   width: 100%;
   padding-top: 10px;
-  height: 100vh;
+  height: calc(100vh - 55px);
   background-color: #000000;
   transition: padding-bottom ease;
 }
 .title {
   transform: translateY(-10px);
   opacity: 0;
-  font-size: clamp(50px, 7vw + 1em, 120px);
+  font-size: clamp(40px, 6vw + 1rem, 100px);
   font-weight: 700;
   color: #2e374a;
   -webkit-text-fill-color: #000000;
   -webkit-text-stroke: white 8px;
   paint-order: stroke fill;
   padding: 0 20px 0 20px;
+  margin-bottom: 50px;
   width: max-content;
+  /* border: 1px solid; */
   animation: title-text-fade 600ms ease-in 450ms forwards;
 }
 
@@ -23,11 +25,8 @@
   width: 50%;
   min-width: 300px;
   max-width: 600px;
-  /* max-height: 00px; */
-  /* aspect-ratio: 16/9; */
   display: flex;
   margin: auto;
-  /* border: 1px solid red; */
 }
 .title-image img {
   scale: 0.8;
