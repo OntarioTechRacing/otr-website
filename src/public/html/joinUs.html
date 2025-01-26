@@ -22,6 +22,13 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    <script type="text/javascript">
+      (
+        function(){
+          emailjs.init({ publicKey: 'GgmkHQug7G_0Cs4kY'});
+        }
+      )()
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -104,18 +111,15 @@
               <div class="contact-icon">
                 <img src="../images/icons/location.png" alt="">
               </div>
-              <p>123 Sesame Street, Toronto, M4Y2V7</p>
+              <p>2000 Simcoe St N, Oshawa, ON L1G 0C5</p>
             </li>
           </ul>
           <div class="contact-footer">
-            <a class="facebook">
-              <img src="../images/icons/facebook.png" alt="">
-            </a>
-            <a class="instagram">
+            <a href="https://www.instagram.com/ontariotechracing/" class="instagram">
               <img src="../images/icons/instagram.png" alt="">
             </a>
-            <a class="x">
-              <img src="../images/icons/x.png" alt="">
+            <a href="https://www.linkedin.com/company/ontariotechracing/" class="linkedin">
+              <img src="../images/icons/linkedin black.png" alt="">
             </a>
           </div>
         </div>
@@ -179,14 +183,14 @@
         >
       </div>
       <div class="otr-links">
-        <a>
+        <a href="https://www.instagram.com/ontariotechracing/">
           <img
             class="instagram-link"
             src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
             alt=""
           />
         </a>
-        <a>
+        <a href="https://www.linkedin.com/company/ontariotechracing/">
           <img
             class="linkedin-link"
             src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
@@ -196,7 +200,7 @@
       </div>
     </div>
     <script src="../js/header.js"></script>
-    <script type="module" src="../js/joinUs/joinUs.js"></script>
     <script type="module" src="../js/joinUs/email.js"></script>
+    <script type="module" src="../js/joinUs/joinUs.js"></script>
   </body>
 </html>

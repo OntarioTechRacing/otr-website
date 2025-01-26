@@ -10,8 +10,7 @@
 .join-us-image-container {
   display: flex;
   width: 40%;
-  height: 900px;
-  /* border: 1px solid red; */
+  height: 850px;
   margin-right: 5%;
 }
 .join-us-image {
