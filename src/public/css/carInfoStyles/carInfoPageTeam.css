@@ -59,11 +59,11 @@
 @media (max-width: 500px) {
   .member-col div:nth-child(1),
   .dept-col div:nth-child(1) {
-    font-size: 18px;
+    font-size: 1.2rem;
     min-width: max-content;
   }
   .team-grid {
-    font-size: 10px;
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 450px) {
