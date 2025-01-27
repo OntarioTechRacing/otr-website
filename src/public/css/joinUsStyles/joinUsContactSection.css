@@ -31,7 +31,7 @@
   background-color: white;
   color: black;
   padding: 45px;
-  /* height: 450px; */
+  max-height: 600px;
 }
 .heading-form {
   font-size: 2rem;
