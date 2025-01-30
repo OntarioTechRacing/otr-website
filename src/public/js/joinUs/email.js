@@ -10,8 +10,9 @@ export function sendEmail(firstName, lastName, email, message, phoneNumber) {
     message: message,
     phone: phoneNumber,
   };
-  emailjs
-    .send(serviceID, templateID, data)
-    .then((res) => console.log(res, "success"))
-    .catch((err) => console.log(err));
+  console.log(data);
+  // emailjs
+  //   .send(serviceID, templateID, data)
+  //   .then((res) => console.log(res, "success"))
+  //   .catch((err) => console.log(err));
 }
