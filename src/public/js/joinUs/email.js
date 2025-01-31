@@ -1,7 +1,7 @@
 // import { publicKey, serviceID, templateID } from "./apiKeys.js";
 // const publicKey = "I9qdyBOY1LRq-z7LE";
-const serviceID = "service_aa4r1no";
-const templateID = "template_ek8hq1d";
+const serviceID = "service_qwv8ueb";
+const templateID = "template_wyihj2c";
 export function sendEmail(firstName, lastName, email, message, phoneNumber) {
   const data = {
     firstname: firstName,
@@ -10,9 +10,8 @@ export function sendEmail(firstName, lastName, email, message, phoneNumber) {
     message: message,
     phone: phoneNumber,
   };
-  console.log(data);
-  // emailjs
-  //   .send(serviceID, templateID, data)
-  //   .then((res) => console.log(res, "success"))
-  //   .catch((err) => console.log(err));
+  emailjs
+    .send(serviceID, templateID, data)
+    .then((res) => console.log(res, "success"))
+    .catch((err) => console.log(err));
 }
