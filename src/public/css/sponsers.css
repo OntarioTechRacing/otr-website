@@ -14,6 +14,7 @@ h1, h2, p {
   margin: 0;
   padding: 0;
   font-family: "Jost", Arial;
+  transition: all 200ms ease-out
 }
 
 a {
@@ -117,10 +118,26 @@ body {
 
   .diamond-sponsers-text{
     padding: 20px;
+    color: #00A9E0; /* Light Blue */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
   }
 
   .gold-sponsers-text{
     padding: 20px;
+    color: #FFB800; /* Rich Gold */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
+
+  }
+
+  .silver-sponsers-text{
+    color: #A7A9AC; /* Soft Silver */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
+
+  }    
+
+  .bronze-sponsers-text{
+    color: #cc7115;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
   }
 
   .diamond-sponsership, .platinum-sponserships, .gold-sponsership, .silver-sponsership, .bronze-sponsership{
@@ -128,7 +145,7 @@ body {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap: 20px;
+    gap: 4rem;
   }
 
   .diamond-logos img,
@@ -138,7 +155,7 @@ body {
   width: 300px;
   height: 200px;
   border-radius: 15px;
-  margin: 5px;
+  margin: 15px;
   background-color:black;
   align-content:center;
   max-width: 100%; 
@@ -204,19 +221,19 @@ body {
     }
     
     .diamond-sponsers-text{
-      text-shadow: 3px 5px 5px #3869ca;
+      text-shadow: 3px 5px 5px #7d94c1;
 
     }
     .gold-sponsers-text{
-      text-shadow: 3px 5px 5px #bd7522;
+      text-shadow: 3px 5px 5px #d5a670;
     }
 
     .silver-sponsers-text{
-      text-shadow: 3px 5px 5px #88e3e3;
+      text-shadow: 3px 5px 5px #b0d9d9;
     }
 
     .bronze-sponsers-text{
-      text-shadow: 3px 5px 5px #5e4903;
+      text-shadow: 3px 5px 5px #8a793f;
     }
   }
 
@@ -227,3 +244,14 @@ body {
     
     
   }
+
+  /* @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #c3abcf, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                   0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  } */
