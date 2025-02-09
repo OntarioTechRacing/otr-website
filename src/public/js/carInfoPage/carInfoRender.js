@@ -2,23 +2,65 @@ import { pageInfoData } from "./data.js";
 
 const url = new URL(window.location.href);
 // const carYear = url.searchParams.get('year');
-const carYear = "OTR F2024";
+const carYear = "OTR F24";
 
 const CurrentPageData = pageInfoData.find(
   (element) => element.title.titleName === carYear
 );
+{
+  /* <div class="car-quote"><p>${CurrentPageData.title.tagLine}</p></div> */
+}
 
 let pageHTML =
   CurrentPageData &&
   `
-     <div class="title-section">
-      <div
-       class="title">${CurrentPageData.title.titleName}
-    </div>
-    <div class="title-image">
-        <img src=${CurrentPageData.title.titleImage} alt="" />
-    </div> 
-      <div class="car-quote"><p>${CurrentPageData.title.tagLine}</p></div>
+    <div class="title-section">
+      <div class="title">${CurrentPageData.title.titleName}
+      </div>
+
+      <div class='image-spec-container'>
+        <div class="title-image">
+            <img src=${CurrentPageData.title.titleImage} alt="" />
+        </div> 
+        <div class='title-Specs-Container'>
+          ${Object.keys(CurrentPageData.titleSpecs)
+            .map((titleSpec) => {
+              return `
+              <div class='title-Specs'>
+                <span class='title-spec-name'>${titleSpec}</span><span class='arrow'>&#8658;</span> ${CurrentPageData.titleSpecs[titleSpec]}
+              </div>
+              `;
+            })
+            .join("")}
+        </div>
+        <div class='title-Specs-mobile'>
+          <div class='title-spec-mobile' style='--i: 1;'>
+            <span class='title-spec-name-mobile'>
+              TopSpeed
+            </span>
+            <span>
+              164km/h
+            </span>
+          </div>
+          <div class='title-spec-mobile' style='--i: 2;'>
+            <span class='title-spec-name-mobile'>
+              PeakPower
+            </span>
+            <span>
+              86kW
+            </span>
+          </div>
+          <div class='title-spec-mobile' style='--i: 3;'>
+            <span class='title-spec-name-mobile'>
+              Acceleration
+            </span>
+            <span>
+              0 - 100km/h in ~4 sec
+            </span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="background-section">

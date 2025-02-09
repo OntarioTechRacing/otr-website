@@ -1,10 +1,18 @@
 export const pageInfoData = [
   {
     title: {
-      titleName: "OTR F2024",
-      titleImage: "../images/carImages/2024/title-image.png",
+      titleName: "OTR F24",
+      titleImage: "../images/carImages/2024/OTR-24-car-image.png",
       //get tag line
       tagLine: "placed 52nd",
+    },
+    titleSpecs: {
+      Frame: "Tubular Spaced Frame",
+      BodyMaterial: "4130 Steel",
+      Motor: "Emrax 208 HV",
+      TopSpeed: "164km/h",
+      PeakPower: "86kW",
+      Acceleration: "0 - 100km/h in ~4 sec",
     },
     background: {
       //get background info
