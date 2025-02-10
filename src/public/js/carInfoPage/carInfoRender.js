@@ -134,33 +134,30 @@ let pageHTML =
     </div>
     <div class="spec-section">
       <div class="spec-heading section-header not-in-view">SPECIFICATIONS</div>
-      <div class="spec-grid">
-      ${CurrentPageData.specifications
-        .map((element) => {
-          return `
-        <div class="specification">
-          <div class="spec-name not-in-view">${element.spec}</div>
-          <div class="spec-description not-in-view">${
-            element.image ? element.value : ""
-          }</div>
-
-         ${
-           element.image
-             ? `<div class="spec-image">
-            <img
-              class="image not-in-view"
-              src=${element.image}
-              alt=""
-            />
-          </div>`
-             : `          
-             <div class="spec-number-value not-in-view number-value">${element.value}</div>
-                `
-         }
+      <div class='slider'>
+        <div class='list'>
+          ${CurrentPageData.specs
+            .map((spec, index) => {
+              return `
+              <div class='item ${index === 0 ? "active" : ""}'>
+                <img src=${spec.image} />
+                <div class='content'>
+                  <h2>
+                    ${spec.name}
+                  </h2>
+                  <p>
+                    ${spec.desc}
+                  </p>
+                </div>
+              </div>
+            `;
+            })
+            .join("")}
         </div>
-        `;
-        })
-        .join("")}
+        <div class='arrows'>
+          <button id='prev'><</button>
+          <button id='next'>></button>
+        </div>
       </div>
     </div>
     <div class="slideshow">
@@ -193,3 +190,34 @@ let pageHTML =
 
 `;
 document.querySelector(".page-content").innerHTML = pageHTML;
+
+{
+  /* <div class="spec-grid">
+      ${CurrentPageData.specifications
+        .map((element) => {
+          return `
+        <div class="specification">
+          <div class="spec-name not-in-view">${element.spec}</div>
+          <div class="spec-description not-in-view">${
+            element.image ? element.value : ""
+          }</div>
+
+         ${
+           element.image
+             ? `<div class="spec-image">
+            <img
+              class="image not-in-view"
+              src=${element.image}
+              alt=""
+            />
+          </div>`
+             : `          
+             <div class="spec-number-value not-in-view number-value">${element.value}</div>
+                `
+         }
+        </div>
+        `;
+        })
+        .join("")}
+      </div> */
+}

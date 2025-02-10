@@ -89,6 +89,7 @@
   color: white;
   font-size: clamp(10px, 0.8vw + 0.5rem, 30px);
   opacity: 0;
+  filter: blur(30px);
   /* transform: translate(-6rem, 0); */
   /* background-color: white; */
   animation: title-specs-fade 2s ease-out 5.8s forwards;
@@ -110,18 +111,10 @@
   }
   100% {
     opacity: 1;
+    filter: blur(0);
   }
 }
-@keyframes title-specs-fade-mobile {
-  0% {
-    opacity: 0;
-    scale: 0;
-  }
-  100% {
-    opacity: 1;
-    scale: 1;
-  }
-}
+
 .arrow {
   color: #e75d2a;
 }
@@ -136,6 +129,7 @@
   align-items: center;
   color: white;
   opacity: 0;
+  filter: blur(30px);
   animation: title-specs-fade 2s ease-out calc(3.5s + 500ms * (var(--i)))
     forwards;
 }

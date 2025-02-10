@@ -55,14 +55,56 @@ export const pageInfoData = [
       placement: "52nd",
     },
     //get specs
-    specifications: [
+    // specifications: [
+    //   {
+    //     spec: "Motor",
+    //     value: "Emrax 208",
+    //     image: "../images/spec-images/2022/ermax1-nobg.png",
+    //   },
+    //   { spec: "Power", value: "Peak 80kW" },
+    //   { spec: "Torque", value: "Peak 140Nm" },
+    // ],
+    specs: [
       {
-        spec: "Motor",
-        value: "Emrax 208",
-        image: "../images/spec-images/2022/ermax1-nobg.png",
+        name: "Accumulator Battery",
+        desc: "X Samsung 40T Li-Ion 21700 cells",
+        image: "../images/spec-images/2024/otr-batteries.png",
       },
-      { spec: "Power", value: "Peak 80kW" },
-      { spec: "Torque", value: "Peak 140Nm" },
+      {
+        name: "Battery Management System",
+        desc: "Energus TinyBMS s516 v2.1 Telemetry",
+        image: "../images/spec-images/2024/bms.png",
+      },
+      {
+        name: "Chassis",
+        desc: "4130 Steel Tubular Spaced Frame",
+        image: "../images/spec-images/2024/otr-chassis.png",
+      },
+      {
+        name: "Damper",
+        desc: "Ohlins TTX25 MkII",
+        image: "../images/spec-images/2024/otr-damper.png",
+      },
+      {
+        name: "Differential",
+        desc: "Drexler FS2010 LSD",
+        image: "../images/spec-images/2024/otr-differential.png",
+      },
+      {
+        name: "Electronic Control Unit",
+        desc: "Dana TM4 Neuro 200",
+        image: "../images/spec-images/2024/ECU-dana.png",
+      },
+      {
+        name: "Motor Controller",
+        desc: "Rinehart PM100DX",
+        image: "../images/spec-images/2024/otr-motorcontroller.png",
+      },
+      {
+        name: "Tires",
+        desc: "18 x 6.0-10 Hoosier R25B",
+        image: "../images/spec-images/2024/otrtire.png",
+      },
     ],
     slideshow: [
       "../images/carImages/2024/slideshow-6.jpg",
