@@ -153,7 +153,7 @@ body {
 }
 
 .timeline-image img {
-    width: 25rem;
+    width: 25rem; /* Fixed width for larger screens */
     height: auto;
     padding-right: 1.25rem;
     padding-bottom: 1.25rem;
@@ -167,7 +167,7 @@ body {
     color: white;
     padding: 1.75rem;
     transition: 0.4s ease;
-    overflow-wrap: break-word !important;
+    /*overflow-wrap: break-word !important;*/
     margin: 1rem 1rem 1.25rem;
     border-radius: 0.375rem;
 }
@@ -217,12 +217,25 @@ body {
     #title {
         font-size: 10vw;
     }
+    .design-section{
+        align-items: center;
+    }
     .timeline-content {
         font-size: 3.5vw;
         padding: 1.25rem;
     }
+    .timeline-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
     .timeline-image img {
         width: 100%;
+        max-width: 25rem;
+        height: auto;
+        padding: 0;
     }
 }
 
