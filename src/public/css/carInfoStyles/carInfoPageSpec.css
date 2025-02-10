@@ -3,7 +3,7 @@
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
-  background-color: #000000;
+  /* background-color: #000000; */
   color: white;
   padding: 40px 20px 0px 20px;
   margin-top: 80px;
@@ -140,8 +140,8 @@
     max-height: 500px;
   }
   .slider .list .item img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 }
 

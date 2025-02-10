@@ -2,7 +2,7 @@
   width: 100%;
   padding-top: 10px;
   height: calc(100vh - 55px);
-  background-color: #000000;
+  /* background-color: #000000; */
   transition: padding-bottom ease;
   /* display: flex;
   flex-direction: column;
