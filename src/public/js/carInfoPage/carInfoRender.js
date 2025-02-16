@@ -2,23 +2,65 @@ import { pageInfoData } from "./data.js";
 
 const url = new URL(window.location.href);
 // const carYear = url.searchParams.get('year');
-const carYear = "OTR F2024";
+const carYear = "OTR F24";
 
 const CurrentPageData = pageInfoData.find(
   (element) => element.title.titleName === carYear
 );
+{
+  /* <div class="car-quote"><p>${CurrentPageData.title.tagLine}</p></div> */
+}
 
 let pageHTML =
   CurrentPageData &&
   `
-     <div class="title-section">
-      <div
-       class="title">${CurrentPageData.title.titleName}
-    </div>
-    <div class="title-image">
-        <img src=${CurrentPageData.title.titleImage} alt="" />
-    </div> 
-      <div class="car-quote"><p>${CurrentPageData.title.tagLine}</p></div>
+    <div class="title-section">
+      <div class="title">${CurrentPageData.title.titleName}
+      </div>
+
+      <div class='image-spec-container'>
+        <div class="title-image">
+            <img src=${CurrentPageData.title.titleImage} alt="" />
+        </div> 
+        <div class='title-Specs-Container'>
+          ${Object.keys(CurrentPageData.titleSpecs)
+            .map((titleSpec) => {
+              return `
+              <div class='title-Specs'>
+                <span class='title-spec-name'>${titleSpec}</span><span class='arrow'>&#8658;</span> ${CurrentPageData.titleSpecs[titleSpec]}
+              </div>
+              `;
+            })
+            .join("")}
+        </div>
+        <div class='title-Specs-mobile'>
+          <div class='title-spec-mobile' style='--i: 1;'>
+            <span class='title-spec-name-mobile'>
+              TopSpeed
+            </span>
+            <span>
+              164km/h
+            </span>
+          </div>
+          <div class='title-spec-mobile' style='--i: 2;'>
+            <span class='title-spec-name-mobile'>
+              PeakPower
+            </span>
+            <span>
+              86kW
+            </span>
+          </div>
+          <div class='title-spec-mobile' style='--i: 3;'>
+            <span class='title-spec-name-mobile'>
+              Acceleration
+            </span>
+            <span>
+              0 - 100km/h in ~4 sec
+            </span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="background-section">
@@ -92,33 +134,30 @@ let pageHTML =
     </div>
     <div class="spec-section">
       <div class="spec-heading section-header not-in-view">SPECIFICATIONS</div>
-      <div class="spec-grid">
-      ${CurrentPageData.specifications
-        .map((element) => {
-          return `
-        <div class="specification">
-          <div class="spec-name not-in-view">${element.spec}</div>
-          <div class="spec-description not-in-view">${
-            element.image ? element.value : ""
-          }</div>
-
-         ${
-           element.image
-             ? `<div class="spec-image">
-            <img
-              class="image not-in-view"
-              src=${element.image}
-              alt=""
-            />
-          </div>`
-             : `          
-             <div class="spec-number-value not-in-view number-value">${element.value}</div>
-                `
-         }
+      <div class='slider'>
+        <div class='list'>
+          ${CurrentPageData.specs
+            .map((spec, index) => {
+              return `
+              <div class='item ${index === 0 ? "active" : ""}'>
+                <img src=${spec.image} />
+                <div class='content'>
+                  <h2>
+                    ${spec.name}
+                  </h2>
+                  <p>
+                    ${spec.desc}
+                  </p>
+                </div>
+              </div>
+            `;
+            })
+            .join("")}
         </div>
-        `;
-        })
-        .join("")}
+        <div class='arrows'>
+          <button id='prev'><</button>
+          <button id='next'>></button>
+        </div>
       </div>
     </div>
     <div class="slideshow">
@@ -151,3 +190,34 @@ let pageHTML =
 
 `;
 document.querySelector(".page-content").innerHTML = pageHTML;
+
+{
+  /* <div class="spec-grid">
+      ${CurrentPageData.specifications
+        .map((element) => {
+          return `
+        <div class="specification">
+          <div class="spec-name not-in-view">${element.spec}</div>
+          <div class="spec-description not-in-view">${
+            element.image ? element.value : ""
+          }</div>
+
+         ${
+           element.image
+             ? `<div class="spec-image">
+            <img
+              class="image not-in-view"
+              src=${element.image}
+              alt=""
+            />
+          </div>`
+             : `          
+             <div class="spec-number-value not-in-view number-value">${element.value}</div>
+                `
+         }
+        </div>
+        `;
+        })
+        .join("")}
+      </div> */
+}
