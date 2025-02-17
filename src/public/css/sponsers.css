@@ -235,7 +235,7 @@ body {
   /* Phone */
   @media only screen and (max-width: 480px){
     .title{
-      font-size:40px;
+      font-size:33px;
 
     }
 
@@ -243,15 +243,21 @@ body {
       font-size:24px;
     }
 
+    .sponsers-package-text{
+      font-size: 32px;
+    }
+
     .sponsers-text-container{
       height: 500px;
+      text-align: center;
     }
 
     .sponsers-paragraph{
       font-size: 14px;
       text-align:left;
-      width: 330px;
+      width: 290px;
       padding:4px;
+      margin:5px;
     }
 
     .row{
@@ -259,19 +265,31 @@ body {
     }
     
     .diamond-sponsers-text{
-      text-shadow: 3px 5px 5px #7d94c1;
-
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
+
     .gold-sponsers-text{
-      text-shadow: 3px 5px 5px #d5a670;
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
 
     .silver-sponsers-text{
-      text-shadow: 3px 5px 5px #b0d9d9;
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
 
     .bronze-sponsers-text{
-      text-shadow: 3px 5px 5px #8a793f;
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
   }
 
@@ -282,14 +300,3 @@ body {
     
     
   }
-
-  /* @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
-                   0 0 50px #c3abcf, 0 0 60px #9554b3, 0 0 70px #9554b3;
-    }
-    to {
-      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
-                   0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  } */

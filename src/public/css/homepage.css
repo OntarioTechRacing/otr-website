@@ -178,14 +178,37 @@ html, body {
       width: 400px;
       height: 100px;
     }
+
+
       /* Phone */
   @media only screen and (max-width: 480px){
     .Title{
-      font-size:60px;
-
+      font-size:40px;
     }
-  .stats-section{
-    display:grid;
-  }
 
+    .homepage-banner{
+      width: 100%;
+      height: 100vh;
+    }
+
+    .mission-paragraph{
+      font-size: 16px;
+    }
+    
+    .mission-image{
+      display:none;
+    }
+
+    .stats-section{
+      display:grid;
+    }
+
+    .instagram-title{
+      font-size: 13px;
+    }
+
+    .instagram-container{
+      display: flex;
+      width: 60vh;
+    }
   }
