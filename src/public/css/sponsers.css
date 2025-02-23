@@ -36,6 +36,7 @@ body {
   /*  SPONSERS TEXT */
   .sponsers-package-text{
     font-size: 40px;
+    margin:40px;
   }
 
   .sponsers-banner{
@@ -79,7 +80,7 @@ body {
     height: 300px;
     color:white;
     font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: gray;
+    background-color: rgb(31, 30, 30);
   }
 
   .sponsers-text{
@@ -100,7 +101,10 @@ body {
     overflow:scroll;
   }
 
-  .view-sponsership-pkg-btn{
+  .view-sponsorship-pkg-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     align-content: center;
     background-color: gray;
@@ -108,36 +112,70 @@ body {
     border-radius: 4px;
     color:white;
     padding: 10px;
+    margin: 0 auto;
   }
 
   .sponsership-packages-container{
     margin: 40px auto;
     text-align:center;
     padding: 20px;
+    margin-bottom: 20px;
   }
 
   .diamond-sponsers-text{
-    padding: 20px;
-    color: #00A9E0; /* Light Blue */
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
+    color: white;
+    background-color: #75a8b9;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px #927171; 
+
   }
 
   .gold-sponsers-text{
-    padding: 20px;
-    color: #FFB800; /* Rich Gold */
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
+    color: white;
+    background-color: #FFB800;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px #927171; 
 
   }
 
   .silver-sponsers-text{
-    color: #A7A9AC; /* Soft Silver */
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
-
+    color: white;
+    text-shadow: 2px 2px 5px #927171; 
+    background-color: #A7A9AC;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
   }    
 
   .bronze-sponsers-text{
-    color: #cc7115;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); /* Light shadow for depth */
+    background-color: #cc7115;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 5px #927171; 
   }
 
   .diamond-sponsership, .platinum-sponserships, .gold-sponsership, .silver-sponsership, .bronze-sponsership{
@@ -197,7 +235,7 @@ body {
   /* Phone */
   @media only screen and (max-width: 480px){
     .title{
-      font-size:40px;
+      font-size:33px;
 
     }
 
@@ -205,15 +243,21 @@ body {
       font-size:24px;
     }
 
+    .sponsers-package-text{
+      font-size: 32px;
+    }
+
     .sponsers-text-container{
       height: 500px;
+      text-align: center;
     }
 
     .sponsers-paragraph{
       font-size: 14px;
       text-align:left;
-      width: 330px;
+      width: 290px;
       padding:4px;
+      margin:5px;
     }
 
     .row{
@@ -221,19 +265,31 @@ body {
     }
     
     .diamond-sponsers-text{
-      text-shadow: 3px 5px 5px #7d94c1;
-
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
+
     .gold-sponsers-text{
-      text-shadow: 3px 5px 5px #d5a670;
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
 
     .silver-sponsers-text{
-      text-shadow: 3px 5px 5px #b0d9d9;
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
 
     .bronze-sponsers-text{
-      text-shadow: 3px 5px 5px #8a793f;
+      text-shadow: 3px 5px 5px #272929;
+      width: 300px;
+      height: 70px;
+      font-size:24px;
     }
   }
 
@@ -244,14 +300,3 @@ body {
     
     
   }
-
-  /* @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
-                   0 0 50px #c3abcf, 0 0 60px #9554b3, 0 0 70px #9554b3;
-    }
-    to {
-      text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
-                   0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  } */
