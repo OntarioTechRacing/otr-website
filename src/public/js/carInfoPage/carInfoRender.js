@@ -10,6 +10,21 @@ const CurrentPageData = pageInfoData.find(
 {
   /* <div class="car-quote"><p>${CurrentPageData.title.tagLine}</p></div> */
 }
+{
+  /* <div class="background-section">
+<div class="background">
+  <div class="background-heading section-header not-in-view">BACKGROUND</div>
+  <p class="background-information not-in-view">
+   ${CurrentPageData.background.backgroundInfo}
+  </p>
+</div>
+<div class="background-image">
+  <img class="image not-in-view" src=${
+    CurrentPageData.background.backgroundImage
+  } alt="" />
+</div>
+</div> */
+}
 
 let pageHTML =
   CurrentPageData &&
@@ -63,19 +78,7 @@ let pageHTML =
 
     </div>
 
-    <div class="background-section">
-      <div class="background">
-        <div class="background-heading section-header not-in-view">BACKGROUND</div>
-        <p class="background-information not-in-view">
-         ${CurrentPageData.background.backgroundInfo}
-        </p>
-      </div>
-      <div class="background-image">
-        <img class="image not-in-view" src=${
-          CurrentPageData.background.backgroundImage
-        } alt="" />
-      </div>
-    </div>
+  
     <div class="team-section">
       <div class="team-heading section-header not-in-view">THE TEAM</div>
       <div class="team-grid">
@@ -190,34 +193,3 @@ let pageHTML =
 
 `;
 document.querySelector(".page-content").innerHTML = pageHTML;
-
-{
-  /* <div class="spec-grid">
-      ${CurrentPageData.specifications
-        .map((element) => {
-          return `
-        <div class="specification">
-          <div class="spec-name not-in-view">${element.spec}</div>
-          <div class="spec-description not-in-view">${
-            element.image ? element.value : ""
-          }</div>
-
-         ${
-           element.image
-             ? `<div class="spec-image">
-            <img
-              class="image not-in-view"
-              src=${element.image}
-              alt=""
-            />
-          </div>`
-             : `          
-             <div class="spec-number-value not-in-view number-value">${element.value}</div>
-                `
-         }
-        </div>
-        `;
-        })
-        .join("")}
-      </div> */
-}

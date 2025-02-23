@@ -30,7 +30,7 @@
 }
 .left-arrow:hover,
 .right-arrow:hover {
-  border: 2px solid wheat;
+  border: 2px solid #0077ca;
   border-radius: 6px;
 }
 

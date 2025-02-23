@@ -30,7 +30,7 @@
   scale: 1.04;
 }
 .competition-info {
-  color: wheat;
+  color: #e75d2a;
   display: flex;
   flex-direction: column;
   row-gap: 10px;

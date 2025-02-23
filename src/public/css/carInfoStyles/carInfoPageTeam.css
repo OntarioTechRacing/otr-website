@@ -19,7 +19,8 @@
 }
 .member-col,
 .dept-col {
-  color: wheat;
+  color: #e75d2a;
+  font-size: 700;
   display: flex;
   flex-direction: column;
   align-items: center;
