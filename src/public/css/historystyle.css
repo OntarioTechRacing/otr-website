@@ -151,6 +151,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+#timelineTitle{
+    font-size: 80px;
+    font-family: Jost, serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    /*font-variation-settings: "wght" 311;*/
+    margin-bottom: 0.8rem;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+}
 
 .timeline-image img {
     width: 25rem; /* Fixed width for larger screens */
@@ -194,7 +205,7 @@ body {
     }
     .timeline-middle {
         position: relative;
-        background-image: linear-gradient(45deg, #a0a0a0, #d0d0d0, #f5f5f5);
+        background-image: linear-gradient(45deg, #E75D2A, #FF8C42, #FFD07B);
         width: 0.1875rem;
         height: 100%;
     }
@@ -208,7 +219,7 @@ body {
         width: 0.9375rem;
         height: 0.9375rem;
         border-radius: 50%;
-        background-image: linear-gradient(45deg, #a0a0a0, #d0d0d0, #f5f5f5);
+        background-image: linear-gradient(45deg, #E75D2A, #FF8C42, #FFD07B);
         transform: translateX(-50%);
     }
 }
