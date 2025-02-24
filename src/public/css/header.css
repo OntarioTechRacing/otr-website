@@ -4,7 +4,7 @@
   color: white;
   padding-left: 40px;
   padding-right: 40px;
-  height: 55px;
+  height: auto;
   position: fixed;
   top: 0;
   right: 0;
@@ -42,7 +42,7 @@
   color: #000000;
 }
 .otr-logo {
-  width: 95px;
+  width: 120px;
   min-width: 96px;
   transition: transform 0.2s;
 }
@@ -136,5 +136,8 @@
   }
   .menu-button {
     display: initial;
+  }
+  .otr-logo {
+    width: 95px;
   }
 }
