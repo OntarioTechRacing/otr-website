@@ -1,148 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../css/TeamPage.css">
-  <meta charset="UTF-8">
-  <title>Team Page</title>
-</head>
-
-<body>
-
-  <img class="fullscreen-image" src="../img/TeamPicTeamPage.jpg">
-
-
-
-  <h1>Meet the Team</h1>
-
-  <div id="software-team">
-    <h2>Software Team</h2>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="../img/IMG_0839.JPG" alt="Aysha" style="height:120px">
-          <div class="container">
-            <h3>Manal Afzal</h3>
-            <p class="title">Software Team Lead</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
+  <head>
+    <link rel="stylesheet" href="../css/TeamPage.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Team Page</title>
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <div class="nav-shell">
+        <ul>
+          <li class="otr-logo">
+            <img
+              src="../images/icons/otrLogo.svg"
+              alt="Ontario Tech Racing Logo"
+            />
+          </li>
+          <div class="nav-toggle">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="./TeamPage.html">Team</a></li>
+            <li class="link"><a href="#">Competition</a></li>
+            <li class="link"><a href="./joinUs.html">Join Us</a></li>
+            <li class="link"><a href="./sponsors.html">Sponsors</a></li>
+            <li class="link">
+              <a href="./OntarioTechRacingHistory.html">History</a>
+            </li>
           </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Troy Odia</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Rayan Khalil</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Rosie Khurmi</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
-        </div>
+        </ul>
+        <button class="menu-button">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
       </div>
     </div>
 
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Disha Patel</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
+    <img
+      class="fullscreen-image"
+      src="../images/Group Photos/Team Picture .jpg"
+    />
+    <h1>Team Members</h1>
 
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Shamsuddin Haroon</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
+    <div id="team-container"></div>
 
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Mashal Niazi</h3>
-            <p class="title">Software Team Member</p>
-            <p>Linkedin: href="http://google.ca" </p>
-            <p>example@example.com</p>
-          </div>
-        </div>
+    <script>
+      const teams = {
+        Analysis: [
+          {
+            name: "Colton Ho",
+            role: "Lead",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Sultan Islam",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Deep Mistry",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/deeprmistry/",
+          },
+          {
+            name: "Seth Imola",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Neil Janarthanan",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Alexander Mueller",
+            role: "Unofficial",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Agsshayan Thiruthaniesan",
+            role: "Unofficial",
+            img: "../images/TeamMembers/Agsshayan Thiruthaniesan.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Chao Xiang Hu",
+            role: "Unofficial",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Chloe Bogaert",
+            role: "Unofficial",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Harsha Anugu",
+            role: "Unofficial",
+            img: "../images/TeamMembers/Harshaa anugu.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Shayaan Darr",
+            role: "Unofficial",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        Aero: [
+          {
+            name: "Fiona Kirby",
+            role: "Lead",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/fiona-kirby0/",
+          },
+          {
+            name: "Johnny Pham",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Kirushanth Kathirkamathamby",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "George Mikhaiel",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Imaad Shaik",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "James Lin",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Zach Pursley",
+            role: "Member",
+            img: "../images/TeamMembers/Zachary pursley.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        "Drivetrain & Braking": [
+          {
+            name: "William Chalk",
+            role: "Lead",
+            img: "../images/TeamMembers/William Chalk.jpg",
+            linkedin: "http://www.linkedin.com/in/william-c-17514b125",
+          },
+          {
+            name: "Ahsen Khan",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://linkedin.com/in/ahsen35813",
+          },
+          {
+            name: "Deep Mistry",
+            role: "Lead",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Ryan MacLean",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Nahl Farhan",
+            role: "New Member",
+            img: "../images/TeamMembers/Nahl Farhan.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Zachary Girard",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        "Embedded Systems": [
+          {
+            name: "Fayez Ahmed",
+            role: "Lead",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/fayezahmed/",
+          },
+          {
+            name: "Kunal Pandya",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Jaspaartap Goomer",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/jaspartap-goomer-883738275",
+          },
+          {
+            name: "Victor Badia",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Krishna Mallick",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/krishna-mallick-a558b6260/",
+          },
+          {
+            name: "Connor G",
+            role: "New Member",
+            img: "../images/TeamMembers/Connor Godden.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Julian Olano Medina",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Logan Yee",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        "HV Electrical Systems": [
+          {
+            name: "Ethan Richardson",
+            role: "Lead",
+            img: "../images/TeamMembers/Ethan.jpg",
+            linkedin: "www.linkedin.com/in/ethan-richardson-0861031ba",
+          },
+          {
+            name: "Garth Anthony Martin",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/anthony-m-3b5882252",
+          },
+          {
+            name: "Timothy Down",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/timothy-down-46b354294",
+          },
+          {
+            name: "William Chalk",
+            role: "Member",
+            img: "../images/TeamMembers/William Chalk.jpg",
+            linkedin: "http://www.linkedin.com/in/william-c-17514b125",
+          },
+          {
+            name: "Luz Yanguez Franco",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/luz-yanguez/",
+          },
+          {
+            name: "William Locke",
+            role: "Member",
+            img: "../images/TeamMembers/william.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Agsshayan Thiruthaniesan",
+            role: "New Member",
+            img: "../images/TeamMembers/Agsshayan Thiruthaniesan.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Sarah Lamanna",
+            role: "New Member",
+            img: "../images/TeamMembers/Sarah Lamanna.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Nahl Farhan",
+            role: "New Member",
+            img: "../images/TeamMembers/Nahl Farhan.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Aryan Oberoi",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "William Tempest",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        Manufacturing: [
+          {
+            name: "Maria Peregoudov",
+            role: "Lead",
+            img: "../images/TeamMembers/Maria peregoudov.jpg",
+            linkedin: "https://www.linkedin.com/in/maria-peregoudov/",
+          },
+          {
+            name: "Rory O'Riordan",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/rory-oriordan2002/",
+          },
+          {
+            name: "Jordan Bobnic",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Tomas Macleod",
+            role: "New Member",
+            img: "../images/TeamMembers/Tomas Macleod.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Ethan Shepperd",
+            role: "New Member",
+            img: "../images/TeamMembers/Ethan Sheppard.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Shantanu Vede",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        Software: [
+          {
+            name: "Manal Afzal",
+            role: "Lead",
+            img: "../images/TeamMembers/Manal afzal.jpg",
+            linkedin: "https://www.linkedin.com/in/manalafzal/",
+          },
+          {
+            name: "Shams Haroon",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/shams-haroon/",
+          },
+          {
+            name: "Rayan Khalil",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/rayan-khalil-7743b9258/",
+          },
+          {
+            name: "Troy Odia",
+            role: "Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Rosie Khurmi",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Disha Padia",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Mashal Niazi",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        Suspension: [
+          {
+            name: "Mihai Marian",
+            role: "Lead",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/mihaimarian/",
+          },
+          {
+            name: "Omar Ibrahim",
+            role: "Co-Lead",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/in/omarribrahim/",
+          },
+          {
+            name: "Grant Bourne",
+            role: "Member",
+            img: "../images/TeamMembers/Grant Bourne.jpg",
+            linkedin: "https://www.linkedin.com/in/grant-bourne-47384526b/",
+          },
+          {
+            name: "Nathan Battler",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Pranav Vaidya",
+            role: "New Member",
+            img: "../img/image.png",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Jake Desaillier",
+            role: "New Member",
+            img: "../images/TeamMembers/Jake Desailler .jpg",
+            linkedin: "http://www.linkedin.com/in/jake-desaillier-a1556a267",
+          },
+        ],
+        Logistics: [
+          {
+            name: "Maya Edison",
+            role: "Lead",
+            img: "../images/TeamMembers/Maya Edison.jpg",
+            linkedin: "https://www.linkedin.com/in/maya-edison",
+          },
+          {
+            name: "Mann Shah",
+            role: "Member",
+            img: "../images/TeamMembers/Mann Shah.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        Marketing: [
+          {
+            name: "Maya Edison",
+            role: "Lead",
+            img: "../images/TeamMembers/Maya Edison.jpg",
+            linkedin: "https://www.linkedin.com/in/maya-edison",
+          },
+          {
+            name: "Laura Costantinipare",
+            role: "Member",
+            img: "../images/TeamMembers/Laura cost.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Adam Bremner",
+            role: "New Member",
+            img: "../images/TeamMembers/Adam bremnar.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+          {
+            name: "Esha Lodhi",
+            role: "New Member",
+            img: "../images/TeamMembers/Esha Lodhi.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+        "Finance & Sponsorship": [
+          {
+            name: "Maya Edison",
+            role: "Lead",
+            img: "../images/TeamMembers/Maya Edison.jpg",
+            linkedin: "https://www.linkedin.com/in/maya-edison",
+          },
+          {
+            name: "Dave Paquette",
+            role: "Member",
+            img: "../images/TeamMembers/Dave Paquette.jpg",
+            linkedin: "https://www.linkedin.com/company/ontariotechracing",
+          },
+        ],
+      };
+
+      const createCard = (member) => `
+  <div class="card-container">
+    <div class="card">
+      <div class="front">
+        <img src="${member.img}" alt="${member.name}" class="profile-pic">
+        <h3>${member.name}</h3>
+        <p class="title">${member.role}</p>
+      </div>
+      <div class="back">
+        <a href="${member.linkedin}">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <p>${member.name}</p>
       </div>
     </div>
   </div>
+`;
 
-  <div id="hardware-team">
-    <h2>Hardware and Electronics Team</h2>
-
+      const createTeamSection = (teamName, members) => `
+  <div class="team-section">
+    <h2 class="subTeam">${teamName} Team</h2>
     <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Alvin Hyunh</h3>
-            <p class="title">Hardware Team Lead</p>
-            <p> Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="column">
-        <div class="card">
-          <img src="" alt="" style="">
-          <div class="container">
-            <h3>Aysha Mohmand</h3>
-            <p class="title">Hardware Assistant Lead</p>
-            <p>Linkedin: href="http://google.ca"</p>
-            <p>example@example.com</p>
-          </div>
-        </div>
-      </div>
+      ${members.map(createCard).join("")}
     </div>
   </div>
-</body>
+`;
 
-
+      const teamContainer = document.getElementById("team-container");
+      for (const [teamName, members] of Object.entries(teams)) {
+        teamContainer.innerHTML += createTeamSection(teamName, members);
+      }
+    </script>
+  </body>
 </html>

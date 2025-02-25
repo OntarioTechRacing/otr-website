@@ -1,85 +1,113 @@
 body {
   background-color: black;
   color: white;
-  font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu globally */
-}
-
-.content {
-  background-image: url(./TeamPicTeamPage.jpg);
-  background-size:cover;
-
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
 }
 
 .fullscreen-image {
   height: 100vh;
   width: 100vw;
+  object-fit: cover;
 }
 
-h1{
+.subTeam {
   text-align: center;
-  /* font-family:  */
+  padding: 50px 0;
+  font-size: 2rem;
+  color: #f3f3f3;
+  letter-spacing: 1px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container {
+  perspective: 1000px;
+  width: 200px;
+  height: 250px;
+  display: inline-block;
+  margin: 20px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center; /* Center text inside the card */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+  background: linear-gradient(145deg, #1d1d1d, #030303);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.card img {
-  display: block; /* Make the image a block element */
-  margin: 0 auto; /* Center the image horizontally */
-  height: 120px; /* Set a fixed height */
+.card.flipped {
+  transform: rotateY(180deg);
 }
 
-.column {
-    float: left;
-    width: 20%;
-    margin-bottom: 160px;
-    padding: 0 8px;
-    height: 250px;
-  }
-  
-  /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 33.3%;
-      display: block;
-    }
-  }
-  
-  /* Add some shadows to create a card effect */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Some left and right padding inside the container */
-  .container {
-    padding: 0 16px;
-  }
-  
-  /* Clear floats */
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card .front {
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Flip the card on hover */
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card .back {
+  background: #0077b5;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card .back a {
+  text-decoration: none;
+}
+
+.card .back i {
+  font-size: 50px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.card .back i:hover {
+  transform: scale(1.2);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3a3a3a;
+}
+
+/* Responsive */
+@media screen and (max-width: 650px) {
+  .card-container {
     width: 100%;
+    height: auto;
   }
-  
-  .button:hover {
-    background-color: #555;
-  }
+}

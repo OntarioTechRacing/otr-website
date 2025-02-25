@@ -6,6 +6,7 @@
   color: white;
   position: relative;
   margin-top: auto;
+  justify-content:center;
 }
 .footer-info {
   position: absolute;

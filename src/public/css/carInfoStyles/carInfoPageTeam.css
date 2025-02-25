@@ -20,6 +20,9 @@
 .member-col,
 .dept-col {
   color: #e75d2a;
+  border: 2px #e75d2a solid;
+  border-radius: 10px;
+  padding: 6px;
   font-size: 700;
   display: flex;
   flex-direction: column;
