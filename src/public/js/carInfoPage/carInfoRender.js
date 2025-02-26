@@ -7,24 +7,6 @@ const carYear = "OTR F24";
 const CurrentPageData = pageInfoData.find(
   (element) => element.title.titleName === carYear
 );
-{
-  /* <div class="car-quote"><p>${CurrentPageData.title.tagLine}</p></div> */
-}
-{
-  /* <div class="background-section">
-<div class="background">
-  <div class="background-heading section-header not-in-view">BACKGROUND</div>
-  <p class="background-information not-in-view">
-   ${CurrentPageData.background.backgroundInfo}
-  </p>
-</div>
-<div class="background-image">
-  <img class="image not-in-view" src=${
-    CurrentPageData.background.backgroundImage
-  } alt="" />
-</div>
-</div> */
-}
 
 let pageHTML =
   CurrentPageData &&
