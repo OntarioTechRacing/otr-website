@@ -49,7 +49,7 @@
 .slideshow-images {
   position: relative;
 
-  width: 700px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -60,7 +60,7 @@
 .slideshow-images .slideimage {
   display: none;
   width: 100%;
-  height: 600px;
+  height: 350px;
   z-index: 100;
   object-fit: contain;
 }

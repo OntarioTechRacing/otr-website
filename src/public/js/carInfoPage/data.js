@@ -107,7 +107,7 @@ export const pageInfoData = [
       },
     ],
     slideshow: [
-      "../images/carImages/2024/slideshow-6.jpg",
+      // "../images/carImages/2024/slideshow-6.jpg",
       "../images/carImages/2024/slideshow-1.jpg",
       "../images/carImages/2024/slideshow-2.png",
       "../images/carImages/2024/slideshow-3.png",
