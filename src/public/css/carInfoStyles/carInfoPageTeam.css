@@ -19,7 +19,7 @@
 }
 .member-col,
 .dept-col {
-  color: #e75d2a;
+  color: white;
   border: 2px #e75d2a solid;
   border-radius: 10px;
   padding: 6px;
@@ -67,7 +67,7 @@
     min-width: max-content;
   }
   .team-grid {
-    font-size: 0.75rem;
+    font-size: 0.55rem;
   }
 }
 @media (max-width: 450px) {
