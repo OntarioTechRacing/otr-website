@@ -3,12 +3,37 @@ body {
   color: white;
   font-family: "Ubuntu", sans-serif;
   overflow-x: hidden;
+  font-family: jost, sans-serif;
 }
 
 .fullscreen-image {
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   object-fit: cover;
+}
+
+.headerText{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #03030394;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerText h1{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.team-section{
+  background-color: #09090976;
 }
 
 .subTeam {
