@@ -4,6 +4,11 @@ body {
   font-family: "Ubuntu", sans-serif;
   overflow-x: hidden;
   font-family: jost, sans-serif;
+  background-image: url("../images/background5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .fullscreen-image {
@@ -12,7 +17,7 @@ body {
   object-fit: cover;
 }
 
-.headerText{
+.headerText {
   top: 0;
   left: 0;
   right: 0;
@@ -25,14 +30,14 @@ body {
   align-items: center;
 }
 
-.headerText h1{
+.headerText h1 {
   font-size: 3rem;
   color: white;
   text-align: center;
   font-weight: bold;
 }
 
-.team-section{
+.team-section {
   background-color: #09090976;
 }
 
