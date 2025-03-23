@@ -12,22 +12,29 @@ html, body {
   .homepage-banner {
     position: relative; 
     width: 100vw;
-    text-align: center;
-    background-image:url('../images/f24Car.jpg');
     height: 100vh;
-    object-fit:cover;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 70px;
+    text-align: center;
+    overflow:hidden;
   }
-  
+
+  .background-video {
+    width: 100vw;  
+    height: 100vh;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+  }
+
   .Title{
     position: absolute; 
     bottom: 0; 
     right: 0; 
     margin: 10px;
     text-shadow: 3px 5px 5px #000;
+    font-family: "Goldman", sans-serif;
+    font-size:80px;
   }   
 
   /* Mission Section */
@@ -43,7 +50,6 @@ html, body {
     padding: 20px;
     box-sizing: border-box;
     gap: 20px; 
-    
   }
   
   .mission-text {
@@ -175,13 +181,6 @@ html, body {
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
       
     }
-
-    .otr-logo{
-      width: 400px;
-      height: 100px;
-    }
-
-
       /* Phone */
   @media only screen and (max-width: 480px){
     .Title{
