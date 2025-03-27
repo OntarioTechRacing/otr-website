@@ -7,9 +7,10 @@ html {
   font-family: "Jost", Arial;
 }
 body {
+
   margin-top: 56px;
   /* background-color: #000000; */
-  background-image: url("../../images/background5.jpg");
+  background-image: url("../../images/BackgroundImages/background5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
