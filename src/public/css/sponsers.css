@@ -43,7 +43,7 @@ body {
     position: relative; 
     width: 100%;
     text-align: center;
-    background-image:url('../images/sponsers.jpg');
+    background-image:url('../images/carImages/2024/title-image.jpg');
     height: 100vh;
     background-size:cover;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ body {
     right: 0;
     position: absolute;
     text-shadow:  3px 5px 5px #000;
-
+    font-family: "Goldman", sans-serif;
   }
   
   .sponsers-section{
@@ -87,7 +87,7 @@ body {
     width: 80%;
     margin: 0 auto;
     font-size: 24px;
-    font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Goldman", sans-serif;
     padding: 20px;
   }
 
@@ -184,6 +184,10 @@ body {
     flex-wrap:wrap;
     justify-content:center;
     gap: 4rem;
+  }
+
+  .logo{
+    width: 350px;
   }
 
   .diamond-logos img,
