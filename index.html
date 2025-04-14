@@ -13,7 +13,6 @@
     />
     <link rel="stylesheet"  href="src/public/css/homepage.css">
     <link rel="stylesheet" href="src/public/css/style.css">
-    <link rel="stylesheet" href="src/public/css/sponsers.css">
     <link
       rel="icon"
       type="image/x-icon"
@@ -27,14 +26,14 @@
 
   <body>
     <div class="homepage-banner">  
-        <video id="background-vid" class="background-video" autoplay muted loop >
-          <source src="/src/public/images/homepage_vid.mp4" type="video/mp4">
+      
+        <video class="background-video" autoplay muted loop playsinline>
+          <source src="./src/public/images/homepage_2.mp4" type="video/mp4">
             Your browser does not support the video
         </video>
 
-        <button id="mute-toggle" className="sound-btn">Unmute</button>
-
         <h1 class="Title">Ontario Tech Racing</h1>
+
     </div>
         <!-- Navigation bar -->
       <header-component></header-component> 
@@ -53,10 +52,6 @@
           showcasing our innovation in vehicle design, build quality, and team operations. 
           With ten technical and three business departments, we offer hands-on experience 
           in everything from aerodynamics and embedded software to sponsorship and logistics.
-           Partnering with ACE, we leverage cutting-edge facilities like the Mustang 
-           Dynamometer and wind tunnel to push our car’s performance to the next level. 
-           Through seminars and hands-on workshops, we empower students with real-world 
-           skills, shaping the next generation of automotive innovators.
         </p>
       </div>
       <div class="mission-image">
@@ -88,21 +83,35 @@
     <!-- INSTAGRAM Section -->
     <div class="instagram-section">
       <div class="instagram-title">
-          <h1 >Find out what we're up to</span></h1>
+          <h1 class="socialMedia-title">Find out what we're up to</span></h1>
       </div>
       <div class="socialMedia-container">
           <div class="instagram-container">
               <iframe id="ig_post" style="border-radius: 5px;" width="100%"height="650" scrolling = "yes" frameborder="0"></iframe>
           </div>
-      </div>
 
-      <footer-component></footer-component>
+          <div class="tiktok-container">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ontariotechracing/video/7460693239494921478" data-video-id="7460693239494921478" style="max-width: 605px; min-width: 325px;">
+              <section class="tiktok-container"> 
+                <a target="_blank" title="@ontariotechracing" href="https://www.tiktok.com/@ontariotechracing">@ontariotechracing</a> 
+                Ontario Tech Racing!
+                <a target="_blank" title="♬ original sound" href="https://www.tiktok.com/music/original-sound-7460693239494921478">♬ original sound</a> 
+              </section>
+            </blockquote>
+          </div>
+      </div>
+      </div>
     </main>
+    
+    <footer-component></footer-component>
+
 </div>
 
     <script src="src/public/js/main.js"></script>
     <script src="src/public/js/updateIG.js"></script>
     <script src="src/public/js/header.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
   </body>
 </html>
 
