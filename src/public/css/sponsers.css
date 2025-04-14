@@ -95,17 +95,18 @@ body {
     font-size: 22px;
     margin: 0 auto;
     font-family: Ubantu, Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    width: 1450px;
     padding: 10px;
+    display:flex;
   }
 
   .view-sponsorship-pkg-btn{
+    position: sticky;
+    top: 20px; /* sticks to top when scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    align-content: center;
+  
+      align-content: center;
     background-color: #0077CA;
     border: 1px solid black;
     border-radius: 4px;
