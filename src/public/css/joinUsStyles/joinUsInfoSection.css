@@ -42,6 +42,38 @@
   margin-right: 20px;
   background-color: white;
 }
+
+
+
+.linktree-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.linktree-card a {
+  text-decoration: none;
+  width: 100%;
+  max-width: 500px;
+}
+
+.linktree-content {
+  background-color: #c04713; 
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.linktree-content:hover {
+  background-color: rgb(149, 49, 7); 
+  transform: scale(1.05); 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width: 1400px) {
   .join-us-info-container {
     font-size: 1.2rem;
@@ -51,24 +83,13 @@
     font-size: 2.2rem;
   }
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 950px) {
   .join-us-info-container {
-    font-size: clamp(5px, 4vw, 20px);
+    font-size: 1.1rem;
     max-width: 400px;
   }
   .bold {
-    font-size: clamp(20px, 6vw, 35px);
-  }
-  .join-us-info {
-    flex-direction: column-reverse;
-  }
-  .join-us-info-container {
-    margin-bottom: 40px;
-  }
-  .join-us-image-container {
-    margin-left: auto;
-    height: auto;
-    max-width: 500px;
-    width: 100%;
+    font-size: 2rem;
   }
 }
