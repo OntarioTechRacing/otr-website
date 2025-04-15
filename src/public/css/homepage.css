@@ -1,18 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html, body {
   overflow-x: hidden;
+  box-sizing: border-box;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 }
 
   /* Homepage banner */
   .homepage-banner {
     position: relative; 
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height:auto;
     text-align: center;
     overflow:hidden;
   }
@@ -132,12 +132,10 @@ html, body {
     }
     
     .stat-box {
-      background-color: #1a1a1a;
       border: 2px solid #E75D2A;
       border-radius: 20px;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 100%;
       max-width: 250px;
     }
@@ -165,27 +163,62 @@ html, body {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 20px; 
+      gap: 40px; 
     }
+
     .socialMedia-title{
       margin:20px;
     }
 
-    .instagram-container, .tiktok-container{
+  
+    .tiktok-container {
       flex: 1 1 300px;
       max-width: 500px;
-    }
-
-    .instagram-container iframe,
-    .tiktok-embed {
       width: 100%;
-      aspect-ratio: 9/16;
-      max-width: 500px;
-      height: auto;
-      overflow: hidden;
-      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible; 
+      padding-bottom: 20px; 
     }
 
+    .instagram-container {
+      flex: 1 1 300px;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    .instagram-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: auto; 
+    }
+    
+    .instagram-wrapper iframe {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border: none;
+      background: transparent;
+      display: block;
+      min-height: 500px;
+    }
+    
+    .tiktok-embed {
+      width: 100% !important;
+      max-width: 500px;
+      height: auto !important;
+      aspect-ratio: 9/16;
+      border: none;
+      background: transparent !important;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: block;
+    }
+    
     /* TABLETS */
   @media (max-width: 900px){
     .Title{
@@ -221,10 +254,11 @@ html, body {
 
     .instagram-container iframe,
     .tiktok-embed {
-     max-width: 700px;
-     width: 100%;
+      aspect-ratio: auto !important;
+      height: auto;
+      width: 100%;
+      max-width: 100%;
     }
-
   }
 
   /* Phone */
@@ -259,8 +293,16 @@ html, body {
       font-size: 13px;
     }
 
-    .instagram-container{
+    .instagram-container, .tiktok-container{
       display: flex;
     }
+
+    .instagram-container iframe,
+    .tiktok-embed {
+      max-width: 700px;
+      width: 100%;
+    }
+
+
   }
 
