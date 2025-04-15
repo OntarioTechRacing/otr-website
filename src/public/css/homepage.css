@@ -123,23 +123,27 @@ html, body {
     /* Statistics Section */
     .stats-section {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      padding: 40px;
-      background-color: #121212;
-      color: white;
-      justify-items: center;
+      padding: 40px 10px;
+      justify-content: center;
+
+      max-width: 1000px;   
+      margin: 0 auto;       
+      width: 100%;
+      box-sizing: border-box;
     }
-    
+        
     .stat-box {
       border: 2px solid #E75D2A;
       border-radius: 20px;
       padding: 20px;
       text-align: center;
       width: 100%;
-      max-width: 250px;
+      box-sizing: border-box;
+
     }
-        
+            
     .stat-box h1 {
       font-size: 3rem;
       margin-bottom: 10px;
