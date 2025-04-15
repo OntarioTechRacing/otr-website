@@ -464,7 +464,7 @@ const teams = {
   `;
 
   const createLeadsSection=(leads)=>`
-    <div class="team-section">
+    <div class="leads-container">
         <h1 class="subteam">Leadership</h1>
         <div class="row">
         ${leads.map(createCard).join("")}

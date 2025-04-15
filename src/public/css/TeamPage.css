@@ -58,20 +58,19 @@ body {
 }
 
 .row {
-  display: grid;
-  grid-template-columns: repeat(7,1fr);
-  gap:20px;
-  padding:20px;
-  justify-content:center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 
 }
 
 .card-container {
-  perspective: 1000px;
   width: 200px;
   height: 250px;
-  display: block;
-  margin: 20px;
+  perspective: 1000px;
+  margin: 10px;
 }
 
 .card {
