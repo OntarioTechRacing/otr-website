@@ -10,9 +10,9 @@
       href="../images/icons/favicon.ico"
       sizes="96x96"
     />
-    <link rel="stylesheet" href="../css/garagePage.css"/ >
-    <link href="../css/header.css" rel="stylesheet" />
-    <link href="../css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/garagePage.css"/ > <link
+    rel="stylesheet" href="../css/customScrollbar.css"/ >
+
     <link
       rel="stylesheet"
       rel="stylesheet"
@@ -26,43 +26,19 @@
       href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="../components/header-component.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="../components/footer-component.js"
+      type="text/javascript"
+      defer
+    ></script>
   </head>
   <body>
-    <div class="navigation-bar">
-      <!-- Navigation bar -->
-      <div class="nav-shell">
-        <ul>
-          <li class="otr-logo">
-            <img src="../images/icons/OTR-logo-updated.PNG" alt="" />
-          </li>
-          <div class="nav-toggle">
-            <li class="link">
-              <a href="../../../index.html"> Home </a>
-            </li>
-            <li class="link">
-              <a href="./TeamPage.html">Team</a>
-            </li>
-            <li class="link">
-              <a href="./carInfoPage.html">Our Car</a>
-            </li>
-            <li class="link">
-              <a href="./joinUs.html">Join Us</a>
-            </li>
-            <li class="link">
-              <a href="./sponsers.html">Sponsors</a>
-            </li>
-            <li class="link">
-              <a href="./History.html">History</a>
-            </li>
-          </div>
-        </ul>
-        <button class="menu-button">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </button>
-      </div>
-    </div>
+    <header-component></header-component>
     <main id="garage-main" class="garage-main" style="height: 16175px">
       <div class="progress-bar-container">
         <div class="progress-bar-spacer"></div>
@@ -164,33 +140,8 @@
         </section>
       </div>
     </main>
-    <div class="footer">
-      <span class="developer">Developed by Troy Odia</span>
-      <div class="footer-info">
-        <div class="otr-links">
-          <a href="https://www.instagram.com/ontariotechracing/">
-            <img
-              class="instagram-link"
-              src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
-              alt=""
-            />
-          </a>
-          <a href="https://www.linkedin.com/company/ontariotechracing/">
-            <img
-              class="linkedin-link"
-              src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="otr-info">
-          <span class="otr-email">motorsports@ontariotechu.net</span>
-          <span class="otr-name"
-            >2024 Ontario Tech University Formula Racing</span
-          >
-        </div>
-      </div>
-    </div>
+    <footer-component></footer-component>
+
     <button id="scroll-to-top-btn" class="to-top-btn">
       <i class="fa-solid fa-angles-up arrow-up"></i>
     </button>
@@ -198,6 +149,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
     <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="../js/header.js"></script>
     <script src="../js/garagePage.js"></script>
   </body>
 </html>
