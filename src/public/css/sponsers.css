@@ -270,7 +270,7 @@ body {
    @media (max-width: 900px){
     
     .title{
-      font-size:25px;
+      font-size:75px;
     }
 
     .sponsers-heading{
@@ -303,7 +303,7 @@ body {
   /* Phone */
   @media  (max-width: 480px){
     .title{
-      font-size:33px;
+      font-size:50px;
 
     }
 
