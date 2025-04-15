@@ -177,7 +177,7 @@ class Header extends HTMLElement {
                           <a href=${filePath + "TeamPage.html"}>Team</a>
                       </li>
                       <li class="link">
-                          <a href="src/public/html/carInfoPage.html">Our Car</a>
+                          <a href=${filePath + "GaragePage.html"}>Our Car</a>
                       </li>
                       <li class="link">
                           <a href=${filePath + "joinUs.html"}>Join Us</a>
