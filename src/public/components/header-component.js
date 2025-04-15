@@ -1,11 +1,23 @@
-class Header extends HTMLElement{
-    constructor(){
-        super();
-    }
+const locationPath = window.location.pathname;
+const imageSrc =
+  locationPath === "/index.html"
+    ? "src/public/images/otrLogo.PNG"
+    : "../images/otrLogo.PNG";
+const filePath = locationPath === "/index.html" ? "src/public/html/" : "./";
+const homePageFilePath =
+  locationPath === "index.html" ? "/index.html" : "../../../index.html";
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
 
-    connectedCallback(){
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <style>
+        ul{
+        margin-top: 0;
+        margin-bottom: 0;
+        }
         .navigation-bar {
             background-color: transparent;
             backdrop-filter: blur(6px);
@@ -150,34 +162,33 @@ class Header extends HTMLElement{
             width: 95px;
           }
         }
-
         </style>
           <div class="navigation-bar">
             <div class="nav-shell">
-                <ul>
-                    <li class="otr-logo">
-                        <img src="src/public/images/otrLogo.PNG" alt="Ontario Tech Racing Logo"/>
-                    </li>
-                    <div class="nav-toggle">
-                        <li class="link">
-                            <a href="#"> Home </a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/TeamPage.html">Team</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/carInfoPage.html">Our Car</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/joinUs.html">Join Us</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/sponsers.html">Sponsors</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/History.html">History</a>
-                        </li>
-                    </div>
+             <ul>
+                  <li class="otr-logo">
+                      <img src=${imageSrc} alt="Ontario Tech Racing Logo"/>
+                  </li>
+                  <div class="nav-toggle">
+                      <li class="link">
+                          <a href=${homePageFilePath}> Home </a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "TeamPage.html"}>Team</a>
+                      </li>
+                      <li class="link">
+                          <a href="src/public/html/carInfoPage.html">Our Car</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "joinUs.html"}>Join Us</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "sponsers.html"}>Sponsors</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "History.html"}>History</a>
+                      </li>
+                  </div>
                 </ul>
                 <button class="menu-button">
                     <div class="bar1"></div>
@@ -186,8 +197,8 @@ class Header extends HTMLElement{
                 </button>
             </div>
         </div>
-    `
-    }
+    `;
+  }
 }
 
-customElements.define('header-component', Header)
+customElements.define("header-component", Header);
