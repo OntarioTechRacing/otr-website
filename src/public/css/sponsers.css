@@ -140,47 +140,72 @@ body {
   }
 
   .gold-sponsers-text{
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); 
     color: white;
-    background-color: #FFB800;
+    background-color: #2E2E2E; 
     width: 400px;
     height: 50px;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     margin: 0 auto;
-    text-shadow: 2px 2px 5px #927171; 
-
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
   }
 
   .silver-sponsers-text{
     color: white;
-    text-shadow: 2px 2px 5px #927171; 
-    background-color: #A7A9AC;
-    width: 350px;
-    height: 50px;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
-  }    
-
-  .bronze-sponsers-text{
-    background-color: #cc7115;
+    background-color: #2E2E2E; 
     width: 400px;
     height: 50px;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+  }    
+
+  .bronze-sponsers-text{
     color: white;
-    text-shadow: 2px 2px 5px #927171; 
+    background-color: #2E2E2E; 
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
   }
 
-  .diamond-sponsership, .platinum-sponserships, .gold-sponsership, .silver-sponsership, .bronze-sponsership{
+  .diamond-sponsers-text{
+    color: white;
+    background-color: #2E2E2E; 
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  .platinum-sponsers-text {
+    color: white;
+    background-color: #2E2E2E; 
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  .general-sponsers-text {
+    color: white;
+    background-color: #2E2E2E; 
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+  }
+
+  .diamond-sponsership, .platinum-sponserships, .gold-sponsership, .silver-sponsership, .bronze-sponsership, .general-sponsership{
     color: white;
     display:flex;
     flex-wrap:wrap;
@@ -195,7 +220,8 @@ body {
   .diamond-logos img,
   .gold-sponsership img,
   .silver-sponsership img,
-  .bronze-sponsership img {
+  .bronze-sponsership img, 
+  .general-sponsership img {
   width: 300px;
   height: 200px;
   border-radius: 15px;
@@ -237,6 +263,7 @@ body {
   button :hover{
     background-color: yellow;
   }
+  
 
     /* Tablets */
 
@@ -304,34 +331,8 @@ body {
     .row{
       display:grid;
     }
-    
-    .diamond-sponsers-text{
-      text-shadow: 3px 5px 5px #272929;
-      width: 300px;
-      height: 70px;
-      font-size:24px;
-    }
+  
 
-    .gold-sponsers-text{
-      text-shadow: 3px 5px 5px #272929;
-      width: 300px;
-      height: 70px;
-      font-size:24px;
-    }
-
-    .silver-sponsers-text{
-      text-shadow: 3px 5px 5px #272929;
-      width: 300px;
-      height: 70px;
-      font-size:24px;
-    }
-
-    .bronze-sponsers-text{
-      text-shadow: 3px 5px 5px #272929;
-      width: 300px;
-      height: 70px;
-      font-size:24px;
-    }
   }
 
 
