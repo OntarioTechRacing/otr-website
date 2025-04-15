@@ -14,6 +14,10 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <style>
+        ul{
+        margin-top: 0;
+        margin-bottom: 0;
+        }
         .navigation-bar {
             background-color: transparent;
             backdrop-filter: blur(6px);
