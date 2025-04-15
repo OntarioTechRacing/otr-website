@@ -1,10 +1,15 @@
-class Header extends HTMLElement{
-    constructor(){
-        super();
-    }
+const locationPath = window.location.pathname;
+const imageSrc =
+  locationPath === "/index.html"
+    ? "src/public/images/otrLogo.PNG"
+    : "../images/otrLogo.PNG";
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
 
-    connectedCallback(){
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <style>
         .navigation-bar {
             background-color: transparent;
@@ -150,13 +155,12 @@ class Header extends HTMLElement{
             width: 95px;
           }
         }
-
         </style>
           <div class="navigation-bar">
             <div class="nav-shell">
                 <ul>
                     <li class="otr-logo">
-                        <img src="src/public/images/otrLogo.PNG" alt="Ontario Tech Racing Logo"/>
+                        <img src=${imageSrc} alt="Ontario Tech Racing Logo"/>
                     </li>
                     <div class="nav-toggle">
                         <li class="link">
@@ -186,8 +190,8 @@ class Header extends HTMLElement{
                 </button>
             </div>
         </div>
-    `
-    }
+    `;
+  }
 }
 
-customElements.define('header-component', Header)
+customElements.define("header-component", Header);
