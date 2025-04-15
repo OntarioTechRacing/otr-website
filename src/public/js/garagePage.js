@@ -122,7 +122,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     },
     {
       heading: "Vehicle Dynamics",
-      content: `Vehicle Dynamics Blurb`,
+      content: `The Vehicle Dynamics team focuses on how the car moves and handles on the track. 
+      We work on things like suspension, steering, and tires to make sure the car
+      is smooth, stable, and easy to control. Our goal is to give the driver the best 
+      possible feel and performance during every part of the race.`,
     },
     {
       heading: "Our Sponsors",
