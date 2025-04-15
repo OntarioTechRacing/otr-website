@@ -7,10 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 minimum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="src/public/css/homepage.css">
     <link rel="stylesheet" href="src/public/css/style.css">
     <link
@@ -83,13 +80,21 @@
     <!-- INSTAGRAM Section -->
     <div class="instagram-section">
       <div class="instagram-title">
-          <h1 class="socialMedia-title">Find out what we're up to</span></h1>
+          <h1 class="socialMedia-title">Find out what we're up to</h1>
       </div>
       <div class="socialMedia-container">
-          <div class="instagram-container">
-              <iframe id="ig_post" style="border-radius: 5px;" width="100%"height="650" scrolling = "yes" frameborder="0"></iframe>
-          </div>
+          
 
+          <div class="instagram-container">
+            <div class="instagram-wrapper">
+              <iframe 
+                id="ig_post"
+                frameborder="0" 
+                scrolling="no" 
+                allowtransparency="true"></iframe>
+            </div>
+          </div>
+          
           <div class="tiktok-container">
             <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ontariotechracing/video/7460693239494921478" data-video-id="7460693239494921478" style="max-width: 605px; min-width: 325px;">
               <section class="tiktok-container"> 
@@ -104,8 +109,6 @@
     </main>
     
     <footer-component></footer-component>
-
-</div>
 
     <script src="src/public/js/main.js"></script>
     <script src="src/public/js/updateIG.js"></script>
