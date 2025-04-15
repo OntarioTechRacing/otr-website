@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garage Page</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/icons/favicon.ico"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="../css/garagePage.css"/ >
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <!-- Navigation bar -->
+      <div class="nav-shell">
+        <ul>
+          <li class="otr-logo">
+            <img src="../images/icons/OTR-logo-updated.PNG" alt="" />
+          </li>
+          <div class="nav-toggle">
+            <li class="link">
+              <a href="../../../index.html"> Home </a>
+            </li>
+            <li class="link">
+              <a href="./TeamPage.html">Team</a>
+            </li>
+            <li class="link">
+              <a href="./carInfoPage.html">Our Car</a>
+            </li>
+            <li class="link">
+              <a href="./joinUs.html">Join Us</a>
+            </li>
+            <li class="link">
+              <a href="./sponsers.html">Sponsors</a>
+            </li>
+            <li class="link">
+              <a href="./History.html">History</a>
+            </li>
+          </div>
+        </ul>
+        <button class="menu-button">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+      </div>
+    </div>
+    <main id="garage-main" class="garage-main" style="height: 16175px">
+      <div class="progress-bar-container">
+        <div class="progress-bar-spacer"></div>
+        <div class="progress-fill-bar">
+          <div id="bar-progress" class="bar-progress" style="height: 2%"></div>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: -0.132%; background-color: #e75d2a"
+            title="3D Display"
+          ></a>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 0%; background-color: #e75d2a"
+            title="Welcome to F2025"
+          ></a>
+          <!-- style="top: 16.20712%" -->
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 16.20712%; background-color: #541600"
+            title="Chassis & Manufacturing"
+          ></a>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 27.21036%; background-color: #541600"
+            title="Suspension & Steering"
+          ></a>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 38.08414%; background-color: #541600"
+            title="Drivetrain & Braking"
+          ></a>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 42.2%; background-color: #541600"
+            title="Hardware & Electronics"
+          ></a>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 56.20712%; background-color: #541600"
+            title="Aerodynamics"
+          ></a>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 68.504854%; background-color: #541600"
+            title="Vehicle Dynamics"
+          ></a>
+          <a
+            id="progress-bar-bubble"
+            class="progress-bubble"
+            style="top: 81.29984%; background-color: #541600"
+            title="Our Sponsors"
+          ></a>
+        </div>
+      </div>
+      <div class="pinned">
+        <button id="auto-play-btn" class="auto-play-btn">
+          <i
+            id="play-stop-icon"
+            class="fa-solid fa-circle-play play-stop-icon pulsing"
+          ></i>
+          <span class="pulsing">Automatic Play</span>
+        </button>
+        <section id="text-section" class="text-section toggle-text-pos">
+          <h2
+            id="section-heading"
+            style="animation-name: move-heading; animation-duration: 500ms"
+          >
+            3D Display of Our Car
+          </h2>
+          <p
+            id="section-content"
+            style="
+              animation-name: move-content;
+              animation-duration: 500ms;
+              animation-delay: 250ms;
+              animation-fill-mode: forwards;
+            "
+          >
+            Scroll down to see the animation
+          </p>
+          <i id="pointer" class="fa-solid fa-arrow-down-long hand-pointer"></i>
+        </section>
+        <section id="image-wrapper" class="images-wrapper">
+          <img
+            id="car-model"
+            4
+            alt="Car Image"
+            rel="preload"
+            src="../images/carFrames/frame00000.png"
+          />
+        </section>
+      </div>
+    </main>
+    <div class="footer">
+      <span class="developer">Developed by Troy Odia</span>
+      <div class="footer-info">
+        <div class="otr-links">
+          <a href="https://www.instagram.com/ontariotechracing/">
+            <img
+              class="instagram-link"
+              src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
+              alt=""
+            />
+          </a>
+          <a href="https://www.linkedin.com/company/ontariotechracing/">
+            <img
+              class="linkedin-link"
+              src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="otr-info">
+          <span class="otr-email">motorsports@ontariotechu.net</span>
+          <span class="otr-name"
+            >2024 Ontario Tech University Formula Racing</span
+          >
+        </div>
+      </div>
+    </div>
+    <button id="scroll-to-top-btn" class="to-top-btn">
+      <i class="fa-solid fa-angles-up arrow-up"></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="../js/garagePage.js"></script>
+  </body>
+</html>
