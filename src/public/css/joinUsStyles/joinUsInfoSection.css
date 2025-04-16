@@ -2,18 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
   margin-left: 30px;
   margin-right: 30px;
   color: white;
   font-family: Jost, Arial;
-  text-align:center;
+  text-align: center;
+  /* margin-bottom: 10rem; */
 }
 
 .join-us-image-container {
   display: flex;
   width: 40%;
-  height: 850px;
-  margin-right: 5%;
 }
 .join-us-image {
   width: 100%;
@@ -44,8 +45,6 @@
   background-color: white;
 }
 
-
-
 .linktree-card {
   display: flex;
   justify-content: center;
@@ -59,7 +58,7 @@
 }
 
 .linktree-content {
-  background-color: #c04713; 
+  background-color: #c04713;
   color: white;
   padding: 20px 30px;
   text-align: center;
@@ -70,36 +69,35 @@
 }
 
 .linktree-content:hover {
-  background-color: rgb(149, 49, 7); 
-  transform: scale(1.05); 
+  background-color: rgb(149, 49, 7);
+  transform: scale(1.05);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.join-team-title{
+.join-team-title {
   color: white;
-  font-size: 50px;
-  font-family: 'Goldman', 'sans-serif';
+  font-size: clamp(35px, 3vw + 1rem, 55px);
+  font-family: "Goldman", "sans-serif";
   text-align: center;
   margin-top: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1400px) {
-  .join-us-info{
+  .join-us-info {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 4rem;
   }
-
-  .join-us-image-container{
-    display:none;
+  .join-us-image-container {
+    display: flex;
+    width: 50%;
   }
 
   .join-us-info-container {
-    
-    text-align:center;
-    align-items:center;
-    max-width: 90%;
+    text-align: center;
+    align-items: center;
+    max-width: 70%;
   }
   .bold {
     font-size: 2.2rem;

@@ -15,26 +15,35 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link href="../css/header.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
     <link href="../css/joinUsStyles/general.css" rel="stylesheet" />
     <link href="../css/joinUsStyles/joinUsInfoSection.css" rel="stylesheet" />
+    <link href="../css/joinUsStyles/slideshow.css" rel="stylesheet" />
+    <script
+      src="../components/header-component.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="../components/footer-component.js"
+      type="text/javascript"
+      defer
+    ></script>
 
-    <script src="../components/header-component.js" type="text/javascript" defer></script>
-    <script src="../components/footer-component.js" type="text/javascript" defer></script>
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (
-        function(){
-          emailjs.init({ publicKey: 'w61yqVN8wJITr_P-V'});
-        }
-      )()
+      (function () {
+        emailjs.init({ publicKey: "w61yqVN8wJITr_P-V" });
+      })();
     </script>
     <title>Join Us</title>
   </head>
@@ -58,7 +67,7 @@
             </li>
             <li class="link">
               <a href="./joinUs.html">Join Us</a>
-          </li>
+            </li>
             <li class="link">
               <a href="./sponsers.html">Sponsors</a>
             </li>
@@ -68,26 +77,23 @@
           </div>
         </ul>
         <button class="menu-button">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </button>
+      </div>
     </div>
-</div>
 
-<h1 class="join-team-title">JOIN OUR TEAM</h1>
+    <h1 class="join-team-title">JOIN OUR TEAM</h1>
 
-  <div class="join-us-info">
-
+    <div class="join-us-info">
       <div class="join-us-image-container">
         <img class="join-us-image" src="../images/sponsers.jpg" alt="" />
       </div>
       <div class="join-us-info-container">
         <div class="bold">
           <div class="bar"></div>
-          <p>
-            Empowering students to create an electric race car.
-          </p>
+          <p>Empowering students to create an electric race car.</p>
         </div>
         <p>
           At Ontario Tech Racing, we are always looking for talented and
@@ -95,20 +101,20 @@
           experience and the opportunity to work on cutting-edge technology.
         </p>
 
-      <div class="linktree-card">
-        <a href="https://linktr.ee/ontariotechracinglinks?fbclid=PAZXh0bgNhZW0CMTEAAacdkhtBxQwe742vHWAOew0aLeuI3LQNKIx1-lRrTwuXYQhD9uz-2JxyEUok1w_aem_4v6AhUMYmbRsUZcXj4vuBQ" target="_blank">
-          <div class="linktree-content">
-            Visit our Linktree!
-          </div>
-        </a>
+        <div class="linktree-card">
+          <a
+            href="https://linktr.ee/ontariotechracinglinks?fbclid=PAZXh0bgNhZW0CMTEAAacdkhtBxQwe742vHWAOew0aLeuI3LQNKIx1-lRrTwuXYQhD9uz-2JxyEUok1w_aem_4v6AhUMYmbRsUZcXj4vuBQ"
+            target="_blank"
+          >
+            <div class="linktree-content">Visit our Linktree!</div>
+          </a>
+        </div>
       </div>
-      </div>
-      
     </div>
-    
+    <main class="slide-show"></main>
+
     <footer-component></footer-component>
     <script src="../js/header.js"></script>
-    <script type="module" src="../js/joinUs/email.js"></script>
-    <script type="module" src="../js/joinUs/joinUs.js"></script>
+    <script src="../js/slideShow.js"></script>
   </body>
 </html>
