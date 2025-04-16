@@ -173,12 +173,12 @@ class Header extends HTMLElement {
                     <img src=${imageSrc} alt="Ontario Tech Racing Logo"/>
                   </li>
                   <li>
-                      <a href="${homePageFilePath}">Home</a>
+                      <a class="link" href="${homePageFilePath}">Home</a>
                       <a class="link" href=${filePath + "TeamPage.html"}>Team</a>
                       <a class="link" href=${filePath + "GaragePage.html"}>Our Car</a>
                       <a class="link" href=${filePath + "joinUs.html"}>Join Us</a>
                       <a class="link" href=${filePath + "sponsers.html"}>Sponsors</a>
-                      <a href="${filePath}History.html">History</a>
+                      <a class="link" href="${filePath}History.html">History</a>
                   </li>
                 </ul>
                 <button class="menu-button">
