@@ -1,10 +1,11 @@
 const isLocalhost =
-  window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
 
 const repoName = window.location.pathname.split("/")[1];
 
 const basePath = isLocalhost ? "/" : `/${repoName}/`;
-const homePageFilePath = `${basePath}`; 
+const homePageFilePath = `${basePath}`;
 
 const imageSrc = `${basePath}src/public/images/otrLogo.PNG`;
 const filePath = `${basePath}src/public/html/`;
@@ -13,7 +14,6 @@ class Header extends HTMLElement {
   constructor() {
     super();
   }
-
   connectedCallback() {
     this.innerHTML = `
         <style>
@@ -170,16 +170,28 @@ class Header extends HTMLElement {
             <div class="nav-shell">
              <ul>
                   <li class="otr-logo">
-                    <img src=${imageSrc} alt="Ontario Tech Racing Logo"/>
+                      <img src=${imageSrc} alt="Ontario Tech Racing Logo"/>
                   </li>
-                  <li>
-                      <a class="link" href="${homePageFilePath}">Home</a>
-                      <a class="link" href=${filePath + "TeamPage.html"}>Team</a>
-                      <a class="link" href=${filePath + "GaragePage.html"}>Our Car</a>
-                      <a class="link" href=${filePath + "joinUs.html"}>Join Us</a>
-                      <a class="link" href=${filePath + "sponsers.html"}>Sponsors</a>
-                      <a class="link" href="${filePath}History.html">History</a>
-                  </li>
+                  <div class="nav-toggle">
+                      <li class="link">
+                          <a href=${homePageFilePath}> Home </a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "TeamPage.html"}>Team</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "GaragePage.html"}>Our Car</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "joinUs.html"}>Join Us</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "sponsers.html"}>Sponsors</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "History.html"}>History</a>
+                      </li>
+                  </div>
                 </ul>
                 <button class="menu-button">
                     <div class="bar1"></div>
