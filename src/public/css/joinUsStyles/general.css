@@ -8,9 +8,10 @@ html {
 }
 body {
   margin-top: 65px;
-  background-image: url("../../images/background11.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+  /* background-image: url("../../images/background11.jpg"); */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  background: black;
   height: 100vh;
   width: 100%;
   background-position: center;
