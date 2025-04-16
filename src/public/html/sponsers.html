@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
   <title>Sponsers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/homepage.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/sponsers.css" />
+  <link rel="stylesheet" href="../css/contactUs.css" />
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link
   rel="icon"
@@ -70,10 +76,17 @@
                 Sponsoring Ontario Tech Racing means empowering the next generation of engineers and innovators. Our team of over 70 Engineering and Business students designs, manufactures, and markets a Formula-electric style race car, competing on the global stage at events like the FSAE Electric Competition in Michigan. Your support directly contributes to real-world learning experiences, cutting-edge automotive technology, and our mission to excel against teams with significantly larger budgets. In return, your brand gains prominent exposure on our vehicle, merchandise, and social media, as well as at high-profile events such as Drive Festival and the FEL Cup. Join us on this journey to an electric future and help drive innovation forward. Contact us at motorsports@ontariotechu.net to learn more.
             </p>
         </div>
-        
-        <a href="https://drive.google.com/file/d/1Ej7B_lh_5JRVSt8Y2eTKSQJjBW5vywNc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            <button class="view-sponsorship-pkg-btn">View Sponsorship Package</button>
-        </a>
+        <div class="button-container">
+
+            <a href="https://drive.google.com/file/d/1Ej7B_lh_5JRVSt8Y2eTKSQJjBW5vywNc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <button class="view-sponsorship-pkg-btn">View Sponsorship Package</button>
+            </a>
+            <a href="#contact-us" class="link-to-contact-form ">
+            
+               <span class="pulsing">Contact Us</spasn> 
+                <i class="fa-solid fa-arrow-down pulsing"></i>
+            </a>
+        </div>
 </div>
 
 
@@ -205,15 +218,100 @@
 
 </div>
 
+<div id="contact-us" class="contact-us-container">
+    <div class="contact-us-heading">
+      <span class="heading">Contact Us</span>
+      <span>Get in Touch with Us!</span>
+    </div>
+    <div class="form-container">
+      <div class="info-form">
+        <div class="heading-form">Our Contact Information</div>
+        <div>
+          Fill in the form and our Team will get back to you within 24 hours
+        </div>
+        <ul>
+          <li>
+            <div class="contact-icon">
+              <img src="../images/icons/email.png" alt="">
+            </div>
+            <p>motorsports@ontariotechu.net</p>
+          </li>
+          <li>
+            <div class="contact-icon">
+              <img src="../images/icons/location.png" alt="">
+            </div>
+            <p>2000 Simcoe St N, Oshawa, ON L1G 0C5</p>
+          </li>
+        </ul>
+        <div class="contact-footer">
+          <a href="https://www.instagram.com/ontariotechracing/" class="instagram">
+            <img src="../images/icons/instagram.png" alt="">
+          </a>
+          <a href="https://www.linkedin.com/company/ontariotechracing/" class="linkedin">
+            <img src="../images/icons/linkedin black.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="join-us-form" id="join-us">
+        <form autocomplete="off">
+          <div class="row">
+            <div>
+              <label for="firstname">First Name*</label>
+              <input class="firstname" name="firstname" placeholder="John">
+              <div class="line"></div>
+              <p class="error" id="firstname-error">*Required field, Please add first name</p>
+            </div>
+            <div>
+              <label for="lastname">Last Name*</label>
+              <input class="lastname" name="lastname" placeholder="John">
+              <div class="line"></div>
+              <p class="error" id="lastname-error">*Required field, Please add last name</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label type="email" for="email">Email*</label>
+              <input class="email" name="email" placeholder="johndoe@gmail.com">
+              <div class="line"></div>
+              <p class="error" id="email-error">*Required field, Please add email</p>
+              <p class="error" id="email-verfication-error">Invalid email address provided</p>
+            </div>
+            <div>
+              <label for="phone">Phone Number (Optional)</label>
+              <input class="phone" name="phone" placeholder="+1 359 836 648">
+              <div class="line"></div>
+              <p class="error" id="phone-error">Invalid phone number provided</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label for="message">Message*</label>
+              <textarea spellcheck="true" class="message" name="message" rows="6" cols="33" placeholder="Write your message"></textarea>
+              <div class="line"></div>
+              <p class="error" id="message-error">*Required field, Please add message</p>
+            </div>
+          </div>
+          <button class="form-submit" type="submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    <div class="thank-you-message" id="thank-you">
+      <div>
+        <p class="thank-you-heading">Thank you for your Interest!</p>
+        <p>We appreciate you contacting us. We will get back in touch with you soon.</p>
+      </div>
+    </div>
+    </div>
+  </div>
 <footer-component></footer-component>
 
 </div>
-
   
 </div>
 
-<script src="../js/main.js"></script>
 <script src="../js/header.js"></script>
-
+<script type="module" src="../js/joinUs/email.js"></script>
+<script type="module" src="../js/joinUs/joinUs.js"></script>
 </body>
 </html>
