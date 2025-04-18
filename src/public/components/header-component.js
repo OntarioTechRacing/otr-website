@@ -10,6 +10,10 @@ const homePageFilePath = `${basePath}`;
 const imageSrc = `${basePath}src/public/images/otrLogo.PNG`;
 const filePath = `${basePath}src/public/html/`;
 
+// display: flex;
+// justify-content: space-between;
+// min-height: 100%
+// width: 100%;
 class Header extends HTMLElement {
   constructor() {
     super();
@@ -22,8 +26,8 @@ class Header extends HTMLElement {
         margin-bottom: 0;
         }
         .navigation-bar {
-            background-color: transparent;
-            backdrop-filter: blur(24px);
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(30px);
             color: white;
             padding-left: 40px;
             padding-right: 40px;
@@ -32,9 +36,8 @@ class Header extends HTMLElement {
             top: 0;
             right: 0;
             left: 0;
-            left: 0;
             z-index: 2000;
-            animation: header-load 600ms ease-in; /*add to*/
+            animation: header-load 600ms ease-in; 
             }
         .nav-shell {
             position: relative;
@@ -144,7 +147,7 @@ class Header extends HTMLElement {
         }
         @media (max-width: 700px) {
           .navigation-bar.nav-open {
-            padding-bottom: 10px;
+            min-height: 100%
           }
           .nav-toggle {
             display: none;
@@ -153,11 +156,18 @@ class Header extends HTMLElement {
             display: block;
           }
           .navigation-bar.nav-open .nav-toggle {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            gap: 1rem;
           }
           .navigation-bar.nav-open a {
             display: block;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
+          }
+         .navigation-bar a:hover {
+            padding-left: 2rem;
           }
           .menu-button {
             display: initial;
