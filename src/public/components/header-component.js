@@ -23,7 +23,7 @@ class Header extends HTMLElement {
         }
         .navigation-bar {
             background-color: transparent;
-            backdrop-filter: blur(6px);
+            backdrop-filter: blur(24px);
             color: white;
             padding-left: 40px;
             padding-right: 40px;
@@ -157,6 +157,7 @@ class Header extends HTMLElement {
           }
           .navigation-bar.nav-open a {
             display: block;
+            font-size: 1.2rem;
           }
           .menu-button {
             display: initial;
