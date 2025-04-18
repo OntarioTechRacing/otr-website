@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "../images/carImages/2024/slideshow-7.jpg",
   ];
   let slideShowHTML = `<div class="slideshow">
-      <div class="slideshow-heading section-header not-in-view">SLIDESHOW</div>
+      <div class="slideshow-heading section-header not-in-view">TEAM SHOWCASE</div>
       <div class="slideshow-container">
         <div class="slideshow-images">
           <button class="left-arrow">
