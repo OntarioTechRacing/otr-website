@@ -10,10 +10,6 @@ const homePageFilePath = `${basePath}`;
 const imageSrc = `${basePath}src/public/images/otrLogo.PNG`;
 const filePath = `${basePath}src/public/html/`;
 
-// display: flex;
-// justify-content: space-between;
-// min-height: 100%
-// width: 100%;
 class Header extends HTMLElement {
   constructor() {
     super();
