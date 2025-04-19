@@ -153,14 +153,18 @@ body {
   background-color: #0077ca;
   border: 1px solid black;
   border-radius: 4px;
-  color: white;
+  color: black;
   padding: 10px;
   margin: 0 auto;
   font-size: 20px;
-  text-shadow: 2px 2px 5px #484848;
-
+  font-weight: 500;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 200ms;
 }
-
+.view-sponsorship-pkg-btn:hover {
+  background-color: #045e9f;
+}
 .sponsership-packages-container {
   margin: 40px auto;
   text-align: center;
