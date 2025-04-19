@@ -1,13 +1,10 @@
 /* Normalize and basic styling */
-html,
-body {
+html,body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
     "Helvetica Neue", Helvetica, sans-serif;
-  color: white;
 }
-
 h1,
 h2,
 p {
@@ -32,7 +29,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: rgb(25,25,25);
 }
 
 #app {
@@ -43,14 +40,13 @@ body {
 .sponsers-package-text {
   font-size: 40px;
   margin: 40px;
-  font-family: "Goldman", sans-serif;
 }
 
 .sponsers-banner {
   position: relative;
   width: 100%;
   text-align: center;
-  background-image: url("../images/carImages/2024/title-image.jpg");
+  background-image: url("../images/sponsors.jpg");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,16 +60,19 @@ body {
   position: absolute;
   text-shadow: 3px 5px 5px #000;
   font-family: "Goldman", sans-serif;
+  font-size:90px;
+  bottom: 0; 
+  right: 0; 
+  margin: 10px;
+
 }
 
 .sponsers-section {
-  background-color: black;
+  background-color: rgb(25,25,25);
   position: relative;
 }
 
 .sponsers-heading {
-  font-family: "Goldman", sans-serif;
-
   text-align: center;
 }
 
@@ -90,8 +89,8 @@ body {
   color: white;
   font-family: Ubantu, Century "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
-  background-color: rgb(31, 30, 30);
-  padding: 10px;
+    background-color: rgb(25,25,25);
+    padding: 10px;
   flex-direction: column;
 }
 
@@ -109,15 +108,16 @@ body {
   margin: 0 auto;
   font-family: jost, sans-serif;
   text-align: center;
-  /* width: 1450px; */
   padding: 10px;
 }
+
 .button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
+
 .link-to-contact-form {
   display: flex;
   justify-content: center;
@@ -127,8 +127,11 @@ body {
   background-color: #c04713;
   font-size: 20px;
   border-radius: 4px;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px 5px #484848;
+
 }
+
 .pulsing {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -154,6 +157,8 @@ body {
   padding: 10px;
   margin: 0 auto;
   font-size: 20px;
+  text-shadow: 2px 2px 5px #484848;
+
 }
 
 .sponsership-packages-container {
@@ -161,14 +166,13 @@ body {
   text-align: center;
   padding: 20px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+  /* text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); */
   border-radius: 5px;
 }
 
 .diamond-sponsers-text {
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
   color: white;
-  background-color: #75a8b9;
+  background-color: #198594	;
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -176,11 +180,12 @@ body {
   align-items: center;
   align-content: center;
   margin: 0 auto;
+  text-shadow: 2px 2px 5px #000;
 }
 
 .gold-sponsers-text {
   color: white;
-  background-color: #2e2e2e;
+  background-color: #d5b043;
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -191,7 +196,7 @@ body {
 
 .silver-sponsers-text {
   color: white;
-  background-color: #2e2e2e;
+  background-color: #cdc8c8;
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -202,18 +207,7 @@ body {
 
 .bronze-sponsers-text {
   color: white;
-  background-color: #2e2e2e;
-  width: 400px;
-  height: 50px;
-  border-radius: 5px;
-  margin: 0 auto;
-  text-align: center;
-  text-shadow: 2px 2px 5px #000;
-}
-
-.diamond-sponsers-text {
-  color: white;
-  background-color: #2e2e2e;
+  background-color: #af7e60;
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -224,7 +218,7 @@ body {
 
 .platinum-sponsers-text {
   color: white;
-  background-color: #2e2e2e;
+  background-color: #cfd8dc;
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -235,7 +229,7 @@ body {
 
 .general-sponsers-text {
   color: white;
-  background-color: #2e2e2e;
+  background-color: #838c95;
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -360,7 +354,7 @@ button :hover {
   }
 
   .sponsers-paragraph {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     width: 100%;
     padding: 4px;
