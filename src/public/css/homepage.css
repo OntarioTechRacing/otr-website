@@ -7,7 +7,7 @@ html, body {
   flex-direction:column;
 }
 
-  /* Homepage banner */
+  /* ------------- Homepage banner ---------------*/
   .homepage-banner {
     position: relative; 
     width: 100%;
@@ -23,10 +23,7 @@ html, body {
     object-fit: cover; 
     top: 0;
     left: 0;
-    border-radius: 10px; /* optional - nice round corners */
-
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* optional - soft shadow */
-
+    border-radius: 10px;
   }
 
   .Title{
@@ -34,12 +31,13 @@ html, body {
     bottom: 0; 
     right: 0; 
     margin: 10px;
-    text-shadow: 3px 5px 5px #000;
+    text-shadow: 9px 5px 5px #000000 !important;
     font-family: "Goldman", sans-serif;
-    font-size:5rem;
+    font-size:7rem;
+    color: rgb(255, 255, 255);
   }   
 
-  /* Mission Section */
+  /* ---------------- Mission Section -------------- */
   .mission-section {
     display: flex;
     flex-direction: row;
@@ -120,7 +118,7 @@ html, body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     }
 
-    /* Statistics Section */
+    /* -------------- Statistics Section ------------------ */
     .stats-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -268,7 +266,7 @@ html, body {
   /* Phone */
   @media  (max-width: 480px){
     .Title{
-      font-size:2.5rem;
+      font-size:4rem;
     }
 
     .homepage-banner{
@@ -277,7 +275,7 @@ html, body {
     }
 
     .mission-paragraph{
-      font-size: 16px;
+      font-size: 1.2rem;
     }
     
     .mission-image{
