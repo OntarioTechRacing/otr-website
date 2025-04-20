@@ -40,6 +40,7 @@ body {
 .sponsers-package-text {
   font-size: 40px;
   margin: 40px;
+  color:white;
 }
 
 .sponsers-banner {
@@ -64,6 +65,7 @@ body {
   bottom: 0; 
   right: 0; 
   margin: 10px;
+  color:white;
 
 }
 
