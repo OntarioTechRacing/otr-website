@@ -45,7 +45,7 @@ const teams = {
       {
         name: "Colton Ho",
         role: "Analysis Lead",
-        img: "../images/icons/favicon.png",
+        img: "../images/TeamMembers/Colton.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
@@ -194,6 +194,12 @@ const teams = {
     ],
     "Embedded Systems": [
       {
+        name: "Jaspaartap Goomer",
+        role: "Embedded Systems Lead",
+        img: "../images/teamMembers/Jaspartap.png",
+        linkedin: "https://www.linkedin.com/in/jaspartap-goomer-883738275",
+      },
+      {
         name: "Fayez Ahmed",
         role: "Member",
         img: "../images/TeamMembers/Fayez.png",
@@ -204,12 +210,6 @@ const teams = {
         role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
-      },
-      {
-        name: "Jaspaartap Goomer",
-        role: "Embedded Systems Lead",
-        img: "../images/icons/favicon.png",
-        linkedin: "https://www.linkedin.com/in/jaspartap-goomer-883738275",
       },
       {
         name: "Victor Badia",
@@ -246,7 +246,7 @@ const teams = {
       {
         name: "Ethan Richardson",
         role: "Electrical Systems Lead",
-        img: "../images/TeamMembers/Ethan.jpg",
+        img: "../images/TeamMembers/Ethan Richardson.png",
         linkedin: "www.linkedin.com/in/ethan-richardson-0861031ba",
       },
       {
@@ -288,7 +288,7 @@ const teams = {
       {
         name: "Sarah Lamanna",
         role: "New Member",
-        img: "../images/TeamMembers/Sarah Lamanna.jpg",
+        img: "../images/TeamMembers/Sarah.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
@@ -426,7 +426,7 @@ const teams = {
       {
         name: "Jake Desaillier",
         role: "New Member",
-        img: "../images/TeamMembers/Jake Desailler .jpg",
+        img: "../images/TeamMembers/Jake.png",
         linkedin: "http://www.linkedin.com/in/jake-desaillier-a1556a267",
       },
     ],
