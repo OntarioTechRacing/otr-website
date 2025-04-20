@@ -2,7 +2,7 @@ const teams = {
     Logistics: [
         {
           name: "Maya Edison",
-          role: "Lead",
+          role: "Business Lead",
           img: "../images/TeamMembers/Maya Edison.jpg",
           linkedin: "https://www.linkedin.com/in/maya-edison",
         },
@@ -44,7 +44,7 @@ const teams = {
     Analysis: [
       {
         name: "Colton Ho",
-        role: "Lead",
+        role: "Analysis Lead",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
@@ -56,7 +56,8 @@ const teams = {
       },
       {
         name: "Deep Mistry",
-        role: "Member",
+        role: "" +
+            "",
         img: "../images/TeamMembers/Deep.jpg",
         linkedin: "https://www.linkedin.com/in/deeprmistry/",
       },
@@ -112,7 +113,7 @@ const teams = {
     Aero: [
       {
         name: "Fiona Kirby",
-        role: "Lead",
+        role: "Aero Lead",
         img: "../images/TeamMembers/Fiona.png",
         linkedin: "https://www.linkedin.com/in/fiona-kirby0/",
       },
@@ -156,7 +157,7 @@ const teams = {
     "Drivetrain & Braking": [
       {
         name: "William Chalk",
-        role: "Lead",
+        role: "Drivetrain & Braking Lead",
         img: "../images/TeamMembers/William Chalk.jpg",
         linkedin: "http://www.linkedin.com/in/william-c-17514b125",
       },
@@ -168,7 +169,7 @@ const teams = {
       },
       {
         name: "Deep Mistry",
-        role: "Lead",
+        role: "Drivetrain & Braking Lead",
         img: "../images/TeamMembers/Deep.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
@@ -194,7 +195,7 @@ const teams = {
     "Embedded Systems": [
       {
         name: "Fayez Ahmed",
-        role: "Lead",
+        role: "Member",
         img: "../images/TeamMembers/Fayez.png",
         linkedin: "https://www.linkedin.com/in/fayezahmed/",
       },
@@ -206,7 +207,7 @@ const teams = {
       },
       {
         name: "Jaspaartap Goomer",
-        role: "New Member",
+        role: "Embedded Systems Lead",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/in/jaspartap-goomer-883738275",
       },
@@ -244,7 +245,7 @@ const teams = {
     "HV Electrical Systems": [
       {
         name: "Ethan Richardson",
-        role: "Lead",
+        role: "Electrical Systems Lead",
         img: "../images/TeamMembers/Ethan.jpg",
         linkedin: "www.linkedin.com/in/ethan-richardson-0861031ba",
       },
@@ -312,7 +313,7 @@ const teams = {
     Manufacturing: [
       {
         name: "Maria Peregoudov",
-        role: "Lead",
+        role: "Manufacturing Lead",
         img: "../images/TeamMembers/Maria peregoudov.jpg",
         linkedin: "https://www.linkedin.com/in/maria-peregoudov/",
       },
@@ -350,7 +351,7 @@ const teams = {
     Software: [
       {
         name: "Manal Afzal",
-        role: "Lead",
+        role: "Software Lead",
         img: "../images/TeamMembers/Manal afzal.jpg",
         linkedin: "https://www.linkedin.com/in/manalafzal/",
       },
@@ -394,13 +395,13 @@ const teams = {
     Suspension: [
       {
         name: "Mihai Marian",
-        role: "Lead",
+        role: "Suspension Lead",
         img: "../images/TeamMembers/Mihai.jpg",
         linkedin: "https://www.linkedin.com/in/mihaimarian/",
       },
       {
         name: "Omar Ibrahim",
-        role: "Co-Lead",
+        role: "Suspension Co-Lead",
         img: "../images/TeamMembers/Omar.png",
         linkedin: "https://www.linkedin.com/in/omarribrahim/",
       },
