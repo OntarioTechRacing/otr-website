@@ -143,7 +143,7 @@ class Header extends HTMLElement {
         }
         @media (max-width: 700px) {
           .navigation-bar.nav-open {
-            min-height: 100%
+            min-height: 100%;
           }
           .nav-toggle {
             display: none;
@@ -156,14 +156,12 @@ class Header extends HTMLElement {
             flex-direction: column;
             min-height: 100vh;
             justify-content: center;
+            align-items: center;
             gap: 1rem;
           }
           .navigation-bar.nav-open a {
             display: block;
             font-size: 1.6rem;
-          }
-         .navigation-bar a:hover {
-            padding-left: 2rem;
           }
           .menu-button {
             display: initial;
