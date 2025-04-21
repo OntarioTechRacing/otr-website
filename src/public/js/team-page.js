@@ -45,7 +45,7 @@ const teams = {
       {
         name: "Colton Ho",
         role: "Analysis Lead",
-        img: "../images/TeamMembers/Colton.png",
+        img: "../images/TeamMembers/Colton.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
@@ -157,7 +157,7 @@ const teams = {
       {
         name: "William Chalk",
         role: "Drivetrain & Braking Lead",
-        img: "../images/TeamMembers/William Chalk.jpg",
+        img: "../images/TeamMembers/William Chalk 3.png",
         linkedin: "http://www.linkedin.com/in/william-c-17514b125",
       },
       {
@@ -193,22 +193,16 @@ const teams = {
     ],
     "Embedded Systems": [
       {
-        name: "Fayez Ahmed",
-        role: "Member",
-        img: "../images/TeamMembers/Fayez.png",
-        linkedin: "https://www.linkedin.com/in/fayezahmed/",
-      },
-      {
-        name: "Kunal Pandya",
-        role: "Member",
-        img: "../images/icons/favicon.png",
-        linkedin: "https://www.linkedin.com/company/ontariotechracing",
-      },
-      {
         name: "Jaspaartap Goomer",
         role: "Embedded Systems Lead",
-        img: "../images/icons/favicon.png",
+        img: "../images/TeamMembers/Jaspartap2.png",
         linkedin: "https://www.linkedin.com/in/jaspartap-goomer-883738275",
+      },
+      {
+        name: "Fayez Ahmed",
+        role: "Member",
+        img: "../images/TeamMembers/Fayez2.png",
+        linkedin: "https://www.linkedin.com/in/fayezahmed/",
       },
       {
         name: "Victor Badia",
@@ -252,7 +246,7 @@ const teams = {
     {
       name: "Aysha Mohmand",
       role: "H&E Lead",
-      img: "../images/icons/favicon.png",
+      img: "../images/TeamMembers/Aysha2.png ",
       linkedin: "https://www.linkedin.com/company/ontariotechracing",
     },
     {
@@ -321,7 +315,7 @@ const teams = {
       {
         name: "William Chalk",
         role: "Member",
-        img: "../images/TeamMembers/William Chalk.jpg",
+        img: "../images/TeamMembers/William Chalk 3.png",
         linkedin: "http://www.linkedin.com/in/william-c-17514b125",
       },
       {
