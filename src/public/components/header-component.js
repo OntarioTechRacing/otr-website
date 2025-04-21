@@ -156,6 +156,7 @@ class Header extends HTMLElement {
             flex-direction: column;
             min-height: 100vh;
             justify-content: center;
+            padding-bottom: 6.5rem;
             align-items: center;
             gap: 1rem;
           }
