@@ -453,7 +453,7 @@ const teams = {
       {
         name: "Omar Ibrahim",
         role: "Suspension Co-Lead",
-        img: "../images/TeamMembers/Omar.png",
+        img: "../images/TeamMembers/Omar2.png",
         linkedin: "https://www.linkedin.com/in/omarribrahim/",
       },
       {
