@@ -22,8 +22,8 @@ class Header extends HTMLElement {
         margin-bottom: 0;
         }
         .navigation-bar {
-            background-color: transparent;
-            backdrop-filter: blur(24px);
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(30px);
             color: white;
             padding-left: 40px;
             padding-right: 40px;
@@ -32,9 +32,8 @@ class Header extends HTMLElement {
             top: 0;
             right: 0;
             left: 0;
-            left: 0;
             z-index: 2000;
-            animation: header-load 600ms ease-in; /*add to*/
+            animation: header-load 600ms ease-in; 
             }
         .nav-shell {
             position: relative;
@@ -144,7 +143,7 @@ class Header extends HTMLElement {
         }
         @media (max-width: 700px) {
           .navigation-bar.nav-open {
-            padding-bottom: 10px;
+            min-height: 100%;
           }
           .nav-toggle {
             display: none;
@@ -153,11 +152,17 @@ class Header extends HTMLElement {
             display: block;
           }
           .navigation-bar.nav-open .nav-toggle {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            padding-bottom: 6.5rem;
+            align-items: center;
+            gap: 1rem;
           }
           .navigation-bar.nav-open a {
             display: block;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
           }
           .menu-button {
             display: initial;
