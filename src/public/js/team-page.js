@@ -23,7 +23,7 @@ const teams = {
         {
           name: "Adam Bremner",
           role: "Member",
-          img: "../images/TeamMembers/Adam bremnar.jpg",
+          img: "../images/TeamMembers/Adam Bremnar 3.png",
           linkedin: "https://www.linkedin.com/company/ontariotechracing",
         },
         {
@@ -143,7 +143,7 @@ const teams = {
       {
         name: "James Lin",
         role: "Member",
-        img: "../images/TeamMembers/James.png",
+        img: "../images/TeamMembers/James Lin2.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
@@ -161,16 +161,16 @@ const teams = {
         linkedin: "http://www.linkedin.com/in/william-c-17514b125",
       },
       {
-        name: "Ahsen Khan",
-        role: "Member",
-        img: "../images/icons/favicon.png",
-        linkedin: "https://linkedin.com/in/ahsen35813",
-      },
-      {
         name: "Deep Mistry",
         role: "Drivetrain & Braking Lead",
         img: "../images/TeamMembers/Deep.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
+      },
+      {
+        name: "Ahsen Khan",
+        role: "Member",
+        img: "../images/icons/favicon.png",
+        linkedin: "https://linkedin.com/in/ahsen35813",
       },
       {
         name: "Ryan MacLean",
