@@ -1,7 +1,3 @@
-/* * {
-  font-family: "Jost", Arial;
-} */
-/*info section*/
 .join-us-info {
   display: flex;
   flex-direction: row;
@@ -34,7 +30,6 @@
   text-align: left;
   font-size: 1.5rem;
   font-weight: 500;
-  /* border: 1px solid red; */
 }
 .bold {
   display: flex;
@@ -59,15 +54,14 @@
   .join-us-info-container {
     font-size: clamp(5px, 4vw, 20px);
     max-width: 400px;
+    margin-bottom: 40px;
+
   }
   .bold {
     font-size: clamp(20px, 6vw, 35px);
   }
   .join-us-info {
     flex-direction: column-reverse;
-  }
-  .join-us-info-container {
-    margin-bottom: 40px;
   }
   .join-us-image-container {
     margin-left: auto;
@@ -98,10 +92,10 @@
   margin-bottom: 60px;
 }
 .contact-us-heading span:last-child {
-  font-family: Goldman, "sans-serif";
+  font-family: Jost, "sans-serif";
 }
 .heading {
-  font-family: Goldman, "sans-serif";
+  font-family: Jost, "sans-serif";
   font-size: clamp(40px, 3vw + 1rem, 55px);
   font-weight: 700;
 }
