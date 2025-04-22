@@ -2,7 +2,7 @@ const teams = {
     Logistics: [
         {
           name: "Maya Edison",
-          role: "Lead",
+          role: "Business Lead",
           img: "../images/TeamMembers/Maya Edison.jpg",
           linkedin: "https://www.linkedin.com/in/maya-edison",
         },
@@ -22,13 +22,13 @@ const teams = {
         },
         {
           name: "Adam Bremner",
-          role: "New Member",
-          img: "../images/TeamMembers/Adam bremnar.jpg",
+          role: "Member",
+          img: "../images/TeamMembers/Adam Bremnar 3.png",
           linkedin: "https://www.linkedin.com/company/ontariotechracing",
         },
         {
           name: "Esha Lodhi",
-          role: "New Member",
+          role: "Member",
           img: "../images/TeamMembers/Esha Lodhi.jpg",
           linkedin: "https://www.linkedin.com/company/ontariotechracing",
         },
@@ -44,8 +44,8 @@ const teams = {
     Analysis: [
       {
         name: "Colton Ho",
-        role: "Lead",
-        img: "../images/icons/favicon.png",
+        role: "Analysis Lead",
+        img: "../images/TeamMembers/Colton.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
@@ -56,7 +56,7 @@ const teams = {
       },
       {
         name: "Deep Mistry",
-        role: "Member",
+        role: "Member", 
         img: "../images/TeamMembers/Deep.jpg",
         linkedin: "https://www.linkedin.com/in/deeprmistry/",
       },
@@ -74,37 +74,37 @@ const teams = {
       },
       {
         name: "Alexander Mueller",
-        role: "Unofficial",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Agsshayan Thiruthaniesan",
-        role: "Unofficial",
+        role: "Member",
         img: "../images/TeamMembers/Agsshayan Thiruthaniesan.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Chao Xiang Hu",
-        role: "Unofficial",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Chloe Bogaert",
-        role: "Unofficial",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Harsha Anugu",
-        role: "Unofficial",
+        role: "Member",
         img: "../images/TeamMembers/Harshaa anugu.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Shayaan Darr",
-        role: "Unofficial",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
@@ -112,7 +112,7 @@ const teams = {
     Aero: [
       {
         name: "Fiona Kirby",
-        role: "Lead",
+        role: "Aero Lead",
         img: "../images/TeamMembers/Fiona.png",
         linkedin: "https://www.linkedin.com/in/fiona-kirby0/",
       },
@@ -143,7 +143,7 @@ const teams = {
       {
         name: "James Lin",
         role: "Member",
-        img: "../images/TeamMembers/James.png",
+        img: "../images/TeamMembers/James Lin2.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
@@ -156,21 +156,21 @@ const teams = {
     "Drivetrain & Braking": [
       {
         name: "William Chalk",
-        role: "Lead",
-        img: "../images/TeamMembers/William Chalk.jpg",
+        role: "Drivetrain & Braking Lead",
+        img: "../images/TeamMembers/William Chalk 3.png",
         linkedin: "http://www.linkedin.com/in/william-c-17514b125",
+      },
+      {
+        name: "Deep Mistry",
+        role: "Drivetrain & Braking Lead",
+        img: "../images/TeamMembers/Deep.jpg",
+        linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Ahsen Khan",
         role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://linkedin.com/in/ahsen35813",
-      },
-      {
-        name: "Deep Mistry",
-        role: "Lead",
-        img: "../images/TeamMembers/Deep.jpg",
-        linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Ryan MacLean",
@@ -180,72 +180,124 @@ const teams = {
       },
       {
         name: "Nahl Farhan",
-        role: "New Member",
+        role: "Member",
         img: "../images/TeamMembers/Nahl Farhan.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Zachary Girard",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
     ],
     "Embedded Systems": [
       {
+        name: "Jaspaartap Goomer",
+        role: "Embedded Systems Lead",
+        img: "../images/TeamMembers/Jaspartap2.png",
+        linkedin: "https://www.linkedin.com/in/jaspartap-goomer-883738275",
+      },
+      {
         name: "Fayez Ahmed",
-        role: "Lead",
-        img: "../images/TeamMembers/Fayez.png",
+        role: "Member",
+        img: "../images/TeamMembers/Fayez2.png",
         linkedin: "https://www.linkedin.com/in/fayezahmed/",
       },
       {
-        name: "Kunal Pandya",
+        name: "Victor Badia",
         role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
-        name: "Jaspaartap Goomer",
-        role: "New Member",
-        img: "../images/icons/favicon.png",
-        linkedin: "https://www.linkedin.com/in/jaspartap-goomer-883738275",
-      },
-      {
-        name: "Victor Badia",
-        role: "New Member",
-        img: "../images/icons/favicon.png",
-        linkedin: "https://www.linkedin.com/company/ontariotechracing",
-      },
-      {
         name: "Krishna Mallick",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/in/krishna-mallick-a558b6260/",
       },
       {
         name: "Connor G",
-        role: "New Member",
+        role: "Member",
         img: "../images/TeamMembers/Connor Godden.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Julian Olano Medina",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Logan Yee",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
     ],
+
+  "Hardware & Electronics": [
+    {
+      name: "Alvin Huynh",
+      role: "H&E Lead",
+      img: "../images/TeamMembers/Alvin 2.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Aysha Mohmand",
+      role: "H&E Lead",
+      img: "../images/TeamMembers/Aysha2.png ",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Kaushik Raman",
+      role: "H&E Lead",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Syedali Abbas",
+      role: "Member",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Bhavik Lad",
+      role: "Member",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Dorsheed Abdalla",
+      role: "Member",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Akshathan V",
+      role: "Member",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Guilhereme Pantelo",
+      role: "Member",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    },
+    {
+      name: "Colby Horne",
+      role: "Member",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://www.linkedin.com/company/ontariotechracing",
+    }
+  ],
+
     "HV Electrical Systems": [
       {
         name: "Ethan Richardson",
-        role: "Lead",
-        img: "../images/TeamMembers/Ethan.jpg",
+        role: "Electrical Systems Lead",
+        img: "../images/TeamMembers/Ethan2.png",
         linkedin: "www.linkedin.com/in/ethan-richardson-0861031ba",
       },
       {
@@ -263,7 +315,7 @@ const teams = {
       {
         name: "William Chalk",
         role: "Member",
-        img: "../images/TeamMembers/William Chalk.jpg",
+        img: "../images/TeamMembers/William Chalk 3.png",
         linkedin: "http://www.linkedin.com/in/william-c-17514b125",
       },
       {
@@ -280,31 +332,31 @@ const teams = {
       },
       {
         name: "Agsshayan Thiruthaniesan",
-        role: "New Member",
+        role: "Member",
         img: "../images/TeamMembers/Agsshayan Thiruthaniesan.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Sarah Lamanna",
-        role: "New Member",
-        img: "../images/TeamMembers/Sarah Lamanna.jpg",
+        role: "Member",
+        img: "../images/TeamMembers/Sarah Lamanna 3.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Nahl Farhan",
-        role: "New Member",
+        role: "Member",
         img: "../images/TeamMembers/Nahl Farhan.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Aryan Oberoi",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "William Tempest",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
@@ -312,7 +364,7 @@ const teams = {
     Manufacturing: [
       {
         name: "Maria Peregoudov",
-        role: "Lead",
+        role: "Manufacturing Lead",
         img: "../images/TeamMembers/Maria peregoudov.jpg",
         linkedin: "https://www.linkedin.com/in/maria-peregoudov/",
       },
@@ -330,19 +382,19 @@ const teams = {
       },
       {
         name: "Tomas Macleod",
-        role: "New Member",
+        role: "Member",
         img: "../images/TeamMembers/Tomas Macleod.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Ethan Shepperd",
-        role: "New Member",
+        role: "Member",
         img: "../images/TeamMembers/Ethan Sheppard.jpg",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Shantanu Vede",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
@@ -350,13 +402,13 @@ const teams = {
     Software: [
       {
         name: "Manal Afzal",
-        role: "Lead",
+        role: "Software Lead",
         img: "../images/TeamMembers/Manal afzal.jpg",
         linkedin: "https://www.linkedin.com/in/manalafzal/",
       },
       {
         name: "Shams Haroon",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/in/shams-haroon/",
       },
@@ -374,19 +426,19 @@ const teams = {
       },
       {
         name: "Rosie Khurmi",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Disha Padia",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Mashal Niazi",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
@@ -394,14 +446,14 @@ const teams = {
     Suspension: [
       {
         name: "Mihai Marian",
-        role: "Lead",
+        role: "Suspension Lead",
         img: "../images/TeamMembers/Mihai.jpg",
         linkedin: "https://www.linkedin.com/in/mihaimarian/",
       },
       {
         name: "Omar Ibrahim",
-        role: "Co-Lead",
-        img: "../images/TeamMembers/Omar.png",
+        role: "Suspension Co-Lead",
+        img: "../images/TeamMembers/Omar2.png",
         linkedin: "https://www.linkedin.com/in/omarribrahim/",
       },
       {
@@ -412,20 +464,20 @@ const teams = {
       },
       {
         name: "Nathan Battler",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Pranav Vaidya",
-        role: "New Member",
+        role: "Member",
         img: "../images/icons/favicon.png",
         linkedin: "https://www.linkedin.com/company/ontariotechracing",
       },
       {
         name: "Jake Desaillier",
-        role: "New Member",
-        img: "../images/TeamMembers/Jake Desailler .jpg",
+        role: "Member",
+        img: "../images/TeamMembers/Jake Desailler 2.png",
         linkedin: "http://www.linkedin.com/in/jake-desaillier-a1556a267",
       },
     ],
