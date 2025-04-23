@@ -53,8 +53,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   };
   const generateSpecsHtml = (specArray, index, flag = "notresize") => {
+    const excludeArr = [0, 4, 5, 6, 7];
     if (specsContainer) {
-      if (index === 0 || index === 7) {
+      if (excludeArr.includes(index)) {
         specsContainer.classList.add("hide-element");
       } else {
         specsContainer.classList.remove("hide-element");
@@ -140,7 +141,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       heading: "Suspension",
       content: `Adjustability is key. Our suspension team focuses on refining 
           geometry, optimizing anti-dive/anti-squat, and enhancing tunability for different track conditions.`,
-      specs: ["Contact Pitch", "spec2", "spec3"],
+      specs: [
+        "Contact Pitch: +- 0.5deg of camber over 40-80 kph cornering speed",
+        "225 lb/in front and rear spring stiffness",
+        "Adjustable Anti-dive/Anti-Squat",
+      ],
     },
     {
       heading: "Drivetrain & Braking",

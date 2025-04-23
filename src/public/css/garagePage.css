@@ -129,6 +129,7 @@ body {
   border: 4px solid #0077ca;
   border-radius: 0.25rem;
   padding: 0.5rem 0.75rem;
+  text-align: center;
 }
 
 /*animation for specs*/
