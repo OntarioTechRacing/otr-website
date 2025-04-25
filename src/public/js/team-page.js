@@ -527,9 +527,10 @@ const teams = {
   const teamContainer = document.getElementById("team-container");
   for (const [teamName, members] of Object.entries(teams)) {
     teamContainer.innerHTML += createTeamSection(teamName, members);
+  }
 
 
-    const leadContainer=document.getElementById("leads-container");
-        leadContainer.innerHTML=createLeadsSection(leadsOnly)
-    }
+    // const leadContainer=document.getElementById("leads-container");
+    //     leadContainer.innerHTML=createLeadsSection(leadsOnly)
+    // }
 
