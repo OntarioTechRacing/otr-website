@@ -9,7 +9,7 @@ const teams = {
     {
       name: "Mann Shah",
       role: "Logistics Lead",
-      img: "../images/TeamMembers/Mann Shah.jpg",
+      img: "../images/TeamMembers/Mann Shah.png",
       linkedin: "https://www.linkedin.com/company/ontariotechracing",
     },
     {
