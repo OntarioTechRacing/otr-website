@@ -167,10 +167,11 @@ body {
 .sponsership-packages-container {
   margin: 40px auto;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 20px;
   /* text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); */
   border-radius: 5px;
+
 }
 
 .diamond-sponsers-text {
@@ -220,60 +221,57 @@ body {
   text-shadow: 2px 2px 5px #000;
 }
 
-.platinum-sponsers-text {
+.sponsers-logo-text {
   color: white;
-  background-color: #cfd8dc;
   width: 400px;
   height: 50px;
   border-radius: 5px;
   margin: 0 auto;
   text-align: center;
   text-shadow: 2px 2px 5px #000;
+  font-size: 42px; 
+  margin: 20px auto 10px auto; 
 }
 
-.general-sponsers-text {
-  color: white;
-  background-color: #cfd8dc;
-  width: 400px;
-  height: 50px;
-  border-radius: 5px;
-  margin: 0 auto;
-  text-align: center;
-  text-shadow: 2px 2px 5px #000;
-
-
-}
-
-.diamond-sponsership,
-.platinum-sponserships,
-.gold-sponsership,
-.silver-sponsership,
-.bronze-sponsership,
-.general-sponsership {
+.sponsorship {
   color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
-.logo {
-  width: 350px;
-}
 
-.diamond-logos img,
-.gold-sponsership img,
-.silver-sponsership img,
-.bronze-sponsership img,
-.general-sponsership img {
-  width: 300px;
+.sponsor-logos {
+  width: 400px;
   height: 200px;
-  border-radius: 15px;
-  margin: 15px;
   background-color: rgb(25,25,25);
-  align-content: center;
-  max-width: 100%;
+  border-radius: 15px;
+  margin: 5px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sponsor-logos a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logos img {
+  max-width: 80%;
+  max-height: 80%;
   object-fit: contain;
+}
+
+.sponsor-logos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .diamond-logos :hover {
@@ -337,10 +335,21 @@ button :hover {
   .link-to-contact-form {
     font-size: 18px;
   }
+  .sponsers-logo-text {
+    font-size: 28px; 
+  }
+  .sponsorship {
+    gap: 1.5rem;
+  }
+
 }
 
 /* Phone */
 @media (max-width: 480px) {
+  .sponsorship {
+    gap: 1rem; 
+  }
+
   .title {
     font-size: 50px;
   }
@@ -351,6 +360,11 @@ button :hover {
 
   .sponsers-package-text {
     font-size: 32px;
+  }
+
+  .sponsor-logos {
+    width: 350px;
+    height: 150px;
   }
 
   .row {
@@ -390,5 +404,9 @@ button :hover {
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
+    .sponsers-logo-text {
+      font-size: 30px; 
+    }
+  
   }
   
