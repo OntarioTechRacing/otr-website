@@ -70,7 +70,8 @@ html, body {
   .bar {
     width: 50px;
     height: 4px;
-    background-color: #0077CA;
+    /*background-color: #0077CA;*/
+    background-color: #E75D2A;
     margin-bottom: 20px;
   }
   
