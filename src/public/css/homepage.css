@@ -1,49 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html, body {
   overflow-x: hidden;
+  box-sizing: border-box;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
 }
 
-  /* Homepage banner */
+  /* ------------- Homepage banner ---------------*/
   .homepage-banner {
     position: relative; 
-    width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    height:auto;
     text-align: center;
-    background-image:url('../images/f24Car.jpg');
-    height: 100vh;
-    object-fit:cover;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 70px;
+    overflow:hidden;
   }
-  
+  .background-video {
+    position: absolute;
+    width: 100vw;  
+    height: 100vh;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+
   .Title{
     position: absolute; 
     bottom: 0; 
     right: 0; 
     margin: 10px;
-    text-shadow: 3px 5px 5px #000;
+    text-shadow: 9px 5px 5px #000000 !important;
+    font-family: "Goldman", sans-serif;
+    font-size:7rem;
+    color: rgb(255, 255, 255);
   }   
 
-  /* Mission Section */
+  /* ---------------- Mission Section -------------- */
   .mission-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #000000, #1a1a1a); 
-    color: white;
-    width: 100%;
-    height: 700px;
-    padding: 20px;
-    box-sizing: border-box;
     gap: 20px; 
-    
+    padding: 40px 20px;
+    flex-wrap:wrap;
   }
   
   .mission-text {
@@ -52,6 +55,7 @@ html, body {
     text-align: left;
     font-size: 18px;
     line-height: 1.6;
+    max-width: 600px;
   }
   
   .mission-text-heading {
@@ -78,10 +82,11 @@ html, body {
   }
   
   .mission-image img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
     max-height: 90%;
-    height: 75vh;
-    width: 370vh;
+    height: auto;
+   
   }
   
   .text-container {
@@ -111,29 +116,32 @@ html, body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
+    }
 
-  /* Statistics Section */
+    /* -------------- Statistics Section ------------------ */
     .stats-section {
-      display: flex;
-      justify-content: space-around;
-      background-color: #121212;
-      color: white;
-      padding: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 10px;
+      justify-content: center;
+
+      max-width: 1000px;   
+      margin: 0 auto;       
+      width: 100%;
+      box-sizing: border-box;
     }
-    
+        
     .stat-box {
-      text-align: center;
-      padding: 20px;
-      width: 200px;
-      height: 200px;
-      border-radius:20px;
-      border-style: solid;
-      border-color: #E75D2A ;
+      border: 2px solid #E75D2A;
       border-radius: 20px;
-      margin:10px;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+
     }
-    
+            
     .stat-box h1 {
       font-size: 3rem;
       margin-bottom: 10px;
@@ -144,48 +152,79 @@ html, body {
       font-weight: normal;
     }
 
+    /* -------- INSTAGRAM SECTION --------- */
+    
     .instagram-section {
       width: 100%;
       text-align: center;
-      background: linear-gradient(to right, #000000, #1a1a1a); 
+      background: linear-gradient(to right, #000000); 
     }
-    
-    .instagram-title {
-      color: white;
-      padding:10px;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    
+
     .socialMedia-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 20px; 
+      gap: 40px; 
+    }
+
+    .socialMedia-title{
+      margin:20px;
+    }
+
+  
+    .tiktok-container {
+      flex: 1 1 300px;
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible; 
+      padding-bottom: 20px; 
+    }
+
+    .instagram-container {
+      flex: 1 1 300px;
+      max-width: 500px;
+      width: 100%;
     }
     
-    .instagram-container,
-    .twitter-container {
-      width: 30%;
-      aspect-ratio: 4 / 5; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px; 
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-      
+    .instagram-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: auto; 
     }
-
-    .otr-logo{
-      width: 400px;
-      height: 100px;
+    
+    .instagram-wrapper iframe {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border: none;
+      background: transparent;
+      display: block;
+      min-height: 500px;
     }
-
-
-      /* Phone */
-  @media only screen and (max-width: 480px){
+    
+    .tiktok-embed {
+      width: 100% !important;
+      max-width: 500px;
+      height: auto !important;
+      aspect-ratio: 9/16;
+      border: none;
+      background: transparent !important;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: block;
+    }
+    
+    /* TABLETS */
+  @media (max-width: 900px){
     .Title{
-      font-size:40px;
+      font-size:4rem;
     }
 
     .homepage-banner{
@@ -194,23 +233,78 @@ html, body {
     }
 
     .mission-paragraph{
-      font-size: 16px;
+      font-size: 19px;
     }
     
     .mission-image{
       display:none;
     }
 
-    .stats-section{
-      display:grid;
+    .stats-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mission-section{
+      flex-direction: column;
+      text-align:center;
     }
 
+    .socialMedia-container{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .instagram-container iframe,
+    .tiktok-embed {
+      aspect-ratio: auto !important;
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Phone */
+  @media  (max-width: 480px){
+    .Title{
+      font-size:4rem;
+    }
+
+    .homepage-banner{
+      width: 100%;
+      height: 100vh;
+    }
+
+    .mission-paragraph{
+      font-size: 1.2rem;
+    }
+    
+    .mission-image{
+      display:none;
+    }
+
+    .stat-box{
+      max-width:90%;
+      margin: 10px auto;
+    }
+
+    .stats-section {
+      grid-template-columns: 1fr;
+    }
+    
     .instagram-title{
       font-size: 13px;
     }
 
-    .instagram-container{
+    .instagram-container, .tiktok-container{
       display: flex;
-      width: 60vh;
     }
+
+    .instagram-container iframe,
+    .tiktok-embed {
+      max-width: 700px;
+      width: 100%;
+    }
+
+
   }
+

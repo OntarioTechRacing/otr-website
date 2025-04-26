@@ -15,198 +15,72 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link href="../css/header.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
     <link href="../css/joinUsStyles/general.css" rel="stylesheet" />
     <link href="../css/joinUsStyles/joinUsInfoSection.css" rel="stylesheet" />
-    <link
-      href="../css/joinUsStyles/joinUsContactSection.css"
-      rel="stylesheet"
-    />
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <link href="../css/joinUsStyles/slideshow.css" rel="stylesheet" />
+    <script
+      src="../components/header-component.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="../components/footer-component.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (
-        function(){
-          emailjs.init({ publicKey: 'w61yqVN8wJITr_P-V'});
-        }
-      )()
+      (function () {
+        emailjs.init({ publicKey: "w61yqVN8wJITr_P-V" });
+      })();
     </script>
     <title>Join Us</title>
   </head>
   <body>
-    <div class="navigation-bar">
-      <!-- Navigation bar -->
-      <div class="nav-shell">
-        <ul>
-          <li class="otr-logo">
-            <img src="../images/icons/otrLogo.svg" alt="" />
-          </li>
-          <div class="nav-toggle">
-            <li class="link">
-              <a href="../../../index.html"> Home </a>
-            </li>
-            <li class="link">
-              <a href="./TeamPage.html">Team</a>
-            </li>
-            <li class="link">
-              <a href="./carInfoPage.html">Our Car</a>
-            </li>
-            <li class="link">
-              <a href="./joinUs.html">Join Us</a>
-          </li>
-            <li class="link">
-              <a href="./sponsers.html">Sponsors</a>
-            </li>
-            <li class="link">
-              <a href="./History.html">History</a>
-            </li>
-          </div>
-        </ul>
-        <button class="menu-button">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </button>
-    </div>
-</div>
-<div class="join-us-info">
+    <header-component></header-component>
+
+    <h1 class="join-team-title">JOIN OUR TEAM</h1>
+
+    <div class="join-us-info">
       <div class="join-us-image-container">
-        <img class="join-us-image" src="../images/windtunnel.jpg" alt="" />
+        <img class="join-us-image" src="../images/sponsers.jpg" alt="" />
       </div>
       <div class="join-us-info-container">
-        <p>JOIN OUR TEAM</p>
         <div class="bold">
           <div class="bar"></div>
-          <p>
-            Empowering students to build electric race cars means thinking
-            differently.
-          </p>
+          <p>Empowering students to create an electric race car.</p>
         </div>
         <p>
           At Ontario Tech Racing, we are always looking for talented and
           passionate individuals to join our team. We offer valuable engineering
           experience and the opportunity to work on cutting-edge technology.
         </p>
-      </div>
-    </div>
-    <div class="contact-us-container">
-      <div class="contact-us-heading">
-        <span class="heading">Contact Us</span>
-        <span">Get in Touch with Us!</span>
-      </div>
-      <div class="form-container">
-        <div class="info-form">
-          <div class="heading-form">Our Contact Information</div>
-          <div>
-            Fill in the form and our Team will get back to you within 24 hours
-          </div>
-          <ul>
-            <li>
-              <div class="contact-icon">
-                <img src="../images/icons/email.png" alt="">
-              </div>
-              <p>motorsports@ontariotechu.net</p>
-            </li>
-            <li>
-              <div class="contact-icon">
-                <img src="../images/icons/location.png" alt="">
-              </div>
-              <p>2000 Simcoe St N, Oshawa, ON L1G 0C5</p>
-            </li>
-          </ul>
-          <div class="contact-footer">
-            <a href="https://www.instagram.com/ontariotechracing/" class="instagram">
-              <img src="../images/icons/instagram.png" alt="">
-            </a>
-            <a href="https://www.linkedin.com/company/ontariotechracing/" class="linkedin">
-              <img src="../images/icons/linkedin black.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="join-us-form" id="join-us">
-          <form autocomplete="off">
-            <div class="row">
-              <div>
-                <label for="firstname">First Name*</label>
-                <input class="firstname" name="firstname" placeholder="John">
-                <div class="line"></div>
-                <p class="error" id="firstname-error">*Required field, Please add first name</p>
-              </div>
-              <div>
-                <label for="lastname">Last Name*</label>
-                <input class="lastname" name="lastname" placeholder="John">
-                <div class="line"></div>
-                <p class="error" id="lastname-error">*Required field, Please add last name</p>
-              </div>
-            </div>
-            <div class="row">
-              <div>
-                <label type="email" for="email">Email*</label>
-                <input class="email" name="email" placeholder="johndoe@gmail.com">
-                <div class="line"></div>
-                <p class="error" id="email-error">*Required field, Please add email</p>
-                <p class="error" id="email-verfication-error">Invalid email address provided</p>
-              </div>
-              <div>
-                <label for="phone">Phone Number (Optional)</label>
-                <input class="phone" name="phone" placeholder="+1 359 836 648">
-                <div class="line"></div>
-                <p class="error" id="phone-error">Invalid phone number provided</p>
-              </div>
-            </div>
-            <div class="row">
-              <div>
-                <label for="message">Message*</label>
-                <textarea spellcheck="true" class="message" name="message" rows="6" cols="33" placeholder="Write your message"></textarea>
-                <div class="line"></div>
-                <p class="error" id="message-error">*Required field, Please add message</p>
-              </div>
-            </div>
-            <button class="form-submit" type="submit">
-              Send Message
-            </button>
-          </form>
-        </div>
-      <div class="thank-you-message" id="thank-you">
-        <div>
-          <p class="thank-you-heading">Thank you for your Interest!</p>
-          <p>We appreciate you contacting us. We will get back in touch with you soon.</p>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="footer">
-      <span class="developer">Developed by Troy Odia</span>
-      <div class="footer-info">
-        <div class="otr-links">
-          <a href="https://www.instagram.com/ontariotechracing/">
-            <img
-              class="instagram-link"
-              src="https://clipartcraft.com/images/instagram-clipart-logo-black-4.png"
-              alt=""
-            />
-          </a>
-          <a href="https://www.linkedin.com/company/ontariotechracing/">
-            <img
-              class="linkedin-link"
-              src="https://icons.iconarchive.com/icons/iconsmind/outline/512/Linkedin-icon.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="otr-info">
-          <span class="otr-email">motorsports@ontariotechu.net</span>
-          <span class="otr-name"
-            >2024 Ontario Tech University Formula Racing</span
+
+        <div class="linktree-card">
+          <a
+            href="https://linktr.ee/ontariotechracinglinks?fbclid=PAZXh0bgNhZW0CMTEAAacdkhtBxQwe742vHWAOew0aLeuI3LQNKIx1-lRrTwuXYQhD9uz-2JxyEUok1w_aem_4v6AhUMYmbRsUZcXj4vuBQ"
+            target="_blank"
           >
+            <div class="linktree-content">Visit our Linktree!</div>
+          </a>
         </div>
       </div>
     </div>
+    <main class="slide-show"></main>
+
+    <footer-component></footer-component>
     <script src="../js/header.js"></script>
-    <script type="module" src="../js/joinUs/email.js"></script>
-    <script type="module" src="../js/joinUs/joinUs.js"></script>
+    <script src="../js/slideShow.js"></script>
   </body>
 </html>

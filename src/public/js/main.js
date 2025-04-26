@@ -1,23 +1,18 @@
 'use strict';
-
     /* -------------- STATISTICS SECTION  ----------------- */
-
-    // Increment "Years of Experience" up to target
     function incrementYearsOfExperience() {
       let start = 0;
-      const target = 8;
+      const target = 6;
       const interval = setInterval(() => {
         start += 1;
         document.getElementById('years-stats').innerHTML = `${start}`;
         
-        // Stop counter when target is reached
         if (start >= target) {
           clearInterval(interval);
         }
       }, 700);
     }
 
-    // Increment "Electric Cars Built" up to target
     function incrementYearsOfElectricCars() {
       let start = 0;
       const target = 4;
@@ -31,10 +26,9 @@
       }, 700);
     }
 
-    // Increment "Departments" up to target
     function incrementYearsOfDepartments() {
       let start = 0;
-      const target = 10;
+      const target = 13;
       const interval = setInterval(() => {
         start += 1;
         document.getElementById('departments-stats').innerHTML = `${start}`;
@@ -45,7 +39,6 @@
       }, 700);
     }
 
-    // Increment "Skilled Members" up to target
     function incrementYearsOfSkilledMembers() {
       let start = 0;
       const target = 71;
@@ -59,7 +52,6 @@
       }, 50);
     }
 
-    // Run all counters on page load
     window.onload = function() {
       incrementYearsOfExperience();
       incrementYearsOfElectricCars();
@@ -67,5 +59,18 @@
       incrementYearsOfSkilledMembers();
     };
 
+    const video = document.getElementById("background-vid")
+    const muteToggle = document.getElementById("mute-toggle")
 
-    /* -------------- INSTAGRAM FEED----------------- */
+
+    muteToggle.addEventListener('click', ()=>{
+      if(video.muted){
+        video.muted=false;
+        muteToggle.innerText='🔇'
+      }
+      else{
+        video.muted=true;
+        muteToggle.innerText='🔊'
+      }
+    })
+    
