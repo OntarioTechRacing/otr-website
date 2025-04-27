@@ -199,19 +199,19 @@ const teams = {
   "Hardware & Electronics": [
     {
       name: "Alvin Huynh",
-      role: "Hardware & Electronics Lead",
+      role: "Tech Lead",
       img: "../images/TeamMembers/Alvin 2.png",
       linkedin: "https://www.linkedin.com/company/ontariotechracing",
     },
     {
       name: "Aysha Mohmand",
-      role: "Hardware & Electronics Lead",
+      role: "Management Lead",
       img: "../images/TeamMembers/Aysha2.png ",
       linkedin: "https://www.linkedin.com/company/ontariotechracing",
     },
     {
       name: "Kaushik Raman",
-      role: "Hardware & Electronics Lead",
+      role: "Online Tech Lead",
       img: "../images/icons/favicon.png",
       linkedin: "https://www.linkedin.com/company/ontariotechracing",
     },
