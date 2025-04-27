@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       specs: ["Aero coefficients", "spec2", "spec3"],
     },
     {
-      heading: "Vehicle Analysis",
+      heading: "Vehicle Dynamics",
       content: `The Vehicle Dynamics team focuses on how the car moves and handles on the track. 
       We work on things like suspension, steering, and tires to make sure the car
       is smooth, stable, and easy to control. Our goal is to give the driver the best 
