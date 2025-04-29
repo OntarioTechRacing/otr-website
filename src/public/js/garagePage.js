@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const textSectionHeading = document.getElementById("section-heading");
   const textSectionContent = document.getElementById("section-content");
-
+  const specsContainer = document.getElementById("dept-specs-container");
   const progressBarGrowth = document.getElementById("bar-progress");
   const progressBarBubbleArray = document.querySelectorAll(
     "#progress-bar-bubble"
@@ -51,6 +51,41 @@ document.addEventListener("DOMContentLoaded", async () => {
         textSectionContent.style.animationName = "move-content";
       }
     }
+  };
+  const generateSpecsHtml = (specArray, index, flag = "notresize") => {
+    const excludeArr = [0, 4, 5, 6, 7];
+    if (specsContainer) {
+      if (excludeArr.includes(index)) {
+        specsContainer.classList.add("hide-element");
+      } else {
+        specsContainer.classList.remove("hide-element");
+      }
+      if (specArray.length > 0) {
+        specArray.forEach((spec, index) => {
+          document.getElementById(`spec-${index + 1}`).textContent = spec;
+        });
+      }
+    }
+    if (flag !== "resize") {
+      if (specsContainer.style.animationName === "spec-animate-in") {
+        specsContainer.style.animationName = "spec-animate-in1";
+      } else {
+        specsContainer.style.animationName = "spec-animate-in";
+      }
+    }
+    // const childern = specsContainer.children;
+    // if (childern.length > 0) {
+    //   for (const child of childern) {
+    //     console.log(childern.length);
+    //     specsContainer.removeChild(child);
+    //   }
+    // }
+    // specArray.forEach((spec) => {
+    //   const span = document.createElement("span");
+    //   span.classList.add("car-garage-spec");
+    //   span.textContent = spec;
+    //   specsContainer.appendChild(span);
+    // });
   };
   //logic for progress bar
   const fillProgressBar = (progress) => {
@@ -91,34 +126,53 @@ document.addEventListener("DOMContentLoaded", async () => {
   //content  for text section
   const carInfo = [
     {
-      heading: "Welcome to F2025",
-      content: `Introducing the F2025, our latest Formula SAE 
+      heading: "Welcome to F2024",
+      content: `Introducing the F2024, our latest Formula SAE 
           electric vehicle, built through collaboration, innovation, and cutting-edge engineering.`,
+      specs: [],
     },
     {
-      heading: "Chassis & Manufacturing",
+      heading: "Manufacturing",
       content: `Designed for strength and weight efficiency, the chassis provides 
-          the backbone of the vehicle while ensuring safety and performance.`,
+      the backbone of the vehicle while ensuring safety and performance.`,
+      specs: ["4130 chromoly", "Torsional stiffness 1366 Nm/deg", "39.2kg"],
     },
     {
-      heading: "Suspension & Steering",
+      heading: "Suspension",
       content: `Adjustability is key. Our suspension team focuses on refining 
           geometry, optimizing anti-dive/anti-squat, and enhancing tunability for different track conditions.`,
+      specs: [
+        "Contact Pitch: +- 0.5deg of camber over 40-80 kph cornering speed",
+        "225 lb/in front and rear spring stiffness",
+        "Adjustable Anti-dive/Anti-Squat",
+      ],
     },
     {
       heading: "Drivetrain & Braking",
-      content: `Band high-performance rotors enhance efficiency and stopping power, 
-          while our drivetrain team ensures seamless power transfer.`,
+      content: `We design the systems that get power to the wheels and 
+      bring the car to a stop. From fine-tuned brakes that deliver confident control,
+       to a drivetrain built for smooth, responsive acceleration.`,
+      specs: [
+        " Emrax 208 HV Motor",
+        "Total voltage 400V",
+        "Max current 180 Amps",
+      ],
     },
     {
       heading: "Hardware & Electronics",
-      content: `From circuit simplification to increased testing, our electronics 
-          team is developing more efficient and reliable systems to power the car.`,
+      content: ` Responsible for designing, building, and integrating critical systems
+       such as the battery management system (BMS), power distribution, control units, and sensor networks. 
+       From high-voltage safety to efficient energy delivery, the department ensures every
+       electronic component works seamlessly to optimize performance, reliability, and safety on the track.`,
+      specs: ["Energus TinyBMS s516 v2.1", "spec2", "spec3"],
     },
     {
       heading: "Aerodynamics",
-      content: `CFD-driven aero designs help balance downforce and drag, 
-          enhancing overall performance on the track`,
+      content: `The Aerodynamics department focuses on designing and optimizing the body 
+      of the electric car to minimize drag and maximize efficiency and stability. 
+      Using tools like CFD simulations and wind tunnel testing, the
+       team develops wings, diffusers, and bodywork that enhance downforce and improve handling at high speeds.`,
+      specs: ["Aero coefficients", "spec2", "spec3"],
     },
     {
       heading: "Vehicle Dynamics",
@@ -126,11 +180,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       We work on things like suspension, steering, and tires to make sure the car
       is smooth, stable, and easy to control. Our goal is to give the driver the best 
       possible feel and performance during every part of the race.`,
+      specs: ["Top Speed - 164km/h", "spec2", "spec3"],
     },
     {
       heading: "Our Sponsors",
       content: `Our business team secures vital sponsorships,
            providing the financial support and industry partnerships that make this project possible.`,
+      specs: [],
     },
   ];
   //scrolltrigger progress thresholds for text content
@@ -159,6 +215,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       ease: "circ.inOut",
     }
   );
+  //for spects html generation
   //array for all the image srcs
   const imgSrcs = Array.from({ length: 150 }, (_, index) => {
     const src = `../images/carFrames/frame00${index
@@ -199,28 +256,37 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (progress >= 0 && progress < IMAGE_CODE_2_PROGRESS) {
       currentContent = carInfo[0].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.add("hide-element");
+        generateSpecsHtml(carInfo[0].specs, 0);
         replaceTextSection(carInfo[0].heading, carInfo[0].content);
+        // generateSpecsHtml(carInfo[0].specs);
+
         // textSection.innerHTML = html;
         // console.log(progress, currentContent);
       }
       if (status === "RESIZE") {
-        console.log("notResizing");
         textSectionContent.textContent = carInfo[0].content;
         textSectionHeading.textContent = carInfo[0].heading;
+        generateSpecsHtml(carInfo[0].specs, 0, "resize");
       }
     }
     if (progress >= IMAGE_CODE_2_PROGRESS && progress < IMAGE_CODE_3_PROGRESS) {
       currentContent = carInfo[1].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.remove("hide-element");
+        generateSpecsHtml(carInfo[1].specs, 1);
         replaceTextSection(carInfo[1].heading, carInfo[1].content);
+        // generateSpecsHtml(carInfo[1].specs);
+
         // textSection.innerHTML = html;
         // console.log(progress);
       }
-      if (status === "RESIZE") {
+      if (status == "RESIZE") {
         console.log(progress);
 
         textSectionContent.textContent = carInfo[1].content;
         textSectionHeading.textContent = carInfo[1].heading;
+        generateSpecsHtml(carInfo[1].specs, 1, "resize");
       }
     }
     if (
@@ -230,6 +296,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     ) {
       currentContent = carInfo[2].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.remove("hide-element");
+        generateSpecsHtml(carInfo[2].specs, 2);
         replaceTextSection(carInfo[2].heading, carInfo[2].content);
         // textSection.innerHTML = html;
         // console.log(progress);
@@ -237,6 +305,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (status === "RESIZE") {
         textSectionContent.textContent = carInfo[2].content;
         textSectionHeading.textContent = carInfo[2].heading;
+        generateSpecsHtml(carInfo[2].specs, 2, "resize");
       }
     }
     if (
@@ -246,6 +315,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     ) {
       currentContent = carInfo[3].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.remove("hide-element");
+        generateSpecsHtml(carInfo[3].specs, 3);
         replaceTextSection(carInfo[3].heading, carInfo[3].content);
         // textSection.innerHTML = html;
         // console.log(progress);
@@ -253,6 +324,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (status === "RESIZE") {
         textSectionContent.textContent = carInfo[3].content;
         textSectionHeading.textContent = carInfo[3].heading;
+        generateSpecsHtml(carInfo[3].specs, 3, "resize");
       }
     }
     if (
@@ -262,6 +334,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     ) {
       currentContent = carInfo[4].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.remove("hide-element");
+        generateSpecsHtml(carInfo[4].specs, 4);
         replaceTextSection(carInfo[4].heading, carInfo[4].content);
         // textSection.innerHTML = html;
         // console.log(progress);
@@ -269,6 +343,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (status === "RESIZE") {
         textSectionContent.textContent = carInfo[4].content;
         textSectionHeading.textContent = carInfo[4].heading;
+        generateSpecsHtml(carInfo[4].specs, 4, "resize");
       }
     }
     if (
@@ -278,6 +353,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     ) {
       currentContent = carInfo[5].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.remove("hide-element");
+        generateSpecsHtml(carInfo[5].specs, 5);
         replaceTextSection(carInfo[5].heading, carInfo[5].content);
         // textSection.innerHTML = html;
         // console.log(progress);
@@ -285,6 +362,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (status === "RESIZE") {
         textSectionContent.textContent = carInfo[5].content;
         textSectionHeading.textContent = carInfo[5].heading;
+        generateSpecsHtml(carInfo[5].specs, 5, "resize");
       }
     }
     if (
@@ -294,6 +372,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     ) {
       currentContent = carInfo[6].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.remove("hide-element");
+        generateSpecsHtml(carInfo[6].specs, 6);
         replaceTextSection(carInfo[6].heading, carInfo[6].content);
         // textSection.innerHTML = html;
         // console.log(progress);
@@ -301,11 +381,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (status === "RESIZE") {
         textSectionContent.textContent = carInfo[6].content;
         textSectionHeading.textContent = carInfo[6].heading;
+        generateSpecsHtml(carInfo[6].specs, 6, "resize");
       }
     }
     if (progress >= IMAGE_CODE_8_PROGRESS && notResizing) {
       currentContent = carInfo[7].content;
       if (status === "PAGE_LOAD" && currentContent !== textVal && notResizing) {
+        // specsContainer.classList.add("hide-element");
+        generateSpecsHtml(carInfo[7].specs, 7);
         replaceTextSection(carInfo[7].heading, carInfo[7].content);
         // textSection.innerHTML = html;
         // console.log(progress);
@@ -313,6 +396,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (status === "RESIZE") {
         textSectionContent.textContent = carInfo[7].content;
         textSectionHeading.textContent = carInfo[7].heading;
+        generateSpecsHtml(carInfo[7].specs, 7, "resize");
       }
     }
   };
