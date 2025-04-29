@@ -173,11 +173,6 @@ const sponsors = {
     ], 
     General:
     [
-        // {
-            // name: 'ZTL Manufacturing', 
-            // website: 'https://www.zintilon.com/', 
-            // img: '../images/sponsersLogos/ontarioTechSteer.png'
-        // }, 
         {
             name: 'United Eastern Central Ontario Welders association', 
             website: 'https://www.ualocal401.ca/', 
@@ -200,9 +195,11 @@ const createLogo=(sponsors)=>
     </div>`
 ;
 
+
 const createLogoSection = (tier, sponsors)=>{
     return `
-        <h2 class="sponsers-logo-text">${tier} Sponsors</h2>
+         <h2 class="sponsers-logo-text">${tier} Sponsors</h2>
+         <div class="${tier}-divider"></div>
         <div class="sponsorship">
             ${sponsors.map(createLogo).join("")}
         </div>
