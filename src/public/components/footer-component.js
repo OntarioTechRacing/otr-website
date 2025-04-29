@@ -110,7 +110,7 @@ class Footer extends HTMLElement{
                     </a>
                 </div>
                 <div class="otr-info">
-                    <span class="otr-email">motorsports@ontariotechu.net</span>
+                    <span class="otr-email"><a href="mailto:motorspors@ontariotechu.net">motorsports@ontariotechu.net</a></span>
                     <span class="otr-name"
                     >2025 Ontario Tech University Formula Racing</span
                     >
