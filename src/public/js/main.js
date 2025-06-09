@@ -10,7 +10,7 @@
         if (start >= target) {
           clearInterval(interval);
         }
-      }, 700);
+      }, 280);
     }
 
     function incrementYearsOfElectricCars() {
@@ -23,7 +23,7 @@
         if (start >= target) {
           clearInterval(interval);
         }
-      }, 700);
+      }, 280);
     }
 
     function incrementYearsOfDepartments() {
@@ -36,7 +36,7 @@
         if (start >= target) {
           clearInterval(interval);
         }
-      }, 700);
+      }, 280);
     }
 
     function incrementYearsOfSkilledMembers() {
