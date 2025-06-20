@@ -8,13 +8,14 @@ html {
 }
 body {
   margin-top: 65px;
-  background-image: url("../../images/background5.jpg");
+  background-color: rgb(25, 25, 25);
+  /* background: linear-gradient(150deg, black 50%, #7b3922); */
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 img {
   cursor: pointer;

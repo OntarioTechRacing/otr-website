@@ -1,0 +1,18 @@
+/*Custom scroll bar*/
+::-webkit-scrollbar {
+  width: 0.75em;
+}
+::-webkit-scrollbar-track {
+  background: rgb(11, 11, 11);
+}
+::-webkit-scrollbar-thumb {
+  background: #0077ca;
+  border: 0.2em solid rgb(11, 11, 11);
+}
+
+/*check for firefox scrollbar change support*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #0077ca rgb(11, 11, 11);
+  }
+}
