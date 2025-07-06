@@ -1,10 +1,15 @@
-class Header extends HTMLElement{
-    constructor(){
-        super();
-    }
+const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const basePath = isLocalhost ? "/" : "/";
 
-    connectedCallback(){
-        this.innerHTML = `
+const imageSrc = `${basePath}src/public/images/otrLogo.PNG`;
+const filePath = `${basePath}src/public/html/`;
+
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
         <style>
         .navigation-bar {
             background-color: transparent;

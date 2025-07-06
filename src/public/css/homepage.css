@@ -5,6 +5,8 @@ html, body {
   min-height:100vh;
   display:flex;
   flex-direction:column;
+  background-color: rgb(25,25,25);
+
 }
 
   /* ------------- Homepage banner ---------------*/
@@ -43,8 +45,9 @@ html, body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #000000, #1a1a1a); 
-    gap: 20px;
+    background-color: rgb(25,25,25);
+
+    gap: 20px; 
     padding: 40px 20px;
     flex-wrap:wrap;
   }
@@ -173,7 +176,6 @@ html, body {
       margin:20px;
     }
 
-  
     .tiktok-container {
       flex: 1 1 300px;
       max-width: 500px;
@@ -221,17 +223,8 @@ html, body {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       display: block;
     }
-    .tiktok-embed video {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 4 / 5;
-      object-fit: contain;
-      border-radius: 10px;
-      display: block;
-    }
-
-
-/* TABLETS */
+    
+  /* TABLETS */
   @media (max-width: 900px){
     .Title{
       font-size:4rem;
