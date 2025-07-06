@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url("../images/background5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; */
+  width: 100%;
+  overflow-y: auto;
+  font-family: jost, sans-serif;
+  background-color: #000000;
+}
+/*progress bar*/
+.progress-bar-container {
+  position: sticky;
+  top: 0;
+  width: 3rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  overflow: visible;
+  border-radius: 0.75rem;
+}
+.progress-bar-spacer {
+  width: 0.5rem;
+  height: 4rem;
+}
+.progress-fill-bar {
+  width: 0.25rem;
+  height: 100%;
+  border-radius: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #541600;
+}
+.bar-progress {
+  width: 100%;
+  border-radius: 9999px;
+  background-color: #e75d2a;
+}
+.progress-bubble {
+  position: absolute;
+  border-radius: 9999px;
+  width: 1rem;
+  height: 1rem;
+  transition: all;
+  transition-duration: 200ms;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.progress-bubble:hover {
+  transform: scale(1.2);
+  border-radius: 0.2rem;
+}
+/*garage page content*/
+.garage-main {
+  width: 100%;
+  color: white;
+  display: flex;
+}
+.pinned {
+  width: 100%;
+  height: 100lvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  overflow: hidden;
+
+  margin-bottom: 20px;
+}
+
+.text-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex: initial;
+  gap: 1rem;
+  padding: 6px;
+  transition: all;
+  transition-duration: 1000ms;
+  /* border: 1px solid red; */
+}
+.text-section h2 {
+  color: #e75d2a;
+  font-size: 2.5rem;
+  letter-spacing: -1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Goldman, sans-serif;
+}
+.text-section p {
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 80%;
+  opacity: 0;
+  font-family: jost, sans-serif;
+}
+.specs-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  /* border: 1px red solid; */
+  max-width: fit-content;
+  opacity: 0;
+}
+.car-garage-spec {
+  border: 4px solid #0077ca;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+}
+
+/*animation for specs*/
+@keyframes spec-animate-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes spec-animate-in1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+/*text heading animation*/
+/*use 2 for toggling*/
+@keyframes move-heading {
+  0% {
+    opacity: 0;
+    transform: translateY(1.2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes move-heading1 {
+  0% {
+    transform: translateY(1.2rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*text content animation*/
+/*use 2 for toggling*/
+@keyframes move-content {
+  0% {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes move-content1 {
+  0% {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle-text-pos {
+  position: absolute;
+}
+.images-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex: initial;
+  transition: all;
+  transition-duration: 1000ms;
+  /* border: 1px solid red; */
+}
+.images-wrapper img {
+  width: 100%;
+  object-fit: contain;
+  transform: scale(0.95);
+  transition: all;
+  transition-duration: 1000ms;
+  opacity: 0;
+  z-index: 0;
+}
+.hide-element {
+  display: none !important;
+}
+.hide-pointer {
+  display: none !important;
+}
+.hand-pointer {
+  font-size: 1.5rem;
+}
+
+@media all and (max-width: 740px) {
+  .pinned {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .text-section {
+    height: fit-content;
+  }
+  .images-wrapper {
+    height: fit-content;
+  }
+}
+@media all and (max-width: 1250px) {
+  .text-section h2 {
+    font-size: 2rem;
+  }
+  .text-section p {
+    font-size: 1rem;
+  }
+  .car-garage-spec {
+    font-size: 1rem;
+  }
+}
+@media all and (orientation: landscape) {
+  .pinned {
+    flex-direction: row;
+  }
+  .text-section {
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+  }
+  .images-wrapper {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* scroll to top btn*/
+.to-top-btn {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  border: 4px solid #0077ca;
+  background-color: transparent;
+  transition: all;
+  transition-duration: 200ms;
+  cursor: pointer;
+  opacity: 0;
+}
+.animate-btn-in {
+  animation-name: move-btn-in;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+.animate-btn-out {
+  animation-name: move-btn-out;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes move-btn-in {
+  0% {
+    opacity: 0;
+    transform: translate(70px, 70px);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes move-btn-out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(70px, 70px);
+  }
+}
+.arrow-up {
+  color: white;
+  font-size: 1.1rem;
+}
+.to-top-btn:hover {
+  background-color: white;
+  .arrow-up {
+    color: black;
+  }
+}
+
+/*auto play button*/
+.auto-play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  position: absolute;
+  top: 4rem;
+  right: 1.25rem;
+
+  color: white;
+  font-weight: 900;
+
+  border: 4px solid #0077ca;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.5rem;
+  background-color: transparent;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.play-stop-icon {
+  font-size: 1rem;
+}
+
+.pulsing {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

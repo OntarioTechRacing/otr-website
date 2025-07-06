@@ -11,9 +11,13 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <style>
+        ul{
+        margin-top: 0;
+        margin-bottom: 0;
+        }
         .navigation-bar {
-            background-color: transparent;
-            backdrop-filter: blur(6px);
+            background-color: rgba(0,0,0,0.8);
+            backdrop-filter: blur(30px);
             color: white;
             padding-left: 40px;
             padding-right: 40px;
@@ -22,9 +26,8 @@ class Header extends HTMLElement {
             top: 0;
             right: 0;
             left: 0;
-            left: 0;
             z-index: 2000;
-            animation: header-load 600ms ease-in; /*add to*/
+            animation: header-load 600ms ease-in; 
             }
         .nav-shell {
             position: relative;
@@ -134,7 +137,7 @@ class Header extends HTMLElement {
         }
         @media (max-width: 700px) {
           .navigation-bar.nav-open {
-            padding-bottom: 10px;
+            min-height: 100%;
           }
           .nav-toggle {
             display: none;
@@ -143,10 +146,17 @@ class Header extends HTMLElement {
             display: block;
           }
           .navigation-bar.nav-open .nav-toggle {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            padding-bottom: 6.5rem;
+            align-items: center;
+            gap: 1rem;
           }
           .navigation-bar.nav-open a {
             display: block;
+            font-size: 1.6rem;
           }
           .menu-button {
             display: initial;
@@ -155,34 +165,33 @@ class Header extends HTMLElement {
             width: 95px;
           }
         }
-
         </style>
           <div class="navigation-bar">
             <div class="nav-shell">
-                <ul>
-                    <li class="otr-logo">
-                        <img src="src/public/images/otrLogo.PNG" alt="Ontario Tech Racing Logo"/>
-                    </li>
-                    <div class="nav-toggle">
-                        <li class="link">
-                            <a href="#"> Home </a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/TeamPage.html">Team</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/carInfoPage.html">Our Car</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/joinUs.html">Join Us</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/sponsers.html">Sponsors</a>
-                        </li>
-                        <li class="link">
-                            <a href="src/public/html/History.html">History</a>
-                        </li>
-                    </div>
+             <ul>
+                  <li class="otr-logo">
+                      <img src=${imageSrc} alt="Ontario Tech Racing Logo"/>
+                  </li>
+                  <div class="nav-toggle">
+                      <li class="link">
+                          <a href=${homePageFilePath}> Home </a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "TeamPage.html"}>Team</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "GaragePage.html"}>Our Car</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "joinUs.html"}>Join Us</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "sponsers.html"}>Sponsors</a>
+                      </li>
+                      <li class="link">
+                          <a href=${filePath + "History.html"}>History</a>
+                      </li>
+                  </div>
                 </ul>
                 <button class="menu-button">
                     <div class="bar1"></div>
@@ -191,8 +200,8 @@ class Header extends HTMLElement {
                 </button>
             </div>
         </div>
-    `
-    }
+    `;
+  }
 }
 
-customElements.define('header-component', Header)
+customElements.define("header-component", Header);
