@@ -1,11 +1,5 @@
-const isLocalhost =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1";
-
-const repoName = window.location.pathname.split("/")[1];
-
-const basePath = isLocalhost ? "/" : `/${repoName}/`;
-const homePageFilePath = `${basePath}`;
+const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const basePath = isLocalhost ? "/" : "/";
 
 const imageSrc = `${basePath}src/public/images/otrLogo.PNG`;
 const filePath = `${basePath}src/public/html/`;
