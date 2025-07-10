@@ -144,12 +144,12 @@ const teams = {
       img: "../images/TeamMembers/Deep.jpg",
       linkedin: "https://www.linkedin.com/company/ontariotechracing",
     },
-    // {
-    //   name: "Ahsen Khan",
-    //   role: "Member",
-    //   img: "../images/icons/favicon.png",
-    //   linkedin: "https://linkedin.com/in/ahsen35813",
-    // },
+    {
+      name: "Ahsen Khan",
+      role: "Member",
+      img: "../images/icons/favicon.png",
+      linkedin: "https://linkedin.com/in/ahsen35813",
+    },
     // {
     //   name: "Ryan MacLean",
     //   role: "Member",
@@ -457,7 +457,7 @@ const teams = {
     {
       name: "Alejandro Bonafede",
       role: "Member",
-      img: "../images/TeamMembers/Jake Desailler 2.png",
+      img: "../images/icons/favicon.png",
       linkedin: "http://www.linkedin.com/in/jake-desaillier-a1556a267",
     },
   ]
