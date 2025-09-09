@@ -46,50 +46,45 @@
   background-color: white;
 }
 
-.forms-section {
+.department-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
 }
 
-.forms-title {
+.department-forms h3 {
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
+  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 30px;
-  font-family: "Goldman", "sans-serif";
 }
 
-.forms-grid {
+.form-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
+  width: 100%;
   max-width: 800px;
-  margin: 0 auto;
 }
 
 .form-link {
-  text-decoration: none;
-  width: 100%;
-}
-
-.form-card {
   background-color: #c04713;
   color: white;
-  padding: 20px 15px;
+  padding: 15px 20px;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 8px;
+  text-decoration: none;
   transition: all 0.3s ease;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
-.form-card:hover {
+.form-link:hover {
   background-color: rgb(149, 49, 7);
-  transform: scale(1.05);
+  transform: translateY(-2px);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -123,6 +118,22 @@
   }
 }
 
+@media (max-width: 768px) {
+  .form-links {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .form-link {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+  }
+  
+  .department-forms h3 {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 950px) {
   .join-us-info-container {
     font-size: 1.1rem;
@@ -130,21 +141,5 @@
   }
   .bold {
     font-size: 2rem;
-  }
-  
-  .forms-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  
-  .form-card {
-    font-size: 1.1rem;
-    padding: 18px 12px;
-    min-height: 70px;
-  }
-  
-  .forms-title {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
   }
 }
